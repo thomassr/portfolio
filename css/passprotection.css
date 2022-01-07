@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+html {
+	font-size: 100%; /*  In most browsers, this defaults to 16 pixels */
+	overflow-x: hidden;
+}
+
+
+.login-page {
+	padding: 8% 0 0;
+	margin: auto;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    /* max-width: 26em; */
+    margin: 0 auto 100px;
+    padding: 16px;
+    text-align: center;
+}
+
+.form input {
+    outline: 0;
+    background: rgba(255, 255, 255, 0.0.9);
+    width: 100%;
+    border: 0;
+    border-radius: 2px;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: inherit;
+  }
+
+.form button {
+    font-family: 'Fira Sans', sans-serif;
+    background: #070D0D;
+    width:100%;
+    border: 0;
+    padding: 15px;
+    opacity: 0.8;
+    color: #FFFFFF;
+    font-size: inherit;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+::placeholder {
+    font-size: inherit;
+    font-family: 'Fira Sans', sans-serif;
+}

@@ -1,0 +1,413 @@
+<?php include("./protector/password_protect.php"); ?>
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <link rel="stylesheet" media="screen" href="assets/css/style.css" />
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Thomas Ruitenberg">
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/custom.css?v=1.0">
+  <script src="https://kit.fontawesome.com/60dc161d94.js" crossorigin="anonymous"></script>
+
+  <title>Thomas' Portfolio: Healthcare</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicons/site.webmanifest">
+  <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body id="secondary">
+  <nav class="navbar sticky-top navbar-expand-sm navbar-light py-3" id="white">
+    <div class="container">
+      <a class="navbar-brand" id="name-heading" href="index.html">Thomas Ruitenberg</a>
+      <span class="d-none d-sm-block me-auto invert" id="role-heading">/Product Designer</span>
+
+      <div class="justify-content-end">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Work</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container col-md-10 col-xxl-8 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-5 mx-auto">
+        <video class="d-block img-fluid" alt="hero image" loading="lazy" width="600" autoplay loop playsinline>
+          <source src="img/showcase.mp4">
+        </video>
+      </div>
+      <div class="col-lg-5 offset-lg-2">
+        <h1 class="fw-bold">Doctor in your pocket</h1>
+        <p class="mb-4 fst-italic" style="color: #767676;">"Quick and trustworthy answers on all your health related
+          questions."</p>
+        <p>
+          This project by Rabobank, followed the lean startup principle to increase self-reliance for health related
+          questions. By finding frictions through user research we created blueprints for a MVP to bring innovation to
+          the health care system.
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="full-width" style="background-color:#EBF3FF;">
+    <div class="container" id="smaller-container">
+      <div class="row d-flex flex-warp pb-4 pt-4">
+        <div class="col-lg-6 col-md-6 col-xs-12">
+          <h2>Role</h2>
+          <p>
+            I was responsible for identifying the market demand by desk research, conducting interviews, (online)
+            surveys and creating persona’s. Designing and validating solutions via prototyping, concept visualisation
+            and final presentations.
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+          <h2>Team</h2>
+          <p>
+            Product owner<br>Product manager <br> Two healtcare consultants <br> Product designer
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+          <h2>Duration</h2>
+          <p>
+            5 months (2019)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5" id="smaller-container">
+    <div class="my-5 text-xl-start">
+      <h2>Problem to solve</h2>
+      <p>
+        Seeking quick and reliable answers to your health related questions can be challenging. Online gives
+        insufficient confirmation and having no time to meet with your GP (general practitioner) leaves your important
+        concerns unanswered. It is very difficult for general practices to innovate and Rabobank wants to contribute to
+        increase self-reliance regarding to health.
+      </p>
+    </div>
+  </div>
+
+  <div class="container my-5 d-flex flex-column justify-content-center align-items-center" data-bs-toggle="modal"
+    data-bs-target="#exampleModal">
+    <img src="img/healthcare/proces-visualised-thumbnail.webp" alt="proces visualised" class="img-fluid" id="clickable"
+      data-bs-target="#carouselExampleControls" data-bs-slide-to="0">
+  </div>
+
+
+  <div class="container my-5" id="smaller-container">
+    <div class="text-xl-start">
+      <h2>Process: Lean Startup</h2>
+      <p>
+        In this "Problem Fit phase", I conducted multiple interviews and survey’s to map frictions on both, the
+        civilians and the GP’s side. Our aim was to (in)validate the created assumptions, resulting in a wide range of
+        learnings. With multiple brainstorm sessions, guided by the healthcare experts and me, we iterated on our
+        learnings resulting in new ideas and assumptions. For which I created experiments such as Five Second Tests, ad
+        campaigns and surveys, to collect feedback and improve our concept.
+      </p>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <div class="container" id="smaller-container">
+    <div class="my-5 text-xl-start">
+      <h2>Validation concept with low-fi prototype </h2>
+      <p>
+        To validate our concept I made a low-fidelity clickable prototype with Sketch & InVision. I found it quite a
+        challenge to create a test method to validate our solutio, since this user journey is complex and long. So I
+        decided to follow a health related narrative and simulated the process. This stripped down prototype gave us
+        trustworthy results and a good understanding of our users.
+    </div>
+  </div>
+
+  <div class="container my-5 d-flex flex-column justify-content-center align-items-center" data-bs-toggle="modal"
+    data-bs-target="#exampleModal">
+    <img src="img/healthcare/low-fidelity-proto-thumbnail.webp" alt="low fidelity prototype" class="img-fluid"
+      id="clickable" data-bs-target="#carouselExampleControls" data-bs-slide-to="1">
+  </div>
+
+  <div class="container" id="smaller-container">
+    <div class="my-5 text-xl-start">
+      <h2>Five Second Test & ad campaign to define proposition</h2>
+      <p>
+        Together with a team member, we used Five Second Test to fine-tune our proposition. Next I created a ‘fake’
+        landing page via Instapage. Our first test was to identify a demand and our second test was to generate new
+        leads for future testing, since it was quite hard to find the right respondents.<br><br>
+
+        During this period I’ve learned a lot about marketing, writing content and how to convert visitors into leads. I
+        used Instapage to quickly create a website, combined with ActiveCampaign for automated emails and Google +
+        Facebook Ads for advertisement.
+
+      </p>
+    </div>
+  </div>
+
+  <div class="container my-5 d-flex flex-column justify-content-center align-items-center" data-bs-toggle="modal"
+    data-bs-target="#exampleModal">
+    <div class="row">
+      <div class="col-sm mb-6">
+        <img src="img/healthcare/results-airtable-thumbnail.webp" alt="results airtable" class="img-fluid"
+          id="clickable" data-bs-target="#carouselExampleControls" data-bs-slide-to="2">
+      </div>
+
+      <div class="col-sm mb-6">
+        <img src="img/healthcare/landingpage-thumbnail.webp" alt="website instapage" class="img-fluid" id="clickable"
+          data-bs-target="#carouselExampleControls" data-bs-slide-to="3">
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="smaller-container">
+    <div class="my-5 text-xl-start">
+      <p>
+        All this resulted in well validated proposition which showed that there is definitely a need from both
+        stakeholders. These results did not surprise me at that time. Because of the way primary care is structured, it
+        will hold back innovative solutions and only fragment this sector even more. You’ll see new disruptive
+        technologies appearing outside the Netherlands (Babylon, KRY, Ada) with success. <br><br>
+
+        Below I’ve created a flowchart of our final MVP and mockups to get an impression of our concept. Sadly because
+        of COVID-19 and the huge impact it has had on the healthcare system, this project was discontinued by Rabobank.
+
+      </p>
+    </div>
+  </div>
+
+  <div class="container my-5 d-flex flex-column justify-content-center align-items-center" data-bs-toggle="modal"
+    data-bs-target="#exampleModal">
+    <img src="img/healthcare/mvp-flow-thumbnail.webp" alt="mvp flow" class="img-fluid" id="clickable"
+      data-bs-target="#carouselExampleControls" data-bs-slide-to="4">
+  </div>
+
+  <div class="container" id="smaller-container">
+    <div class="my-5 text-xl-start">
+      <h2>Creating the visual style</h2>
+      <p>
+        Together with some help from a visual designer, some competitor research was done for inspiration and collected
+        in a moodboard. Because of our extensive research and validation, we knew what the core values of this concept
+        should be: quick, trustworthy and secure. Keeping this in mind we came up with the following colors and font,
+        which is enough for now.
+      </p>
+    </div>
+  </div>
+
+  <div class="container my-5 d-flex flex-column justify-content-center align-items-center mb-5" data-bs-toggle="modal"
+    data-bs-target="#exampleModal">
+    <div class="row">
+      <div class="col-sm mb-6">
+        <img src="img/healthcare/styleguide-1-thumb.webp" alt="Colors styleguide" class="img-fluid"
+          id="clickable" data-bs-target="#carouselExampleControls" data-bs-slide-to="5">
+      </div>
+
+      <div class="col-sm mb-6">
+        <img src="img/healthcare/styleguide-2-thumb.webp" alt="Font styleguide" class="img-fluid" id="clickable"
+          data-bs-target="#carouselExampleControls" data-bs-slide-to="6">
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5 col-md-10 col-xxl-8 py-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5 d-flex">
+      <div class="col-10 col-lg-7 mx-auto">
+        <img src="/img/healthcare/mockup_1-thumb.png" alt="designs of app" class="img-fluid" id="clickable" data-bs-target="#carouselExampleControls" data-bs-slide-to="7">
+      </div>
+      <div class="col-lg-4 offset-lg-1">
+        <p>
+          I tried to re-create the feeling of a GP’s waiting room, giving the user comfort and ease. Clear icons and subtitles support the consult options and there are little to none distractions. 
+        </p>
+      </div>
+    </div>
+    <div class="row align-items-center g-5 py-5">
+      <div class="col-10 col-lg-7 mx-auto">
+        <img src="/img/healthcare/mockup_2-thumb.png" alt="designs of app" class="img-fluid" id="clickable" data-bs-target="#carouselExampleControls" data-bs-slide-to="8">
+      </div>
+      <div class="col-lg-4">  
+        <p>
+          A sans serif font has been chosen because it doesn’t tire your eyes as quickly and a lot of reading has to be done. With adjustments to the line height and kerning this font becomes even more easier to read.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container my-5" id="smaller-container">
+    <h2 class="mb-3">My biggest learnings</h2>
+
+    <div class="card mb-4">
+      <div class="card-body p-4">
+        <div class="d-flex">
+          <div class="flex-shrink-0"><i class="fas fa-quote-left fs-2" style="color:rgba(0, 0, 0, 0.125);"></i></div>
+          <div class="ms-4">
+            <h2 class="card-title" style="font-size:1.5em;">Don’t try to work out all the details</h2>
+            <p class="card-text">When validating high-over concepts, don’t work out the details. Keep it high-over.
+              Otherwise you’ll collect feedback about the details instead of the concept as a whole.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body p-4">
+        <div class="d-flex">
+          <div class="flex-shrink-0"><i class="fas fa-quote-left fs-2" style="color:rgba(0, 0, 0, 0.125);"></i></div>
+          <div class="ms-4">
+            <h2 class="card-title" style="font-size:1.5em;">Conversion rates are additional data</h2>
+            <p class="card-text">Conversion rates of the landing page should be seen as something additional on a good
+              foundation of research. It’s ‘one dimensional’ quantitative data. It doesn’t give much insights,
+              especially when using marketing tactics to get higher conversion rates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body p-4">
+        <div class="d-flex">
+          <div class="flex-shrink-0"><i class="fas fa-quote-left fs-2" style="color:rgba(0, 0, 0, 0.125);"></i></div>
+          <div class="ms-4">
+            <h2 class="card-title" style="font-size:1.5em;">Openness and transparency gives you the most</h2>
+            <p class="card-text">When gathering new leads for prototype testing, be open and transparent. To get the
+              highest conversion rate, we kind of stated that our concept already existed. This backfired because when
+              the leads found out this wasn’t real, they all lost their interest. I find it better to achieve higher
+              engagement with less users instead of the other way around. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container mt-5 d-flex flex-column justify-content-center align-items-center" data-bs-toggle="modal"
+    data-bs-target="#exampleModal">
+    <img src="img/healthcare/mockups-thumbnail.png" alt="mockups" class="img-fluid" id="clickable"
+      data-bs-target="#carouselExampleControls" data-bs-slide-to="9">
+  </div>
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="d-flex flex-row-reverse p-3">
+          <button type="button" class="btn-close btn-close-white float-end" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false"
+            data-bs-keyboard="true">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/healthcare/proces-visualised.webp" class="d-block w-100" alt="bla">
+              </div>
+              <div class="carousel-item">
+                <img src="img/healthcare/low-fidelity-proto.webp" class="d-block w-100" alt="blabla">
+              </div>
+              <div class="carousel-item">
+                <img src="img/healthcare/results-airtable.webp" class="d-block w-100" alt="blabla2">
+              </div>
+              <div class="carousel-item">
+                <img src="img/healthcare/landingpage.webp" class="d-block w-100" alt="blabla3">
+              </div>
+              <div class="carousel-item">
+                <img src="img/healthcare/mvp-flow.jpg" class="d-block w-100" alt="blabla4">
+              </div>
+              <div class="carousel-item">
+                <img src="img/healthcare/styleguide-1.webp" class="d-block w-100" alt="styleguide colors">
+              </div>
+              <div class="carousel-item">
+                <img src="img/healthcare/styleguide-2.webp" class="d-block w-100" alt="styleguide font">
+              </div>
+              <div class="carousel-item">
+                <img src="img/healthcare/mockup_1.png" class="d-block w-100" alt="mockup of design">
+              </div>
+              <div class="carousel-item">
+                <img src="img/healthcare/mockup_2.png" class="d-block w-100" alt="mockup of design">
+              </div>
+
+
+
+              <div class="carousel-item">
+                <img src="img/healthcare/mockups.png" class="d-block w-100" alt="blabla5">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <p class="float-right">
+        <a class="nav hvr-icon-up" href="#">Back to top
+          <i class="fas fa-arrow-up fa-sm hvr-icon1"></i></a>
+      </p>
+      <p>
+        <a href="https://www.linkedin.com/in/thomasruitenberg/" target="_blank" rel="noopener noreferrer"
+          style="color: #070D0D;">
+          Check my LinkedIn
+        </a>
+      </p>
+      <p style="color: #cdcfcf;">
+        I designed and coded this website. © 2021
+      </p>
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

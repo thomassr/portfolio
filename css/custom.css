@@ -685,3 +685,23 @@ iframe#prototype1 {
 	scale: 0.75;
 	text-align: center;
 }
+
+
+.image-stack {
+	padding-top: 10vh;
+	display: grid;
+	position: relative; 
+	grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .image-stack__item--bottom {
+	grid-column: 4 / -1;
+	grid-row: 1;
+  }
+  
+  .image-stack__item--top {
+	grid-row: 1;
+	grid-column: 1 / span 8;
+	padding-top: 90%; 
+	z-index: 1; 
+  }

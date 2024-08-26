@@ -1,14 +1,4 @@
-@media only screen and (min-width:768px) {
-    .container-xxl {
-        max-width: 1600px;
-        padding-left: 16px;
-        padding-right: 16px;
-        margin-left: auto;
-        margin-right: auto;
-        
-    }
-}
-
+/* || Styling of paragraph text */
 .container-p {
     position: relative;
     max-width: 680px;
@@ -18,20 +8,18 @@
     margin-right: auto
 }
 
-.shadow {
-    box-shadow: var(--shadow-elevation-medium);
- }
-
- @media (max-width: 768px){
+@media (max-width: 768px){
     .margin-bottom { 
         margin-bottom: 1rem;
     }
-  }
+}
 
 .hero {
     width: 100%;
     height: 80dvh;
+    /* background-color: #EBE4FF; */
 }
+
 @media (min-width: 576px) {
     .hero {
         height: 100vh;
@@ -45,11 +33,184 @@
     }
   }
 
-@media (max-width: 992px) {
-    .scrollToTopBtn {
-      mix-blend-mode: normal !important;
+.center { 
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
+.shadow {
+    box-shadow: var(--shadow-elevation-medium);
+ }
+
+
+/* || Specific Styles for Juni project */
+.row-m p {
+    margin-top: 4px;
+    padding: 0;
+}
+
+.purple { 
+    background-color: #EBE4FF;
+}
+
+.yellow {
+    background-color: #FFFAEB;
+}
+
+.padding-box { /* all around negative space */
+    padding: 5.8%;
+}
+
+
+.yellow img, 
+.purple img { /* places the images in the yellow and purple boxes in the corner */
+    display: block;
+}
+
+.padding-box-t-r { /* top-right negative space */
+    padding-right: 5.8%;
+    padding-top: 5.8%;
+    display: block;
+}
+
+.padding-box-t-l { /* top-left negative space */
+    padding-left: 5.8%;
+    padding-top: 5.8%;
+    display: block;
+}
+
+.padding-box-l-t-r { /* left-top-right negative space */
+    padding-left: 5.8%;
+    padding-top: 5.8%;
+    padding-right: 5.8%;
+}
+
+.padding-box-r-b { /* right-bottom negative space */
+    padding-bottom: 5.8%;
+    padding-right: 5.8%;
+}
+
+.gridbox,
+.gridbox-2 {
+    display: block;
+}
+
+/* First 4 masonry layout */
+@media (min-width:768px) {
+    .gridbox {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat (9, 1fr);
+        grid-auto-flow: 1fr;
+        gap: 16px 16px;
+        grid-template-areas:
+            "Left-Top Right-Top"
+            "Left-Top Right-Top"
+            "Left-Top Right-Top"
+            "Left-Top Right-Top"
+            "Left-Top Right-Bottom"
+            "Left-Bottom Right-Bottom"
+            "Left-Bottom Right-Bottom"
+            "Left-Bottom Right-Bottom"
+            "Left-Bottom Right-Bottom";
     }
+}
+
+.Right-Top {
+    grid-area: Right-Top;
+}
+
+.Right-Bottom {
+    grid-area: Right-Bottom;
+}
+
+.Left-Bottom {
+    grid-area: Left-Bottom;
+}
+
+.Left-Top {
+    grid-area: Left-Top;
+}
+
+/* First 3 masonry layout */
+
+@media (min-width:768px) {
+.gridbox-1 {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: min-content 300px;
+    grid-auto-rows: 300px;
+    gap: 16px 16px;
+    grid-auto-flow: row;
+    align-content: stretch;
+    justify-items: stretch;
+    grid-template-areas:
+      "Left Right-Top-3"
+      "Left Right-Bottom-3";
   }
+}
+  
+.Left { grid-area: Left; }
+  
+.Right-Top-3 { grid-area: Right-Top-3; padding: 24px; }
+  
+.Right-Bottom-3 { grid-area: Right-Bottom-3; padding: 24px; }
+  
+
+/* Second 4 masonry layout */
+@media (min-width:768px) {
+    .gridbox-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 0.4fr 1.6fr 1fr 1fr 1fr 1fr;
+        gap: 16px 16px;
+        grid-auto-flow: 1fr;
+        grid-template-areas:
+            "Left-Top-2 Right-Top-2"
+            "Left-Top-2 Right-Top-2"
+            "Left-Top-2 Right-Top-2"
+            "Left-Top-2 Right-Top-2"
+            "Left-Top-2 Right-Bottom-2"
+            "Left-Bottom-2 Right-Bottom-2"
+            "Left-Bottom-2 Right-Bottom-2"
+            "Left-Bottom-2 Right-Bottom-2"
+            "Left-Bottom-2 Right-Bottom-2"
+            "Left-Bottom-2 Right-Bottom-2";
+    }
+}
+
+.Left-Top-2 {
+    grid-area: Left-Top-2;
+}
+
+.Left-Bottom-2 {
+    grid-area: Left-Bottom-2;
+}
+
+.Right-Bottom-2 {
+    grid-area: Right-Bottom-2;
+}
+
+.Right-Top-2 {
+    grid-area: Right-Top-2;
+}
+
+/* Standard 2 masonry layout */
+@media (min-width:768px) {
+.gridbox-single {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 0px;
+    } 
+}
+
+.overflow-hidden {
+    overflow: hidden !important;
+}
 
 .center {
     display: flex;
@@ -57,7 +218,130 @@
     align-items: center; /* align vertical */
 }
 
+
+
+.quote {
+    position: relative;
+    height: 100%;
+    min-height: 80%;
+}
+
+.quote h2 {
+    font-weight: 900;
+    padding: 4%;
+    line-height: 120%;
+    }
+
+@media (min-width: 0px) {
+    .quote h2 { font-size: 1.5rem; }
+  }
+  
+  @media (min-width: 400px) {
+    .quote h2 { font-size: calc(1rem + 1vw); }
+  }
+  
+  @media (min-width: 1265px){
+    .quote h2 { font-size: 2.5rem; }
+  }
+  
+.source {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.purple svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+}
+
+.purple #end {
+    position: absolute;
+    left: 60% !important;
+    top: 40% !important;
+    width: 30% !important;
+    transform: rotate(180deg);
+}
+
+.context-card-grid {
+    display: flex;
+    width: 80%; 
+    height: 100%;
+    flex-wrap: wrap;  
+}
+
+.context-card-grid .context-card {
+    flex-basis: 50%;
+    padding: 8px;
+}
+
+.card {
+    height: fit-content;
+    width: 88%;
+    background-color: #FFFAEB;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #EBE4FF;
+    border-radius: 50%;
+    color: #7D76FF;
+}
+
+@media (min-width: 768px){
+    .circle { 
+        width: 54px; 
+        height: 54px; 
+    }
+  }
+
+.c-col-2 {
+    max-width: fit-content;
+    margin-right: 1.5rem;
+}
+
+.c-col-10 {
+    flex: 1;
+}
+
 .p-title {
     font-weight: 700;
     line-height: 0;
+}
+
+.container-xl {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 16px;
+}
+
+.hero-img {
+    box-shadow: var(--shadow-elevation-high); 
+    border-radius: 12px 12px 0 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #D9D9D9;
+    border-style: solid solid none solid;
+}
+
+@media (max-width: 768px) {
+    .hero-img {
+        border-radius: 6px 6px 0 0;
+    }
+}
+
+.card p,.c-col-10 p {
+    margin-top: 0px;
 }

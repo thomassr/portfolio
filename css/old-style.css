@@ -1071,3 +1071,21 @@ h2#header {
 }
 
 
+
+
+/* HERO BACKGROUNDS */
+
+#healthcare-bg {
+    background: rgb(126,168,252);
+    background: linear-gradient(270deg, rgba(126,168,252,1) 0%, rgba(181,205,253,1) 100%); 
+}
+
+#kleedje-bg {
+    background: rgb(255,205,114);
+    background: linear-gradient(270deg, rgba(255,205,114,1) 0%, rgba(255,220,156,1) 100%); 
+}
+
+#smarttransfers-bg {
+    background: rgb(185,175,242);
+    background: linear-gradient(270deg, rgba(185,175,242,1) 0%, rgba(150,135,235,1) 100%);   
+}

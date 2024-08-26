@@ -27,13 +27,17 @@ html {
   font-size: 100%;
 }
 
+body {
+  background-color: var(--white);
+}
+
 section {
   height: 100%;
   position: relative;
   background-color: var(--black);
 }
 
-  .background-wrapper {
+.background-wrapper {
     position: relative;
     width: 100%;
     height: 100svh;
@@ -43,7 +47,7 @@ section {
     background-color:#99acff;
 }
   
-  .background-layer {
+.background-layer {
     position: absolute;
     top: 0;
     left: 0;
@@ -53,11 +57,11 @@ section {
     opacity: 0;
   }
   
-  .background-layer.active {
+.background-layer.active {
     opacity: 1;
   }
 
-  .gradient-1 {
+.gradient-1 {
     background-color:#99acff;
     background-image:
     radial-gradient(at 14% 5%, hsla(1,60%,74%,1) 0px, transparent 50%),
@@ -110,6 +114,17 @@ section {
     padding-right: 16px;
   }
 } 
+
+@media only screen and (min-width:768px) {
+  .container-xxl {
+      max-width: 1600px;
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-left: auto;
+      margin-right: auto;
+      
+  }
+}
 
 .btn {
   font-family: 'Satoshi', sans-serif;
@@ -283,7 +298,16 @@ footer {
     right: 16px !important;
     mix-blend-mode: exclusion;
   }
+  .scrollToTopBtn-normal {
+    mix-blend-mode: normal !important;
+  }
 }
+
+/* @media (max-width: 992px) {
+  .scrollToTopBtn {
+    mix-blend-mode: normal !important;
+  }
+} */
 
 .scrollToTopBtn {
   right: 30px;

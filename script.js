@@ -1,4 +1,7 @@
 
+// This is the old script used in the legacy project pages. Delete until new pages refactored.
+
+
 //Sets viewport right for mobile
 // Get viewport height and multiple it by 1% = a vh unit
 let vh = window.innerHeight * 0.01;

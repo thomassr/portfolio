@@ -1,0 +1,282 @@
+
+  @font-face {
+    font-family: "Modern Era";
+    src: url("../fonts//ModernEra/ModernEra-Bold.woff") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Modern Era";
+    src: url("../fonts/ModernEra/ModernEra-Medium.woff") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Modern Era";
+    src: url("../fonts/ModernEra/ModernEra-Regular.woff") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Modern Era";
+    src: url("../fonts/ModernEra/ModernEra-Light.woff") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+  }
+
+
+
+#juni-bg {
+    background: rgb(202, 199, 255);
+    background: linear-gradient(270deg, rgba(202, 199, 255, 1) 0%, rgba(237, 236, 255, 1) 100%);
+}
+
+
+  
+
+
+  .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      border-radius: 6px;
+      box-shadow: -30px 29px 17px rgba(87, 87, 87, 0.01), -17px 17px 14px rgba(87, 87, 87, 0.03), -8px 7px 11px rgba(87, 87, 87, 0.05), -2px 2px 6px rgba(87, 87, 87, 0.06), 0px 0px 0px rgba(87, 87, 87, 0.06);
+      padding-top: 40px;
+      background-color: rgba(255, 250, 235, 1);
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      height: 100%;
+  }
+
+  
+  .box::after {
+    content: "";
+    border-radius: 6px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 46px 27px rgba(87, 87, 87, 0.01), -27px 26px 22px rgba(87, 87, 87, 0.03), -12px 12px 17px rgba(87, 87, 87, 0.05), -3px 3px 9px rgba(87, 87, 87, 0.06), 0px 0px 0px rgba(87, 87, 87, 0.06);    
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  .box:hover {
+    -webkit-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+  }
+  
+  .box:hover::after {
+      opacity: 1;
+  }
+  
+  
+
+.div-4 {
+    color: rgba(125, 118, 255, 1);
+    font-size: 22px;
+    letter-spacing: 0%;
+    text-align: left; 
+    font-family: 'Modern Era', sans-serif;
+    font-weight: 500;
+  }
+
+.div-5 {
+    color: rgba(66, 62, 48, 1);
+    font-size: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    font-family: 'Modern Era', sans-serif;
+    font-weight: 400;
+  }
+
+.div-6 {
+    color: rgba(66, 62, 48, 1);
+    font-size: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+    font-family: 'Modern Era', sans-serif;
+    font-weight: 400;
+}
+
+
+
+.parallax-container img {
+    width: 55%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+    overflow: hidden;
+}
+
+/* container for left image behind the right image */
+.parallax-container .img-left-behind {
+    position: absolute;
+    float: left;
+    margin-bottom: 4vh;
+    z-index: 2;
+}
+
+.parallax-container .img-right-front {
+    float: right;
+    position: relative;
+    top: 6vw;
+    z-index: 3;
+}
+
+/* container for right image behind the left image */
+
+.parallax-container .img-right-behind {
+    float: right;
+    position: relative;   
+    z-index: 2;
+
+}
+
+.parallax-container .img-left-front {
+    position: absolute;
+    float: left;
+    margin-top: 20vh;
+    z-index: 3;
+}
+
+.img-1 {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-1:hover {
+    cursor: pointer;
+}
+
+.img-2:hover {
+    cursor: pointer;
+}
+
+.img-3:hover {
+    cursor: pointer;
+}
+
+
+.img-2 {
+    width: 100%;
+    top: 32px;
+    position: relative;
+    display: inline-block;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-3 {
+    width: 100%;
+    top: 64px;
+    position: relative;
+    display: inline-block;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media only screen and (min-width: 768px){
+
+.img-1 {
+    max-width: 120%;
+    left: 65%;
+    transform: translateX(-50%);
+}
+
+.img-2 {
+    max-width: 120%;
+}
+
+.img-3 {
+    max-width: 120%;
+    left: 35%;
+    transform: translateX(-50%);
+
+}
+   }
+
+
+.window-style {
+    box-shadow: -30px 29px 17px rgba(87, 87, 87, 0.01), -17px 17px 14px rgba(87, 87, 87, 0.03), -8px 7px 11px rgba(87, 87, 87, 0.05), -2px 2px 6px rgba(87, 87, 87, 0.06), 0px 0px 0px rgba(87, 87, 87, 0.06);
+    border-radius: 0.4vw;
+    border: solid 0.05vw;
+    border-color: rgba(217, 217, 217, 1);
+}
+
+/* #window-style::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 46px 27px rgba(87, 87, 87, 0.01), -27px 26px 22px rgba(87, 87, 87, 0.03), -12px 12px 17px rgba(87, 87, 87, 0.05), -3px 3px 9px rgba(87, 87, 87, 0.06), 0px 0px 0px rgba(87, 87, 87, 0.06);    
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#window-style:hover {
+    content: "";
+}
+
+#window-style:hover::after {
+      opacity: 1;
+} */
+
+
+.window-style-left {
+    border-top-right-radius: 0.4vw;
+    border-bottom-right-radius: 0.4vw;
+    border-top: solid 0.86px;
+    border-right: solid 0.86px;
+    border-bottom: solid 0.86px;
+    border-color: rgba(217, 217, 217, 1);
+    box-shadow: -30px 29px 17px rgba(87, 87, 87, 0.01), -17px 17px 14px rgba(87, 87, 87, 0.03), -8px 7px 11px rgba(87, 87, 87, 0.05), -2px 2px 6px rgba(87, 87, 87, 0.06), 0px 0px 0px rgba(87, 87, 87, 0.06);
+
+}
+
+.window-style-right {
+    border-top-left-radius: 0.4vw;
+    border-bottom-left-radius: 0.4vw;
+    border-top: solid 0.86px;
+    border-left: solid 0.86px;
+    border-bottom: solid 0.86px;
+    border-color: rgba(217, 217, 217, 1);
+    box-shadow: -30px 29px 17px rgba(87, 87, 87, 0.01), -17px 17px 14px rgba(87, 87, 87, 0.03), -8px 7px 11px rgba(87, 87, 87, 0.05), -2px 2px 6px rgba(87, 87, 87, 0.06), 0px 0px 0px rgba(87, 87, 87, 0.06);
+}
+
+.hover-class {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.hover-class:hover {
+    -webkit-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+}
+
+figcaption {
+	text-align: center;
+	margin-top: 1.5rem;
+	color: #717171;
+}
+
+
+

@@ -81,7 +81,7 @@
 
       <div class="hero d-none d-md-block">
 
-        <video class="hero-image d-block window-style" loading="eager" autoplay loop playsinline>
+        <video class="hero-image d-block window-style" loading="eager" autoplay loop playsinline muted>
           <source src="img/healthcare/hero-showcase.webm">
         </video>
       </div>

@@ -1,0 +1,494 @@
+<?php include("./protector/password_protect.php"); ?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thomas Ruitenberg">
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Thomas Ruitenberg">
+    <meta name="theme-color" content="rgba(33, 33,33)">
+    <meta name="robots" content="noindex,nofollow">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#212121">
+    <meta name="msapplication-TileColor" content="#212121">
+
+    <title>Thomas' Portfolio | Money Management at Juni</title>
+    <meta name="description" content="I craft mobile and web experiences - based in Utrecht.">
+
+    <!-- Base Core -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/core.css">
+    <!-- Base Common -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/code.css">
+
+    <!-- Add Your Website / App Stylesheet -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/anim.css">
+    <link rel="stylesheet" href="/css/styles-projects.css">
+    <link rel="stylesheet" href="/css/styles-juni.css">
+
+    <script defer src="/script1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Add Additional Modules -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/containers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/horizontal-spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/vertical-spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/typography-helpers.css">
+
+</head>
+
+<body style="color: var(--black)">
+    
+    <div class="hero overflow-hidden">
+        <div class="container-xl text-center center padding-top-3rem padding-top-5rem-m">
+            <h1 class="fade-Y-bottom-l" style="transition-delay: 100ms;">
+                Money Management at Juni
+            </h1>
+            <p class="padding-bottom-1rem padding-bottom-2rem-m fade-Y-bottom-s" style="max-width: 680px; transition-delay: 150ms;">
+                Juni is a B2B SaaS platform built for ecommerce businesses, to manage finances and maximise cash flow all
+                from a smart dashboard.
+            </p>
+            <img class="hero-img scale-up" style="transition-delay: 75ms;" src="img/juni/Home.jpg" alt="...">
+        </div>
+        
+    </div>
+    </div>
+
+
+    <div class="container-p padding-top-2rem padding-top-5rem-m">
+        <div class="row-m">
+            <div class="col-6-m padding-top-1rem padding-top-2rem-m">
+                <p class="p-title">Role</p>
+                <p>Product Designer</p>
+            </div>
+            <div class="col-6-m text-right-m padding-top-1rem padding-top-2rem-m">
+                <p class="p-title">Date</p>
+                <p>April - December 2022</p>
+            </div>
+        </div>
+        <div class="row-m">
+            <div class="col-6-m padding-top-1rem padding-top-2rem-m">
+                <p class="p-title">Practices</p>
+                <p>User Research, Product Thinking, UX & UI Design, Design System</p>
+            </div>
+            <div class="col-6-m text-right-m padding-top-1rem padding-top-2rem-m">
+                <p class="p-title">Methods & Tools</p>
+                <p>Interviewing, Usability Testing, Competitor Analysis, Wireframing, Figma, Dovetail, Hotjar, PingPong, Amplitude</p>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+    <div class="container-p padding-top-2rem padding-top-5rem-m">
+        <h3>Project context</h3>
+        <p>
+            My product area is called Money Management and I was leading the design process together with my Project
+            Manager and Lead Engineer. Our team was responsible for the backbone of the product; currency accounts,
+            cards and transferring money.
+        </p>
+        <p>
+            Our product team prioritised the roadmap according to the company's KPI's, which were managing funds
+            efficiently and increasing transaction volume.
+        </p>
+        <p>
+            In these nine months, I’ve conducted interviews and usability tests, redesigned existing and created new
+            features, which has also been implemented. Together with front-end and data analytics, we defined and
+            implemented analytic frameworks into our development process.
+        </p>
+    </div>
+
+    <div class="container-xxl padding-top-2rem padding-top-5rem-m">
+        <div class="gridbox-1">
+            <div class="Left purple padding-box center margin-bottom">
+                <div class="card">
+                    <div class="circle"><h5>1</h5></div>
+                    <p style="font-weight: 500;" class="padding-bottom-0-5rem padding-top-1rem">
+                        Payments are an essential part of any business, and this feature was lacking in its functionality, interaction, and user experience.
+                    </p>
+                    <p>
+                        I’ve designed and shipped a new flow to support cross-currency and cross-country payments.
+                    </p>
+                </div>
+            </div>
+            <div class="Right-Top-3 yellow">
+                <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                    <div class="c-col-2 padding-left-0-5">
+                        <div class="circle">
+                            <h5>2</h5>
+                        </div>
+                    </div>
+                    <div class="c-col-10">
+                        <p style="font-weight: 500;" class="padding-bottom-0-5rem">
+                            The Instant Top-up feature makes depositing money as easy and seamless as possible, which wasn't the
+                            case and was a risk for our KPI's. </p>
+                        <p>
+                            I gave this feature a redesign and this flow has been implemented. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="Right-Bottom-3 yellow">
+                <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                    <div class="c-col-2 padding-left-0-5">
+                        <div class="circle">
+                            <h5>3</h5>
+                        </div>
+                    </div>
+                    <div class="c-col-10">
+                        <p style="font-weight: 500;" class="padding-bottom-0-5rem">
+                            Managing a high amount of cards was difficult and we saw a growing need for extra actions. </p>
+                        <p>
+                            I designed filtering possibilities and list view with UI improvements, which has been implemented.</p>
+                        </div>
+                </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="container-p padding-top-2rem padding-top-5rem-m">
+        <h3>1. Designing the Send Money flow to support cross-currency and cross-country payments</h3>
+        <p>
+            As part of our efforts to improve the sending money feature, I focused on making sure the flow is not only
+            understandable and intuitive but also scalable in functionality. To achieve this, I designed the flow with
+            cross-currency and cross-country payments in mind, ensuring that it caters to the needs of international
+            payments.
+        </p>
+    </div>
+
+    <div class="container-xxl padding-top-2rem padding-top-5rem-m">
+        <div class="gridbox-single">
+            <div class="purple padding-box center margin-bottom">
+                    <div class="context-card-grid">
+                        <div class="context-card">
+                            <img src="./img/juni/contextcard1.svg" alt="...">
+                        </div>
+                        <div class="context-card">
+                            <img src="./img/juni/contextcard2.svg" alt="...">
+                        </div>
+                        <div class="context-card">
+                            <img src="./img/juni/contextcard3.svg" alt="...">
+                        </div>
+                        <div class="context-card">
+                            <img src="./img/juni/contextcard4.svg" alt="...">
+                        </div>
+                    </div>
+            </div>
+            <div class="yellow">
+                <img src="./img/juni/flowchart.svg" alt="screens made at Juni">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-p padding-top-2rem padding-top-5rem-m">
+        <p>
+            Our PM developed a matrix to determine the necessary payment requirements determined by third party suppliers, which then informed the order of the
+            flow. I determined with wireframing that starting with the account, followed by the recipient, amount, and review would be the
+            most optimal approach.
+        </p>
+    </div>
+
+    <div class="container-xxl padding-top-2rem padding-top-5rem-m">
+    <div class="purple" style="padding-left: 0px; padding-right: 0px;">
+        <img src="./img/juni/wireframes.png" alt="screens made at Juni"></div>
+    </div>
+    </div>
+
+    <div class="container-p padding-top-2rem padding-top-5rem-m">
+        <p>
+            Throughout the design process, I was mindful of customer behaviour and needs, incorporating their feedback into the
+            wireframe designs. With the support of an UX Researcher, I conducted moderated wireframe testing. Which allowed us
+            to validate our assumptions, like the order of the steps, and refine the design further. We used PingPong to find participants and
+            Dovetail to analyse the interviews.
+        </p>
+    </div>
+
+    <div class="container-xxl padding-top-2rem padding-top-5rem-m">
+        <div class="gridbox">
+            <div class="Right-Top purple padding-box-t-r margin-bottom"><img src="./img/juni/recipientlist.jpg"
+                    alt="screens made at Juni"></div>
+            <div class="Right-Bottom purple margin-bottom"><img src="./img/juni/failed-iphone.jpg" alt="screens made at Juni"></div>
+            <div class="Left-Bottom purple padding-box margin-bottom">
+                <video class="center shadow" loading="lazy" autoplay loop playsinline muted style="border-radius: 6px;">
+                    <source src="img/juni/initiate-payment.webm">
+                </video>
+            </div>
+            <div class="Left-Top yellow padding-box"><img src="./img/juni/recipient-filled.jpg"
+                    alt="screens made at Juni"></div>
+        </div>
+    </div>
+
+    <div class="container-p padding-top-2rem padding-top-5rem-m">
+        <p>
+            The learnings of previous testing, business needs and copy input of our UX copywriter led to new high-fidelity UI
+            designs. I created these with components from Juni's design system. I designed new patterns and components for
+            the recipient form, amount input and summary screen only when no existing component could be used. In collaboration
+            with another Product Designer from Onboarding, we decided to improve the navigation component. By displaying
+            the steps horizontally, it's more suitable for smaller screens and easier to develop. 
+        </p>
+    </div>
+
+    <div class="container-xxl padding-top-2rem padding-top-5rem-m">
+        <div class="gridbox-single">
+            <div class="yellow padding-box margin-bottom">
+                <img class="shadow" src="./img/juni/dovetail-safari.jpg" alt="interview results at Dovetail"
+                    style="border-radius: 0.3rem;">
+            </div>
+            <div class="purple padding-box" style="position: relative;">
+                <div class="quote padding-bottom-2rem">
+                    <h2>When you make a payment to a new recipient for the first time, it can take up to a week. Usually it
+                        arrives the day after. That’s annoying.
+                    </h2>
+                    <p class="source" style="line-height: 0;">Accountant interviewed for discovery</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 109" preserveAspectRatio="xMinYMin meet"
+                        fill="none">
+                        <path fill="#7D76FF" fill-opacity=".1"
+                            d="M64.466 71.087c0 20.68-15.901 37.913-36.1 37.913C11.173 109 0 96.075 0 77.119 0 39.206 31.374 4.309 68.764 0l-3.438 20.249c-18.48 3.447-33.093 15.079-35.242 29.727 3.439-1.723 7.306-2.585 11.604-2.585 13.323 0 22.778 9.048 22.778 23.696Zm84.236 0c0 20.68-15.901 37.913-36.101 37.913-17.19 0-28.365-12.925-28.365-31.881C84.236 39.206 115.61 4.309 153 0l-3.438 20.249c-18.481 3.447-33.093 15.079-35.242 29.727 3.438-1.723 7.306-2.585 11.604-2.585 13.323 0 22.778 9.048 22.778 23.696Z" />
+                    </svg>
+                    <svg id="end" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 109" preserveAspectRatio="xMinYMin meet"
+                        fill="none">
+                        <path fill="#7D76FF" fill-opacity=".1"
+                            d="M64.466 71.087c0 20.68-15.901 37.913-36.1 37.913C11.173 109 0 96.075 0 77.119 0 39.206 31.374 4.309 68.764 0l-3.438 20.249c-18.48 3.447-33.093 15.079-35.242 29.727 3.439-1.723 7.306-2.585 11.604-2.585 13.323 0 22.778 9.048 22.778 23.696Zm84.236 0c0 20.68-15.901 37.913-36.101 37.913-17.19 0-28.365-12.925-28.365-31.881C84.236 39.206 115.61 4.309 153 0l-3.438 20.249c-18.481 3.447-33.093 15.079-35.242 29.727 3.438-1.723 7.306-2.585 11.604-2.585 13.323 0 22.778 9.048 22.778 23.696Z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container-p padding-top-2rem padding-top-5rem-m">
+        <p>
+            PingPong was used again to gather representative participants for usability testing. By performing multiple
+            user tasks, I gathered valuable feedback and identified areas for improvement. This process led to updates in design,
+            notably the interactions when editing from the review page and addition of a scam warning.
+        </p>
+    </div>
+
+    <div class="container-xxl padding-top-2rem padding-top-5rem-m">
+        <div class="gridbox-single">
+            <div class="yellow padding-box margin-bottom">
+                <video class="center shadow" loading="lazy" autoplay loop playsinline muted style="border-radius: 6px;">
+                    <source src="img/juni/review-edit.webm">
+                </video>
+                <!-- <img src="./img/juni/sendmoneyreview.jpg" alt="screens made at Juni"> -->
+            </div>
+            <div class="yellow padding-box-r-b">
+                <img src="./img/juni/scamwarning.jpg" alt="screens made at Juni">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-p padding-top-2rem padding-top-5rem-m">
+        <p>
+            Along the way, the engineers and founders were constantly kept in the loop. I was trusted to introduce a new design
+            methodology and, with the support of the PM, we were able to develop a design that was company-wide supported.
+            Which I find really important and keeps surprises to a minimum. </p>
+        <p>
+            What was left was delivering the designs to the engineers. I designed every edge-case, error state, new
+            inputfields, etc. This new Send Money feature had a wide-reaching impact on the product and KPI's. 
+            I was unfortunately let go by Juni before I could see it through to implementation. Despite this, 
+            I have confidence in my designs and believe that they will bring significant value to Juni's customers. 
+        </p>
+    </div>
+    
+    <div class="container-p padding-top-2rem padding-top-5rem-m">
+        <h3>2. Quick improvements to Instant Top-ups</h3>
+        <p>
+            Through data analysis and Hotjar recordings, we identified a problem where depositors were sent back money due to
+            incorrect currencies or unknown bank accounts, even though an information banner was present to alert them of
+            this limitation. But who reads banners anyway?
+        </p>
+        <p>
+            The PM suggested a quick fix, making the banner more standout. I decided to make a bigger effort and improve the UX instead of just changing the copy. I began redesigning the
+            top-up flow to incorporate Send Money's new UI elements while considering customer problems and technical third party requirements.
+        </p>
+    </div>
+    
+    <div class="container-xxl padding-top-2rem padding-top-5rem-m">
+        <div class="gridbox-single">
+            <div class="purple padding-box-l-t-r margin-bottom">
+                <img src="./img/juni/choose-account.jpg" alt="screens made at Juni">
+            </div>
+            <div class="yellow padding-box">
+                <img class="shadow" src="./img/juni/topup-safari.jpg" alt="screens made at Juni"
+                    style="border-radius: 0.3rem;">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-p padding-top-2rem padding-top-5rem-m">
+        <p>
+            Our PM, Lead Engineer and I decided to implement a bare minimum design and have additional
+            nice-to-have features as extra, to solve an urgent UX issue with minimal development time.
+        </p>
+        <p>
+            Within two weeks of the issue being noticed, a redesigned version was implemented and tracked with Hotjar and
+            Amplitude to confirm increased top-up volume.
+        </p>
+    </div>
+
+    <div class="container-xxl padding-top-2rem padding-top-5rem-m">
+        <div class="gridbox-single overflow-hidden">
+            <div class="yellow padding-box-l-t-r margin-bottom">
+                <img src="./img/juni/topup-method.jpg" alt="screens made at Juni">
+            </div>
+            <div class="yellow overflow-hidden">
+                <img style="object-fit: cover; width: 100%;height: 100%;" src="./img/juni/topup-success-macbook.jpg" alt="screens made at Juni">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-p padding-top-2rem padding-top-5rem-m">
+        <h3>3. Bringing new functionality to Cards</h3>
+        <p>
+            After noticing that only a small percentage of customers had a large amount of cards, the PM and I decided
+            to put the request for a list view as a 'nice to have' feature on hold in favour of more impactful projects.
+        </p>
+        <p>
+            As a side project I collaborated with the Front-end team to make the Cards grid view sleeker and responsive,
+            also applying Mastercard or VISA card design standards.
+        </p>
+    </div>
+
+    <div class="container-xxl padding-top-2rem padding-top-5rem-m">
+        <div class="gridbox-single overflow-hidden">
+            <div class="center purple margin-bottom" style="max-height: 539px;">
+                <!-- <img src="./img/juni/cardsgrid.jpg" style="object-fit: cover;width: 100%;height: 100%;"
+                    alt="screens made at Juni"> -->
+                    <video style="object-fit: cover; width: 100%;height: 100%;" loading="lazy" autoplay loop playsinline muted>
+                        <source src="img/juni/cards-slide.webm">
+                    </video>
+            </div>
+            <div class="yellow padding-box-l-t-r overflow-hidden" style="max-height: 539px;">
+                <div class="center" style="height: 100%;">
+                    <img class="shadow" src="./img/juni/cardsidepanel.jpg"  alt="screens made at Juni">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-p padding-top-2rem padding-top-5rem-m">
+        <p>
+            A couple of months later, seeing a growing need for filtering and bulk actions, this project had value
+            enough to start
+            designing it.
+        </p>
+    </div>
+
+    <div class="container-xxl padding-top-2rem padding-top-5rem-m">
+        <div class="gridbox-single">
+            <div class="purple padding-box-l-t-r overflow-hidden margin-bottom" style="max-height: 374px;">
+                <div class="center" style="height: 100%;">
+                    <img class="shadow" src="./img/juni/modal-monthlyspendlimit.png" alt="screens made at Juni">
+                </div>
+            </div>
+            <div class="purple padding-box overflow-hidden" style="max-height: 374px;">
+                <div class="center" style="height: 100%;">
+                    <img class="shadow" src="./img/juni/modal-deletecards.png" alt="screens made at Juni">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-p padding-top-2rem padding-top-5rem-m">
+        <p>
+            I collaborated with another Product Designer from Analytics to create a new filter component that fulfilled both
+            our requirements
+            and would be consistent through-out the product.
+        </p>
+        <p>
+            Designing the list view was trickier than expected. Due to a lack of usage data and differing opinions, many
+            iterations were made. For example, we had discussions if the currency should be separated from the amount or what the
+            order of the row items should be.
+        </p>
+        <p>
+            I was forced to make decisions based on assumptions, with the goal of learning from implementation and
+            iterating
+            after.
+        </p>
+    </div>
+
+
+    <div class="container-xxl padding-top-2rem padding-top-5rem-m padding-bottom-2rem padding-bottom-5rem-m">
+        <div class="gridbox-2">
+            <div class="Right-Top-2 yellow padding-box center margin-bottom"><img class="center" src="./img/juni/filters.svg"
+                    alt="screens made at Juni"></div>
+            <div class="Right-Bottom-2 purple margin-bottom"><img src="./img/juni/listview-ipad.jpg" alt="screens made at Juni"></div>
+            <div class="Left-Bottom-2 yellow padding-box center margin-bottom">
+                <video class="center shadow" loading="lazy" autoplay loop playsinline muted style="border-radius: 6px;">
+                    <source src="img/juni/safari-cards.webm">
+                </video>
+            </div>
+            <div class="Left-Top-2 purple padding-box-t-l"><img src="./img/juni/cards-apply-filters.jpg"
+                    alt="screens made at Juni"></div>
+        </div>
+    </div>
+
+    <a class="scrollToTopBtn btn btn-black">
+        <div class="icon baseline up">
+            <svg fill="none" viewBox="0 0 32 32">
+                <path fill-rule="evenodd"
+                    d="M16 4l8 8.23-1.17 1.205-6.002-6.174V28h-1.656V7.26l-6.001 6.175L8 12.231 16 4z"
+                    clip-rule="evenodd" />
+            </svg>
+        </div>
+    </a>
+    <a hidden class="scrollToHiBtn hand" onclick="scrollFunction3()">
+        say hoi
+    </a>
+
+        <div class="container-l padding-bottom-5rem">
+            <div class="padding-top-3rem padding-bottom-1rem padding-bottom-5rem-m" id="el3">
+                <h2 class="padding-bottom-3rem text-center">
+                    I've got some more work to show you or I would love to hear from you when you have seen enough.
+                    
+                </h2>
+                <div class="button-row center">
+                    <a class="btn btn-black mail fade-Y-bottom-l" href="index.html#el1"
+                        rel="noopener noreferrer">check out more work</a>
+                    <a class="btn btn-black fade-Y-bottom-l" style="transition-delay: 50ms;"
+                        href="index.html#el3"
+                        rel="noopener noreferrer">or say hoi</a>
+                    <a class="btn btn-black fade-Y-bottom-l" href="#" style="transition-delay: 100ms;">back to top
+                        <div class="icon baseline">
+                            <svg fill="none" viewBox="0 0 32 32">
+                                <path fill-rule="evenodd"
+                                    d="M16 4l8 8.23-1.17 1.205-6.002-6.174V28h-1.656V7.26l-6.001 6.175L8 12.231 16 4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    <footer style="background-color: var(--white);">
+        <div class="container-l text-center padding-top-1rem padding-top-5rem-m padding-bottom-2rem">
+            <span style="color: var(--black)">
+                website designed and developed by me<br>
+                <span style="color: var(--black); font-size: 0.8rem; opacity: 60%;">© </span>
+                <span style="color: var(--black); font-size: 0.8rem; opacity: 60%;" id="currentYear"></span>
+            </span>
+        </div>
+    </footer>
+
+    <script type="text/JavaScript" src="date_script.js"></script>
+
+</body>
+
+</html>

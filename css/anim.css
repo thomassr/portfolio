@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+    .fade-Y-bottom-l {
+      opacity: 0;
+      transition: opacity .6s cubic-bezier(0.16, 1, 0.3, 1),transform .6s cubic-bezier(0.16, 1, 0.3, 1);    
+      transform: translateY(80px);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .fade-Y-bottom-s {
+      opacity: 0;
+      transition: opacity .6s cubic-bezier(0.16, 1, 0.3, 1),transform .6s cubic-bezier(0.16, 1, 0.3, 1);    
+      transform: translateY(24px);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .scale-up {
+      opacity: 0;
+      transition: opacity .7s cubic-bezier(0.16, 1, 0.3, 1),transform .7s cubic-bezier(0.16, 1, 0.3, 1);
+      transform: scale(0.96) translateY(24px);
+  }
+}
+  
+  .show-anim {
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+
+  

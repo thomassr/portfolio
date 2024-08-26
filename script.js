@@ -13,7 +13,7 @@ window.addEventListener('resize', () => {
   });
 
 
-// Navbar transparent
+// Makes Navbar transparent on older project pages linked with script.js files
   $(function () {
     $(document).scroll(function () {
       var $nav = $(".navbar");

@@ -96,16 +96,6 @@ const observer1 = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.fade-Y-bottom-l,.fade-Y-bottom-s,.scale-up');
 hiddenElements.forEach((el) => observer1.observe(el));
 
-// Navbar transparent
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $(".navbar");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-  });
-});
-
-
-
 const gradients = [
   'gradient-1',
   'gradient-2',

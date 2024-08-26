@@ -1,130 +1,508 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Thomas Ruitenberg">
 
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/custom.css?v=1.0"> 
-    <script src="https://kit.fontawesome.com/60dc161d94.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Thomas Ruitenberg">
+    <meta name="theme-color" content="rgba(33, 33,33)">
+    <meta name="robots" content="noindex,nofollow">
 
-    <title>Thomas' Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#212121">
+    <meta name="msapplication-TileColor" content="#212121">
 
-    
+    <title>Thomas' Portfolio | Product Designer & Researcher</title>
+    <meta name="description" content="I craft mobile and web experiences - based in Utrecht.">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="./img/favicons/site.webmanifest">
-    <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <!-- Base Core -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/core.css">
+    <!-- Base Common -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/code.css">
 
+    <!-- Add Your Website / App Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/anim.css">
 
+    <script defer src="script1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Add Additional Modules -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/containers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/horizontal-spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/vertical-spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/typography-helpers.css">
+    <script async src="https://eu.umami.is/script.js" data-website-id="d5103722-a693-4d12-8ed4-656152255c6c"></script>
 
 </head>
 
-<body id="primary">
-  <nav class="navbar sticky-top navbar-expand-sm navbar-dark py-5">
-    <div class="container">
-      <a class="navbar-brand" id="name-heading" href="#">Thomas Ruitenberg</a>
-      <span class="d-none d-sm-block text-start me-auto" id="role-heading">/Product Designer</span>
-
-      <div class="justify-content-end">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/about.html">About me</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-    <div class="container mb-5">
-        <div class="row animate fadeIn">
-          <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 mb-5 ">
-            <h5>
-              I create digital products tailored to user needs & business goals. I specialise in validating cloudy ideas or apparent designs. Learning from user feedback to design an intuitive and meaningful product. Currently working at Mobiquity in Amsterdam.
-              
-              <a href="/about.html" class="hvr-icon-forward">
-                Continue reading
-                <i class="fas fa-arrow-right fa-sm hvr-icon"></i>
-              </a>
-            </h5>  
-          </div>
-
-         
+<body style="color: var(--white)">
+    
+    <div class="background-wrapper">
+        <div class="background-layer"></div>
+        <div class="background-layer"></div>
+    
+    
+    
+        <div class="container-l">
+    
+            <h2 class="text-left fade-Y-bottom-l" style="transition-delay: 200ms;">
+                Hoi! I’m Thomas, a designer and researcher
+                with five years of experience in exposing user problems and designing opportunities for web and
+                mobile.
+            </h2>
+            <div class="button-row padding-top-2rem padding-top-5rem-m">
+                <a class="btn btn-white fade-Y-bottom-l" style="transition-delay: 275ms;" onclick="scrollFunction1()">check
+                    out
+                    my work</a>
+                <a class="btn btn-white fade-Y-bottom-l" style="transition-delay: 350ms;" onclick="scrollFunction2()">learn
+                    more
+                    about me</a>
+                <a class="btn btn-white hand fade-Y-bottom-l" style="transition-delay: 425ms;"
+                    onclick="scrollFunction3()">or
+                    say hoi</a>
+            </div>
         </div>
-
-        <div class="row mt-5">
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-2 animate fadeIn two">
-            <div class="tile">
-              
-              <figure class="effect-hover rounded-1">
-                <img src="./img/tiles/smarttransfer-tile-thumbnail.png" alt="smart transfers project"/>
-                <figcaption>
-                  <h3>Smart Transfers</h3>
-                  <h4>Automatically split your money across all your accounts using smart transfers. </h4>
-                  <a href="./smarttransfers.php">View more</a>
-                </figcaption>			
-              </figure>
-            <div class="d-block d-sm-none mb-4" style="color: #fff;">
-                <h3>Smart Transfers</h3>
-                    <h5>Automatically split your money across all your accounts using smart transfers.</h5>
-            </div>
-            </div>
-          </div>
+    </div>
 
 
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-2 animate fadeIn three">
-            <div class="tile">
-              <figure class="effect-hover rounded-1">
-                <img src="./img/tiles/gp-tile-thumbnail.png" alt="gp project"/>
-                <figcaption>
-                  <h3>Doctor in your pocket</h3>
-                  <h4>Increase self-reliance for healthcare of citizens with a docter in your pocket.</h4>
-                  <a href="./healthcare.php">View more</a>
-                </figcaption>			
-              </figure>
-            <div class="d-block d-sm-none mb-4" style="color: #fff;">
-              <h3>Doctor in your pocket</h3>
-                  <h5>Increase self-reliance for healthcare of citizens with a docter in your pocket.</h5>
-            </div>
-            
-            </div>
-            
-          </div>
+</div>
 
-          
-          
-          
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-2 animate fadeIn four">
-            <div class="tile">
-              
-              <figure class="effect-hover rounded-1">
-                <img src="./img/tiles/kingsday-tile-thumbnail.png" alt="easy pay kleedje project"/>
-                <figcaption>
-                  <h3>Easy-pay  Kleedje</h3>
-                  <h4>Pay cashless via the app & special qr-code blanket at flea markets on Kingsday.</h4>
-                  <a href="./easypaykleedje.php">View more</a>
-                </figcaption>			
-              </figure>
-              <div class="d-block d-sm-none mb-4" style="color: #fff;">
-                <h3>Easy-pay  Kleedje</h3>
-                    <h5>Pay cashless via the app & special qr-code blanket at flea markets on Kingsday.</h5>
-              </div>
+
+
+
+        
+    <section id="el1">
+        <div class="container-l">
+            <div class="list-item">
+                <h2 class="padding-bottom-3rem ">
+                    Juni is a fintech startup creating a SaaS platform for ecommerce businesses to manage all their
+                    finances.
+                    I led a product team and was responsible for the design process and all deliverables.
+                </h2>
+
+                <div class="padding-bottom-3rem">
+                    <a class="btn btn-white" href="./juni" data-umami-event="{Juni-project button}">check this project
+                        <div class="icon">
+                            <svg fill="none" viewBox="0 0 32 32">
+                                <path fill-rule="evenodd"
+                                    d="M9.2 12.5V9.8a6.8 6.8 0 0113.6 0v2.7h.7A3.5 3.5 0 0127 16v9.5a3.5 3.5 0 01-3.5 3.5h-15A3.5 3.5 0 015 25.5V16a3.5 3.5 0 013.5-3.5h.7zm1.6-2.7a5.2 5.2 0 1110.4 0v2.7H10.8V9.8zm4.1 12.18a1.65 1.65 0 011.074-2.88H16.025a1.65 1.65 0 011.075 2.88v1.52a1.1 1.1 0 01-2.2 0v-1.52z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <img src="./img/thumbnail-juni.png" alt="screens made at Juni" class="padding-top-3rem fade-Y-bottom-l">
+
+
             </div>
-          </div>
-        </div> 
-				
-				</div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
+
+            <div class="list-item">
+                <h2 class="padding-bottom-3rem">
+                    This Mobiquity challenge ideated a solution to pay cashless at Kingsday fleamarkets.
+                    I designed the flow and visual style of the Easy-pay Kleedje + app.
+                </h2>
+
+                <div class="padding-bottom-3rem">
+                    <a class="btn btn-white" href="./easypaykleedje.html">check this project
+
+                    </a>
+                </div>
+                <img src="./img/thumbnail-kingsday.png" alt="screens and blanket for Kingsday" class="padding-top-3rem fade-Y-bottom-l">
+
+
+            </div>
+
+            <div class="list-item">
+                <h2 class="padding-bottom-3rem">
+                    At Rabobank’s Innohub, an automated money distribution between all banks was created.
+                    I led the research to strengthen the problem-solution fit and I designed the smart transfers app.
+                </h2>
+
+                <div class="padding-bottom-3rem">
+                    <a class="btn btn-white" href="./smarttransfers">check this project
+                        <div class="icon">
+                            <svg fill="none" viewBox="0 0 32 32">
+                                <path fill-rule="evenodd"
+                                    d="M9.2 12.5V9.8a6.8 6.8 0 0113.6 0v2.7h.7A3.5 3.5 0 0127 16v9.5a3.5 3.5 0 01-3.5 3.5h-15A3.5 3.5 0 015 25.5V16a3.5 3.5 0 013.5-3.5h.7zm1.6-2.7a5.2 5.2 0 1110.4 0v2.7H10.8V9.8zm4.1 12.18a1.65 1.65 0 011.074-2.88H16.025a1.65 1.65 0 011.075 2.88v1.52a1.1 1.1 0 01-2.2 0v-1.52z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <img src="./img/thumbnail-smarttransfers.png" alt="screens made at Juni" class="padding-top-3rem fade-Y-bottom-l">
+
+
+            </div>
+
+            <div class="list-item">
+                <h2 class="padding-bottom-3rem">
+                    Also developed at Rabobank’s Innohub, this app concept increases self-reliance for health questions.
+                    I validated the problem-solution fit and designed high-fidelity app mockups.
+                </h2>
+
+                <div class="padding-bottom-3rem">
+                    <a class="btn btn-white" href="./healthcare">check this project
+                        <div class="icon">
+                            <svg fill="none" viewBox="0 0 32 32">
+                                <path fill-rule="evenodd"
+                                    d="M9.2 12.5V9.8a6.8 6.8 0 0113.6 0v2.7h.7A3.5 3.5 0 0127 16v9.5a3.5 3.5 0 01-3.5 3.5h-15A3.5 3.5 0 015 25.5V16a3.5 3.5 0 013.5-3.5h.7zm1.6-2.7a5.2 5.2 0 1110.4 0v2.7H10.8V9.8zm4.1 12.18a1.65 1.65 0 011.074-2.88H16.025a1.65 1.65 0 011.075 2.88v1.52a1.1 1.1 0 01-2.2 0v-1.52z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <img src="./img/thumbnail-gp.png" alt="screens made at Juni" class="padding-top-3rem fade-Y-bottom-l">
+
+
+            </div>
+        </div>
+    </section>
+    <section id="el2">
+        <div class="container-l">
+            <div class="list-item">
+                <h3 class="padding-bottom-5rem">
+                    <img src="./img/pf-small.png" alt="me drinking coffee in finland" class="pf padding-top-1rem padding-bottom-2rem fade-Y-bottom-s">
+                    Hoi! I’d like to design awesome things, cook delicious food and I watch almost all Formula 1
+                    races.
+                    <br><br>
+                    Creating tangible results is what I love do to, especially when it’s produced with close team collaboration. 
+                    <br><br>
+                    I put a strong emphasis on an analytical approach and strive for learning through validation. Also to add to the craftsmanship I
+                    like to design animations, like these on my
+                    <a class="link" href="https://dribbble.com/ruitenberg" target="_blank" rel="noopener noreferrer">Dribbble <b
+                            style="vertical-align: super; font-size: 0.5em;">↗︎</b></a>.
+                    </h3>
+                <div class="padding-top-5rem">
+                    <div class="row-m fade-Y-bottom-s">
+                        <div class="col-4-m">
+                            <h4>Current</h4>
+                        </div>
+                        <div class="col-8-m text-right-m">
+                            <h3>UX Designer at
+
+                                <a class="link" href="https://www.nn.nl/" target="_blank"
+                                    rel="noopener noreferrer">Nationale Nederlanden
+                                    <b style="vertical-align: super; font-size: 0.5em;">↗︎</b></a>
+                            </h3>
+                        </div>
+                    </div>
+                    
+                    <div class="row-m padding-top-2rem fade-Y-bottom-s">
+                        <div class="col-4-m">
+                            <h4>2022</h4>
+                        </div>
+                        <div class="col-8-m text-right-m">
+                            <h3>Product Designer at
+
+                                <a class="link" href="https://www.juni.co/" target="_blank"
+                                    rel="noopener noreferrer">Juni
+                                    <b style="vertical-align: super; font-size: 0.5em;">↗︎</b></a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="row-m padding-top-2rem fade-Y-bottom-s">
+                        <div class="col-4-m">
+                            <h4>2018 - 2022</h4>
+                        </div>
+                        <div class="col-8-m text-right-m">
+                            <h3>UX Designer at
+
+                                <a class="link" href="https://www.mobiquity.com/" target="_blank"
+                                    rel="noopener noreferrer">Mobiquity <b
+                                        style="vertical-align: super; font-size: 0.5em;">↗︎</b></a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="row-m padding-top-2rem fade-Y-bottom-s">
+                        <div class="col-4-m">
+                            <h4>2016 - 2017</h4>
+                        </div>
+                        <div class="col-8-m text-right-m">
+                            <h3>Jr. UI/UX Designer at
+
+                                <a class="link" href="https://newnexus.nl/" target="_blank"
+                                    rel="noopener noreferrer">New
+                                    Nexus <b style="vertical-align: super; font-size: 0.5em;">↗︎</b></a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="row-m padding-top-2rem fade-Y-bottom-s">
+                        <div class="col-4-m">
+                            <h4>2017</h4>
+                        </div>
+                        <div class="col-8-m text-right-m">
+                            <h3>UI/UX Designer at
+
+                                <a class="link" href="https://www.menzis.nl/" target="_blank"
+                                    rel="noopener noreferrer">Menzis <b
+                                        style="vertical-align: super; font-size: 0.5em;">↗︎</b></a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="row-m padding-top-2rem padding-bottom-5rem fade-Y-bottom-s">
+                        <div class="col-4-m">
+                            <h4>2016 - 2017</h4>
+                        </div>
+                        <div class="col-8-m text-right-m">
+                            <h3>Intern UI/UX Designer at
+
+                                <a class="link" href="https://www.d-tt.nl/" target="_blank"
+                                    rel="noopener noreferrer">DTT <b
+                                        style="vertical-align: super; font-size: 0.5em;">↗︎</b></a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="padding-top-3rem">
+                    <div class="row">
+                        <div class="col-4 col-2-m logo scale-up" style="transition-delay: 0ms;">
+                            <svg viewBox="0 0 133 132">
+                                <g clip-path="url(#clip0_40_1237)">
+                                    <path fill-rule="evenodd"
+                                        d="M37.143 58.813c-.016 1.59-.297 3.227-1.104 4.613-.557.954-1.452 1.753-2.541 1.994-1.038.217-2.177.056-3.062-.555-.936-.63-1.547-1.646-1.909-2.704-.532-1.522-.597-3.165-.483-4.76.145-1.459.518-2.954 1.413-4.137a3.874 3.874 0 011.159-1.037c.451-.263.95-.43 1.468-.493.892-.116 1.836.05 2.594.556.826.542 1.399 1.402 1.767 2.312.539 1.33.72 2.78.698 4.21zm7.084-3.05c.345 1.84.309 3.747-.032 5.588-.355 1.863-1.12 3.667-2.32 5.136-1.328 1.649-3.165 2.84-5.16 3.493-1.822.608-3.772.774-5.676.598-2.276-.214-4.522-1.03-6.31-2.483-1.776-1.43-3.034-3.466-3.61-5.678-.253-.957-.4-1.94-.438-2.931-.002-6.495 0-12.99 0-19.484h7.323v7.412c2.352-.803 4.866-1 7.312-.572 2.202.394 4.322 1.411 5.904 3.026 1.588 1.58 2.604 3.694 3.007 5.895zM68.387 40c2.358-.002 4.715 0 7.072 0 .007 5.508-.007 11.017.01 16.526.128-.084.204-.223.286-.352 1.965-3.012 3.942-6.017 5.901-9.035 3.067-.012 6.135-.005 9.202-.003-2.98 3.6-5.969 7.192-8.95 10.788-.065.063-.106.157-.02.22 3.314 3.982 6.652 7.944 9.963 11.929-3 .005-6.001 0-9.004.002a.195.195 0 01-.2-.09c-2.395-3.515-4.776-7.039-7.181-10.545-.018 3.539.009 7.078-.014 10.616-.99.046-1.991.006-2.986.02H68.39c-.004-10.026 0-20.05-.002-30.076zm-1.485 20.925c-4.887 0-9.774-.007-14.66.003.09 1.041.565 2.045 1.349 2.733 1.166 1.054 2.75 1.465 4.274 1.591 2.398.12 4.799-.189 7.091-.91.308 1.614.628 3.226.93 4.84-2.681 1.082-5.596 1.412-8.464 1.412-1.727-.037-3.468-.267-5.095-.878a10.415 10.415 0 01-3.231-1.886 9.746 9.746 0 01-2.455-3.267c-.81-1.741-1.15-3.682-1.14-5.599-.022-1.898.345-3.78 1.076-5.528.806-1.926 2.105-3.666 3.818-4.86 1.588-1.128 3.497-1.749 5.426-1.904 1.591-.139 3.221-.011 4.748.488 1.262.422 2.442 1.118 3.386 2.07.894.877 1.58 1.954 2.078 3.106 1.137 2.69 1.328 5.722.87 8.589zM52.21 56.019l8.362.001c-.009-1.232-.33-2.527-1.153-3.468-.675-.781-1.714-1.169-2.726-1.17-1.002-.041-2.029.29-2.777.977-1.025.925-1.571 2.297-1.706 3.66zm60.392.86c.283 2.945-.186 6.06-1.779 8.587-1.35 2.167-3.517 3.755-5.922 4.523-1.805.599-3.734.759-5.622.591-1.959-.185-3.895-.805-5.541-1.905a10.454 10.454 0 01-3.667-4.257c-1.203-2.562-1.428-5.517-.954-8.29.39-2.277 1.397-4.482 3.032-6.12 1.472-1.521 3.42-2.524 5.46-3.002.759-.184 1.535-.283 2.313-.35 1.911-.127 3.863.072 5.666.748 2.226.812 4.174 2.391 5.394 4.446.915 1.521 1.449 3.262 1.619 5.03h.001zm-7.312 3.2c.18-1.75.069-3.56-.526-5.225-.359-.976-.925-1.92-1.791-2.516-.761-.536-1.726-.721-2.638-.609a3.79 3.79 0 00-2.184 1.008c-.783.735-1.256 1.742-1.545 2.766-.38 1.34-.438 2.747-.359 4.129.09 1.139.324 2.279.82 3.31.415.86 1.047 1.644 1.89 2.105.788.442 1.729.544 2.612.404.979-.177 1.84-.802 2.414-1.612.785-1.091 1.147-2.434 1.307-3.76zM41.667 82.663c22.741-3.234 45.484-6.452 68.226-9.692.016 2.408.009 4.817.003 7.223-6.488.904-12.972 1.838-19.459 2.752-23.25 3.295-46.502 6.602-69.754 9.889-.002-2.402-.01-4.803.003-7.204 6.996-.973 13.987-1.984 20.981-2.968z"
+                                        clip-rule="evenodd" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_40_1237">
+                                        <path d="M0 0h92v53H0z" transform="translate(20.68 40)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="col-4 col-2-m logo scale-up" style="transition-delay: 75ms;">
+                            <svg viewBox="0 0 132 132">
+                                <g clip-path="url(#clip0_40_1225)">
+                                    <path
+                                        d="M52.295 83.153V53.141H63.72c4.599 0 7.998.63 10.194 1.891 2.196 1.261 3.295 3.215 3.295 5.86 0 1.764-.541 3.205-1.621 4.325-1.082 1.119-2.71 1.928-4.886 2.43 2.505.448 4.366 1.273 5.577 2.473 1.212 1.2 1.818 2.812 1.818 4.832 0 2.74-.988 4.792-2.965 6.156-1.976 1.363-4.962 2.045-8.955 2.045H52.295zm8.16-17.846h3.266c1.816 0 3.146-.274 3.987-.823.84-.549 1.258-1.408 1.258-2.574 0-1.113-.44-1.946-1.322-2.503-.88-.556-2.188-.833-3.923-.833h-3.265v6.733zm0 12.393h3.266c2.05 0 3.531-.288 4.44-.865.91-.578 1.364-1.516 1.364-2.819 0-1.206-.468-2.098-1.404-2.675-.938-.577-2.405-.865-4.4-.865h-3.265V77.7zM81.754 83.153V53.141H95.72c3.98 0 6.993.81 9.038 2.431 2.046 1.62 3.069 4.004 3.069 7.151 0 3.08-1.012 5.477-3.036 7.194-2.026 1.717-4.849 2.574-8.472 2.574h-6.095v10.662h-8.47zm8.47-16.543h3.761c1.803 0 3.137-.325 3.998-.976.86-.652 1.291-1.662 1.291-3.033 0-1.342-.423-2.323-1.271-2.94-.847-.617-2.186-.926-4.018-.926h-3.76v7.875zM119.884 53.14h-8.43v30.013h8.43V53.141z" />
+                                    <path fill-rule="evenodd"
+                                        d="M12.646 78.488c.275.702.824 1.359 1.674 2.014 1.254.96 10.648 7.131 13.498 8.973l.628.409.518-.34c.486-.322 11.909-7.96 13.318-9.042.853-.657 1.4-1.316 1.674-2.016.442-1.12.272-1.999.146-2.638l-.006-.03c-.06-.31-1.92-11.407-2.925-16.678a81.646 81.646 0 00-12.578-.972c-.095 0-.187.007-.282.007v28.749c-5.736-3.71-11.306-7.29-12.233-8.002-.555-.426-.906-.82-1.044-1.172-.228-.577-.142-1.07-.043-1.573.066-.343 2.086-12.23 3.055-17.3-.881.114-1.555.228-2.428.37-1.01 5.295-3.052 16.264-3.112 16.574-.13.663-.302 1.542.14 2.667zm7.466-15.136h1.019V64.216h.882V63.3h1.07v.917h.844v-.864h1.02v2.235h-4.835v-2.235zm.797 2.622h3.24l1.118 8.848H19.79l1.118-8.848zm-1.73 9.267h6.7v2.234h-1.8v-.578H20.98v.578h-1.801V75.24zm2.594-4.435h1.532v-.553h-1.532v.553zm1.52-2.297h-1.534v.553h1.533v-.553zm-1.533 4.045h1.532v-.553H21.76v.553zm-.987-17.92c-.634.077-1.07.136-1.641.312-.097.5-.274 1.474-.44 2.243a70.93 70.93 0 019.754-.691c3.113 0 6.173.224 9.182.617-.16-.748-.325-1.68-.42-2.17-.398-.154-.919-.26-1.588-.31 2.12-.492 3.402-1.953 3.403-3.365 0-1.861-1.49-3.339-5.15-3.7-1.304-1.005-3.105-1.431-4.67-1.558a1.51 1.51 0 00.643-1.244c0-.831-.85-1.504-1.66-1.504-.81 0-1.659.673-1.659 1.504 0 .518.256.974.644 1.244-1.566.127-3.366.553-4.672 1.558-3.659.361-5.15 1.839-5.15 3.7.002 1.417 1.294 2.875 3.424 3.364zm13.864-5.91s2.78.249 2.754 2.627c-.02 1.891-2.106 2.918-4.74 2.593 3.632-1.45 2.852-4.208 1.986-5.22zm-5.601-1.407c2.334.209 4.147 1.64 4.147 3.398 0 1.784-1.87 3.234-4.255 3.404.483-.637.817-1.947.817-3.477 0-1.414-.286-2.64-.71-3.325zm-1.7 0c-.422.685-.708 1.91-.708 3.325 0 1.53.335 2.84.817 3.477-2.384-.17-4.255-1.62-4.255-3.404 0-1.758 1.815-3.19 4.147-3.398zm-5.6 1.407c-.866 1.012-1.645 3.77 1.987 5.22-2.635.325-4.72-.702-4.74-2.593-.027-2.378 2.753-2.627 2.753-2.627zm13.769 30.635l.083-.316.54-.083c.342-.214.308-.909.643-1.109.156-.092.239.04.312.13.106-.227.077-.578.187-.843.281-.677.904-1.056.665-2.215l-.042-.052c-.106.152-.137.271-.27.397-.888-.053-.562-2.005.041-2.184.428 1.166 2.297 1.503 2.409-.043.022-.309-.24-.722-.55-1.21.127-.48.328-.878.51-1.13.107-.15-.5.118-.793.667.126-.515.34-.938.532-1.203.102-.14-.435.09-.743.576.126-.51.339-.926.528-1.19.114-.156-.569.145-.84.755a2.679 2.679 0 01-.152-.917c.019-.725.227-2.177.531-3.345.076-.332.254-.963.739-1.224-.384-.095-1.04.241-1.014.971-.107-1.07-.92-1.432-1.335-1.495 1.335 1.165.233 3.816.247 5.067.014 1.573 1.923 3.208 1.634 3.763-.43.823-1.246-.743-1.492-1.245-.245-.504-1.125-1.28-1.747-1.89.372-.27.801-.921.81-1.636l.187.21h.082c-.087-.658.176-1.342-.041-1.947l.312-.002c-.093-2.894-2.22-2.294-3.26-2.055l-.062.158.414.023v.026c-.11.037-.22.072-.332.108-.05.189-.005.66.25.892.099-.215.116-.296.31-.396.256.126.408.551.251.945-.19.072-.364.04-.436-.18h-.021c-.115.42-.069.87.248 1.155.016-.36.14-.519.457-.504-.093.876-.69.673-1.287.904-1.11.428-1.407 2.059-2.408 2.331.088.388.479.72.767.862-.151.264-.752 1.111-1.037 1.14-.105-.135-.2-.294-.374-.34l-.519.135-.083.184.228.053-.02.314c.148.028.342.039.477.101l.021.08c-.163-.029-.331-.11-.498-.049-.104.079-.35.497-.291.686v.053c.048-.046.096-.089.145-.133.108.03.1.055.125.182.034.02.07.036.103.053.132-.123.263-.248.395-.37h.021l.042.078-.354.37c-.018.21-.05.449-.02.737l.249-.239c.325.311.52-.096.706-.4.115.102.226.116.373.13l.021.236h.02c.521-.502-.146-.934.479-1.528.285.176.506.129.789-.007l.145-.21a.513.513 0 01-.332-.288c.006-.113.006-.127.041-.183.125-.276.57-.24.83-.139.667.263 1.067.856 1.558 1.33-.043.603-.117 1.384.02 1.947.137.56.536.796.395 1.496.245-.015.387-.133.477-.343l.291.023c-.255.468-.714 1.347-1.204 1.482-.456.123-.638-.422-1.06-.282a25.11 25.11 0 01-.186.185c-.2.099-.253-.04-.373.212v.08c.076.008.152.015.228.025l.062.289.354-.399a.878.878 0 00.02.052c-.172.165-.308.417-.436.635-.025.165 0 .292.021.447.014.01.027.02.041.027l.125-.211c.028-.002.055-.002.083-.002l.103.156h.084c.041-.219.082-.439.125-.656l.061-.055.021.026c-.12.351-.185.725-.082 1.131l.082.08c.022-.062.041-.124.063-.185.092-.082.151-.115.332-.108.023-.286-.075-.54.123-.71-.133.277-.099.711-.02 1.052.05.034.097.07.146.104zm-.341-14.337v-.357c.258-.01.583-.034.75.075l-.75.282zm.487 10.732v-.026c-.257-.2-1.13-1.237-.852-1.86.114-.332.435-.25.623-.083.015-.184.028-.369.042-.553-.17-.258-.58-.368-.415-.813-1.109-.878-1.026.604-1.973.593.039.334.203.591.498.601 0 .69.268 1.175.582 1.469l.02.079c-.418.049-.947.117-1.246-.123-.367-.298-.449-.75-1.08-.703v.026l.104.156c.015.095-.029.13-.062.238v.027l.354.103h.041v.104c-.346-.064-.7-.06-.831.321v.027h.208a.782.782 0 01.124.367l.374-.424h.021c-.067.39-.404.505-.436.975v.026c.076-.003.16-.074.25-.131l.207.208c.083-.097.134-.32.165-.475h.084c-.059.286-.211.635-.104.92l.104.13.083-.261c.13-.09.211.084.436-.004.258-.101.254-.44.622-.451.093.108.143.161.146.393.237-.065.314-.304.519-.372.718-.235.888.108 1.392-.484zm-1.83-9.26c.47-.047.629-.563 1.129-.586v-.037c-.122-.016-.223-.052-.358-.016-.23.062-1.312.649-.887-.265-.344.135-.484.966.116.905zm-3.32 2.327v.026c.116.143.383.106.582.1l.228-.341.041-.002.727.916h.041c.232-.22.393-.52.583-.793-.08-.445-.594-.648-.728-1.074-.154-.489.325-1.156-.29-1.496-.007.244-.104.307-.125.447l.042.42v.053h-.021c-.092-.112-.074-.272-.145-.42-.08-.162-.445-.364-.623-.39v.028c.061.172.017.32.04.472l.272.445v.104l-.063.002c-.097-.114-.194-.225-.29-.34-.153-.073-.434-.003-.583.056l.188.21c.139.239.826 1.02.124 1.577zm4.21-5.967c.205-.157.487-.223.732-.243a.236.236 0 01-.1-.195c0-.13.131-.235.258-.235s.26.104.26.235c0 .081-.04.152-.101.195.245.02.526.086.73.243.572.056.806.287.806.578 0 .243-.24.5-.636.548-.014.081-.025.2-.035.244-.238-.064-.674-.106-1.024-.106s-.835.055-1.024.106c-.009-.044-.02-.163-.035-.244-.396-.048-.635-.305-.635-.547 0-.292.232-.523.805-.58zm2.33.59c.003-.328-.402-.361-.402-.361.126.14.24.517-.29.717.385.044.688-.097.692-.357zm-.658-.099c0-.244-.283-.442-.65-.471.067.095.112.265.112.462 0 .212-.053.395-.128.484.373-.024.666-.226.666-.475zm-.897.475c-.076-.09-.129-.272-.129-.484 0-.197.045-.367.111-.462-.364.029-.648.227-.648.471 0 .25.293.45.666.475zm-.626-.012c-.535-.202-.42-.586-.293-.725 0 0-.409.033-.405.364.003.262.31.405.698.36z"
+                                        clip-rule="evenodd" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_40_1225">
+                                        <path d="M0 0h108v47H0z" transform="translate(12 43)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="col-4 col-2-m logo scale-up" style="transition-delay: 150ms;">
+                            <svg fill="none" viewBox="0 0 133 132">
+                                <g clip-path="url(#clip0_42_224)">
+                                    <path
+                                        d="M37.719 49.5H11.494c-2 0-3.634 1.65-3.634 3.668v15.758c0 2.016 1.633 3.668 3.634 3.668h7.45v9.149l9.064-9.15h9.71c2 0 3.635-1.65 3.635-3.667V53.168c0-2.018-1.635-3.668-3.634-3.668zm-3.989 6.207c-.26.308-.519.617-.782.923-2.234 2.598-4.473 5.192-6.697 7.8-.342.4-.702.502-1.198.353-1.537-.463-3.081-.903-4.623-1.346-.8-.23-1.597-.474-2.406-.661-.604-.139-.969.1-1.05.708-.058.426-.035.889.067 1.307.141.579.54.953 1.135 1.127 2.419.712 4.832 1.436 7.242 2.175.299.092.46.044.655-.196 1.94-2.378 3.89-4.745 5.842-7.11.159-.194.259-.356.2-.637-.062-.3-.042-.625-.005-.934.03-.258.107-.52.215-.755.165-.362.538-.508.855-.38.353.141.493.48.44.879-.054.408-.12.84-.045 1.235.083.447.015.782-.27 1.125-1.712 2.066-3.409 4.147-5.122 6.213-.616.743-1.262 1.458-1.894 2.185h-.502c-.061-.03-.122-.07-.187-.09-2.643-.793-5.285-1.59-7.93-2.376-.57-.17-1.016-.503-1.4-.948-.446-.516-.623-1.147-.788-1.786v-1.083c.03-.076.067-.15.084-.229.168-.779.376-1.546.919-2.157 2.34-2.635 4.689-5.261 7.023-7.901.329-.372.675-.457 1.143-.35 2.724.625 5.451 1.235 8.18 1.838.376.084.693.225.9.565v.506zM51.35 54.54c-1.323 0-2.34.48-3.085 1.199v-4.996c0-.65-.373-1.026-1.017-1.026h-1.56c-.644 0-1.017.376-1.017 1.026V71.51c0 .65.373 1.027 1.017 1.027h1.56c.644 0 1.017-.377 1.017-1.027V60.528c0-2.054 1.118-2.805 2.271-2.805 1.22 0 2.27.82 2.27 2.736v11.05c0 .651.374 1.027 1.018 1.027h1.56c.644 0 1.016-.376 1.016-1.026V60.46c0-3.833-1.932-5.92-5.05-5.92zM64.4 54.541c-3.526 0-5.865 2.018-5.865 5.919v6.056c0 3.968 2.407 6.364 6.475 6.364 2.746 0 4.271-.993 4.271-2.122v-.787c0-.513-.338-.855-.881-.855-.78 0-1.39.581-2.983.581-1.796 0-3.288-.786-3.288-3.147v-1.71h7.119c.644 0 1.017-.377 1.017-1.027V60.46c0-3.9-2.34-5.919-5.865-5.919zm2.271 7.22h-4.543v-1.3c0-1.916 1.051-2.738 2.272-2.738 1.22 0 2.271.822 2.271 2.737v1.3zM79.043 54.54c-1.322 0-2.339.48-3.085 1.199v-4.996c0-.65-.372-1.026-1.017-1.026h-1.56c-.642 0-1.016.376-1.016 1.026V71.51c0 .65.374 1.027 1.017 1.027h1.56c.576 0 .949-.309 1.016-.856.746.753 1.763 1.198 3.085 1.198 3.119 0 5.051-2.087 5.051-5.919v-6.5c0-3.833-1.932-5.92-5.05-5.92zm1.458 12.42c0 1.916-1.05 2.737-2.271 2.737-1.153 0-2.272-.753-2.272-2.805v-6.364c0-2.053 1.12-2.805 2.272-2.805 1.22 0 2.271.82 2.271 2.737v6.5zM92.975 54.54c-1.323 0-2.34.48-3.085 1.199v-4.996c0-.65-.373-1.026-1.017-1.026h-1.56c-.644 0-1.017.376-1.017 1.026V71.51c0 .65.373 1.027 1.017 1.027h1.56c.576 0 .95-.309 1.017-.856.745.753 1.762 1.198 3.085 1.198 3.119 0 5.05-2.087 5.05-5.919v-6.5c0-3.833-1.931-5.92-5.05-5.92zm1.457 12.42c0 1.916-1.051 2.737-2.271 2.737-1.152 0-2.271-.753-2.271-2.805v-6.364c0-2.053 1.119-2.805 2.271-2.805 1.22 0 2.271.82 2.271 2.737v6.5zM105.28 54.541c-2.78 0-4.068.821-4.068 1.643v.855c0 .616.407.855.78.855.61 0 1.254-.41 2.881-.41 1.797 0 2.712.89 2.814 2.463-4.78 0-8.136 2.566-8.136 7.218 0 3.764 2.17 5.714 5.187 5.714 1.763 0 2.813-.89 3.187-1.3 0 .479.27.958.949.958h1.389c.678 0 1.017-.342 1.017-1.061V60.255c0-4.037-2.576-5.714-6-5.714zm2.407 12.351c0 1.881-.983 2.84-2.272 2.84-1.423 0-2.271-.992-2.271-2.84 0-2.771 1.932-4.14 4.543-4.14v4.14zM120.262 54.541c-1.322 0-2.339.479-3.085 1.198-.101-.582-.441-.856-1.017-.856h-1.559c-.644 0-1.017.377-1.017 1.026V71.51c0 .65.373 1.027 1.017 1.027h1.559c.644 0 1.017-.376 1.017-1.027V60.528c0-2.053 1.119-2.805 2.272-2.805 1.22 0 2.27.82 2.27 2.736V71.51c0 .65.374 1.027 1.018 1.027h1.559c.644 0 1.017-.377 1.017-1.027V60.46c0-3.832-1.932-5.919-5.051-5.919z" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_42_224">
+                                        <path d="M0 0h117.48v32.34H0z" transform="translate(7.86 49.5)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="col-4 col-2-m logo scale-up" style="transition-delay: 225ms;">
+                            <svg fill="none" viewBox="0 0 133 132">
+                                <g clip-path="url(#clip0_40_1240)">
+                                    <path
+                                        d="M126.472 52.141h-23.69v5.234h8.934v15.677h-8.934v5.233h23.69v-5.282h-9.296V57.327h9.296V52.14zM76.393 78.237V62.56l15.918 12.457v3.22h5.46V52.14h-5.46v15.677L76.393 55.36v-3.22h-5.46v26.096h5.46zm-16.5-10.467L57.23 71.7l-5.253 1.69-5.254-1.69-2.663-3.978V52.045h-5.496v17.329l4.564 6.921 8.812 2.906 8.813-2.906 4.564-6.921V52.14h-5.423V67.77zM33.106 52.093H13.058v5.234H27.67v10.395L24.982 71.7l-5.254 1.688-5.253-1.688-3.438-5.15-4.697 2.774 4.576 6.922 8.812 2.906 8.8-2.906 4.577-6.922V52.093z" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_40_1240">
+                                        <path d="M0 0h120.121v27.06H0z" transform="translate(6.34 52.139)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="col-4 col-2-m logo scale-up" style="transition-delay: 300ms;">
+                            <svg fill="none" viewBox="0 0 133 132">
+                                <g>
+                                    <path
+                                        d="M41.242 87.779a739.978 739.978 0 00-9.1 0c-1.609.011-3.08-.468-4.452-1.429l-.002-.001c-.316-.295-.615-.552-.891-.833-4.535-4.614-9.082-9.216-13.591-13.855-1.672-1.72-2.543-3.823-2.438-6.276.075-1.747.737-3.29 1.735-4.688.328-.46.698-.896 1.093-1.3 3.008-3.076 6.03-6.14 9.043-9.212 1.398-1.426 2.768-2.883 4.19-4.284 1.518-1.498 3.302-2.356 5.48-2.342 5.259.032 10.518.003 15.777.008.35 0 .714.035 1.046.136.554.17.713.623.431 1.135-.109.198-.258.381-.415.542l-7.762 7.471c-.23.234-.419.407-.648.641l-.292.288-.39.367c-2.359 2.36-4.716 4.724-7.067 7.092-1.49 1.5-2.987 2.994-4.45 4.52-.984 1.027-1.718 2.243-2.37 3.507a16.599 16.599 0 00-1.682 5.135c-.466 3.078.034 6.004 1.347 8.8.103.218.216.431.34.635-2.902-6.685-1.692-12.647 2.914-18.024l.163-.05c.39.42.77.85 1.17 1.258 3.897 3.959 7.798 7.913 11.696 11.87a7329.7 7329.7 0 016.775 6.884c.146.148.272.316.41.473.167.188.295.296.339.668.016.249-.081.414-.081.414-.268.34-.698.424-1.085.43-2.038.032-4.077.017-6.115.012M98.55 52.81h2.054c2.843-.003 5.686.002 8.529-.01 1.888-.008 3.771.012 5.625.406 1.153.245 2.251.62 3.205 1.31 1.146.828 1.795 1.947 2.053 3.28.247 1.27.317 2.537-.219 3.767-.62 1.422-1.756 2.369-3.143 3.068-.509.257-1.05.458-1.647.715.165.042.274.073.383.097 1.501.326 2.893.874 4.067 1.853 1.334 1.114 2.051 2.527 2.161 4.213.108 1.66-.156 3.248-1.129 4.67-.884 1.294-2.167 2.091-3.646 2.632-1.624.594-3.322.88-5.048.92-2.282.055-4.565.011-6.848.028-1.956.014-3.912.054-5.869.083-.05 0-.102-.003-.153.006-.288.048-.407-.055-.381-.344a4.624 4.624 0 000-.76c-.019-.245.055-.34.332-.35a5.88 5.88 0 001.117-.143c.712-.164 1.199-.608 1.369-1.282.14-.554.237-1.132.239-1.7.017-6.192.011-12.384.008-18.575 0-.224-.017-.448-.04-.671-.118-1.171-.628-1.666-1.847-1.79-.314-.031-.631-.032-.943-.075-.084-.012-.216-.12-.22-.19-.02-.389-.01-.778-.01-1.158zm8.69 19.218l.001 4.825c0 .154-.029.313.22.34 1.409.157 2.815.27 4.232.061 1.966-.29 3.2-1.326 3.587-3.177a9.91 9.91 0 00.197-2.495c-.113-2.277-1.331-3.667-3.618-4.297-1.391-.383-2.816-.375-4.242-.386-.32-.003-.385.109-.383.392.013 1.579.006 3.158.006 4.737zm1.244-7.519l.009.067c.867-.107 1.748-.148 2.596-.332 1.631-.355 2.839-1.211 3.23-2.865.191-.805.179-1.623.092-2.443-.202-1.908-1.228-3.058-3.176-3.536-1.186-.29-2.396-.3-3.61-.301-.318-.001-.391.092-.39.382.01 2.865.006 5.731.006 8.597 0 .058.004.117.001.175-.013.182.06.266.264.26.325-.013.652-.004.978-.004zM62.966 66.699v.477c0 2.833-.005 5.666.005 8.5 0 .413.042.83.104 1.24.185 1.202.9 1.83 2.146 1.913.192.012.384.032.576.034.155.001.216.061.213.213-.006.347-.007.694 0 1.04.004.168-.06.222-.233.218-1.357-.032-2.715-.082-4.073-.08-2.32.004-4.641.04-6.961.07-.414.005-.414.022-.418-.39-.001-.248.012-.496-.003-.743-.015-.235.057-.337.32-.335.281.003.566-.034.844-.083.986-.175 1.538-.677 1.715-1.638.105-.572.161-1.16.162-1.74.011-6.113.009-12.225.003-18.338 0-.453-.039-.91-.1-1.36-.094-.711-.524-1.148-1.246-1.27-.467-.08-.943-.12-1.417-.153-.205-.014-.287-.075-.281-.281.012-.384.003-.769.003-1.143h11.678c0 .411.007.853-.01 1.293-.002.044-.146.11-.228.12-.452.052-.913.056-1.358.142-.921.178-1.314.633-1.387 1.548-.03.395-.05.791-.051 1.186-.005 2.754-.003 5.508-.002 8.262 0 .413.005.432.418.343 1.025-.222 1.898-.716 2.647-1.436 1.422-1.367 2.631-2.906 3.777-4.493.823-1.139 1.599-2.311 2.384-3.477.137-.204.235-.439.322-.67.192-.516.021-.924-.51-1.091-.429-.136-.885-.191-1.332-.27-.217-.037-.44-.043-.672-.065v-1.443c.207.012.395.031.583.03 2.908-.006 5.816-.014 8.724-.03.213-.001.292.053.284.262-.012.306-.008.614-.001.921.004.174-.035.275-.244.286-1.063.061-1.883.588-2.54 1.357-.927 1.087-1.824 2.2-2.725 3.309-1.649 2.033-3.288 4.074-4.941 6.104-.158.194-.174.323-.031.537 1.866 2.812 3.931 5.479 6.114 8.062.912 1.08 1.86 2.12 3.03 2.946.803.566 1.664 1.027 2.639 1.234.38.08.354.381.46.62.103.228-.11.294-.23.391-1.009.826-2.11 1.482-3.448 1.638-2.019.233-3.785-.293-5.264-1.69-1.166-1.099-2.165-2.337-3.091-3.623-1.697-2.356-3.327-4.757-5.004-7.126-.285-.402-.664-.742-1.006-1.103-.072-.072-.176-.116-.344-.225zM83.368 52.799h11.21c0 .403.008.82-.01 1.236-.002.056-.133.143-.213.153-.461.061-.931.072-1.386.161-.758.147-1.128.562-1.231 1.321-.041.299-.066.602-.066.903-.003 6.252-.005 12.504.002 18.755 0 .427.036.86.113 1.278.205 1.114.867 1.686 1.999 1.772.25.02.501.037.792.059 0 .437.009.863-.011 1.288-.003.049-.168.13-.256.129-1.273-.018-2.545-.071-3.816-.069-2.263.005-4.526.037-6.79.074-.27.004-.361-.052-.343-.33.024-.357.006-.717.006-1.092.246-.019.457-.04.668-.05 1.321-.07 2.017-.71 2.174-2.02.045-.377.07-.758.07-1.138.004-6.154.006-12.308-.002-18.463-.001-.464-.045-.935-.132-1.39-.097-.51-.44-.86-.946-.967-.52-.109-1.053-.155-1.582-.207-.184-.019-.257-.069-.251-.26.01-.387.001-.775.001-1.143z" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="col-4 col-2-m logo scale-up" style="transition-delay: 375ms;">
+                            <svg fill="none" viewBox="0 0 132 132">
+                                <g clip-path="url(#clip0_40_1249)">
+                                    <path
+                                        d="M62.262 44.198s-3.584-5.688.288-7c0 0 .116-1.595-2.719-1.595-2.844 0-2.603 2.625-2.67 2.674-.058.059-.174 3.082 5.101 5.93M65.971 44.149s4.343-2.625 3.7-7.292c0 0-.164-3.072-3.18-3.13 0 0-3.133-.234-3.248 2.955 0 0 6.082-1.536 2.728 7.467zM68.71 30.052l-.856-2.518h-2.988l-.845 2.518 2.344 2.1 2.345-2.1zM56.305 44.083s-1.45-3.986.163-4.608c0 0-.519-1.303-1.624-1.303-1.095 0-1.844.622-1.844 1.935 0 1.312 2.142 3.47 3.295 3.986M46.505 63.507c-.98 3.296 2.96 4.152 2.96 4.152-1.106-.972.345-1.264.345-1.264 1.278-.272 3.767-.049 3.767-.049 6.658.914 5.85 5.98 5.85 5.98-2.728-.973-4.227.388-4.227.388-1.921 1.653-2.844.35-2.844.35-1.268 4.832 1.442 7.059 1.442 7.059.999-6.028 7.014-6.495 7.014-6.495-.058-6.203 7.244-4.491 7.244-4.491-1.441-3.306-4.862-3.646-4.862-3.646 5.208-.74 4.689-5.182 4.689-5.182-3.18 2.226-7.763 1.254-7.763 1.254 4.583-1.711 4.17-4.725 4.17-4.725-2.787 2.1-6.15 1.478-6.15 1.478 1.98-.516 1.057-3.646 1.057-3.646-.288 1.653-4.17 1.536-4.17 1.536-3.074-.224-2.843 2.11-2.843 2.11.115.291 1.796.972 2.844 1.36 1.037.41 1.268.866 1.268.866-.116 1.42-1.441 1.245-1.441 1.245-1.22 0-1.22-1.303-1.22-1.303-2.143-.68-6.774 1.196-6.774 1.196-1.74.797-.346 1.818-.346 1.818M70.775 44.197s5.38-1.701 5.15-6.66c0 0-.288-2.158-2.594-2.1 0 0-2.152.108-2.671 1.702 0 0 3.41 2.226.115 7.058zM79.691 44.433c-2.834 2.44-10.713 1.42-10.713 1.42-4.804-.575-5.736.35-7.59 1.992-2.018 1.799-1.441 5.697-1.441 5.697 4.343-6.436 7.878-3.48 7.878-3.48-3.997 2.11-2.959 6.26-2.959 6.26 3.594-5.395 8.58-2.896 8.58-2.896 2.863 1.36 6.659 1.03 6.659 1.03a7.476 7.476 0 004.4-1.546 7.623 7.623 0 002.661-3.869c-4.746 2.392-11.933.457-11.933.457 4.756-2.333 4.458-5.065 4.458-5.065zM65.567 82.465c1.96 2.946 3.363 8.127 3.363 8.127 2.594-3.305-.182-7.622-.182-7.622-4.343-5.123-3.008-7.972-3.008-7.972-3.017 3.811-.173 7.457-.173 7.457" />
+                                    <path
+                                        d="M76.165 55.583s-7.475-1.935-7.36 4.326c0 0 4.401-2.839 8.11-.049.46-.116 4.63 3.354 9.502-1.36 0 0 2.2-3.025 5.265-2.8 0 0-2.258-3.306-6.716-.798s-2.901 2.907-8.8.68z" />
+                                    <path
+                                        d="M81.546 63.157s-9.205-5.182-12.106 2.508c0 0 5.736-3.646 11.299.797 0 0 5.438 3.355 9.32.166 0 0 3.42-2.723 4.054-4.492 0 0-4.996 4.122-12.567 1.02zM76.742 43.868s2.834-1.031 3.363-4.055c0 0 .105-1.701-1.634-1.75 0 0-1.326-.126-1.845 1.07 0 0 1.73 1.993.116 4.725M61.85 46.008s-5.093-2.723-7.4 2.12c0 0-1.854 2.624 2.547 6.669 0 0-2.738-6.407 4.852-8.799M80.037 78.07s-3.651-8.137-11.405-6.086c0 0 4.631 1.478 7.36 6.086 0 0 3.007 8.264 11.462 4.161 0 0-5.38.292-7.417-4.161z" />
+                                    <path
+                                        d="M86.071 70.612C82.363 73.18 79.26 68.96 79 68.678c-.96-1.021-5.505-5.007-9.445.223 0 0 4.698-1.302 8.282 3.082 3.594 4.375 7.59 3.87 10.194 1.653 2.604-2.226 5.381-2.917 5.381-2.917s-3.651-2.663-7.34-.097M80.392 87.006s-4.986-.788-6.322-6.32c0 0-1.383-5.055-6.889-6.825-.547-.175 2.21 2.217 3.767 7.457 0 0 3.19 8.08 9.444 5.688zM55.373 71.127c-1.277-4.277-8.291-1.594-8.291-1.594-7.014 2.508-7.36-2.275-7.36-2.275-3.123 2.897-1.681 4.492-.404 5.522 1.278 1.02 3.94 1.138 8.984-.856 5.035-1.993 7.062-.797 7.062-.797M62.896 83.593c-2.603-4.55 0-7.622 0-7.622-4.17 1.186-2.834 5.97-2.834 5.97 1.566 3.14.75 7.748.75 7.748 3.65-.574 2.084-6.096 2.084-6.096z" />
+                                    <path
+                                        d="M57.746 81.94c-1.796-3.47 2.787-6.708 2.787-6.708-6.841 2.382-4.516 6.485-4.516 6.485.922 2.849-.356 5.406-.356 5.406 3.469-2.159 2.085-5.182 2.085-5.182zM50.963 97.028l5.208 5.6h-3.584l-3.46-3.88-.172.215-.5.505v3.16h-2.738V91.224h2.738v4.744c1.422-1.585 2.816-3.17 4.218-4.744h3.43l-5.14 5.804zM65 102.628l-4.611-6.456v6.407h-2.806V91.224h2.652l4.583 6.455v-6.407h2.806v11.356H65zM79.557 91.224l-5.227 12.298-5.208-12.298h2.921l2.287 5.668 2.315-5.668h2.912zM87.032 99.157c0-.914-1.288-.972-1.624-.972h-1.653v1.964h1.567c.643 0 1.71-.146 1.71-.992zm-3.267-3.47h1.557s1.537 0 1.537-.973c0-.739-.788-1.011-1.537-1.011h-1.567v1.983h.01zm4.525 1.224c.43.16.8.448 1.06.827.262.38.401.83.4 1.293v.175c0 3.257-3.593 3.422-4.428 3.422h-4.286V91.224h4.305c.355 0 4.247.077 4.247 3.354 0 1.166-.567 1.905-1.297 2.333z" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_40_1249">
+                                        <path d="M0 0h56.688v75.921H0z" transform="translate(37.858 27.533)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 col-2-m logo scale-up" style="transition-delay: 0ms;">
+                            <svg fill="none" viewBox="0 0 132 132">
+                                <g>
+                                    <path fill-rule="evenodd"
+                                        d="M33.388 42.624c15.005-3.647 33.116-4.84 45.615-4.342 11.138.444 22.988 2.212 31.964 5.56 4.486 1.675 8.295 3.758 10.935 6.305 2.653 2.558 4.144 5.605 3.908 9.153-.501 7.51-6.308 16.526-14.859 23.566-8.572 7.056-20.023 12.23-31.985 11.947-17.162-.422-35.291-4.233-49.147-10.064-6.927-2.914-12.816-6.347-16.983-10.137-4.162-3.785-6.67-7.99-6.67-12.44 0-4.923 3.15-8.915 8.051-12.096 4.906-3.183 11.673-5.629 19.171-7.452zm-18.525 8.448c-4.747 3.08-7.51 6.757-7.51 11.1 0 3.98 2.244 7.89 6.282 11.562 4.032 3.668 9.789 7.037 16.644 9.922 13.707 5.768 31.689 9.552 48.715 9.97 11.61.275 22.792-4.753 31.203-11.677 8.432-6.94 13.959-15.683 14.429-22.728.207-3.12-1.083-5.844-3.547-8.22-2.477-2.388-6.118-4.401-10.527-6.046-8.814-3.29-20.526-5.046-31.596-5.488-12.41-.494-30.409.694-45.287 4.31-7.443 1.81-14.062 4.217-18.806 7.295z"
+                                        clip-rule="evenodd" />
+                                    <path
+                                        d="M45.187 73.806h-3.522V63.309c0-1.514-.534-2.597-2.236-2.597-1.68 0-2.241 1.083-2.241 2.597v10.497h-3.516V63.309c0-1.514-.572-2.597-2.265-2.597-1.684 0-2.253 1.083-2.253 2.597v10.497h-3.505V63.228c0-3.92 2.002-5.516 5.414-5.516 1.823 0 3.38.428 4.343 1.922 1.025-1.462 2.984-1.922 4.385-1.922 3.371 0 5.396 1.596 5.396 5.516v10.578zm29.355 0H71.02V63.309c0-1.485-.534-2.597-2.262-2.597-1.678 0-2.247 1.083-2.247 2.597v10.497H63V63.228c0-4.112 2.303-5.516 5.757-5.516 3.684 0 5.785 1.404 5.785 5.516v10.578zm12.995 0h-9.932v-2.974l5.827-9.9h-5.827v-2.978h9.747v2.979l-5.83 9.899h6.015v2.974zm16.181.218c-1.633 0-2.684-.135-4.29-.377v-3c1.149.152 2.358.374 3.533.374.922 0 2.609.055 2.609-1.215 0-.842-.459-1.351-1.233-1.815l-2.17-1.27c-1.372-.815-2.475-2.113-2.475-4.362 0-2.947 2.256-4.406 5.29-4.406h3.241v2.979h-2.493c-.91 0-2.603-.032-2.603 1.241 0 .839.48 1.354 1.236 1.811l2.095 1.247c1.366.81 2.55 2.137 2.55 4.382 0 2.951-2.254 4.41-5.29 4.41zM59.8 67.252h-8.034c0 2.143-.084 3.792 2.556 3.792 1.708 0 3.49-.268 5.154-.57v2.981a26.133 26.133 0 01-5.451.568c-3.976 0-5.778-2.167-5.778-6.148v-4.007c0-4.008 1.776-6.175 5.778-6.175 3.978 0 5.775 2.193 5.775 6.175v3.384zM54.025 60.7c-1.7 0-2.26 1.083-2.26 2.6v1.166h4.513V63.3c0-1.518-.566-2.6-2.253-2.6zM93.71 50.62c.749 0 1.664.784 1.664 1.57 0 .84-.886 2.488-1.88 2.488-.936 0-1.558-1.188-1.558-1.998 0-1.139.567-2.06 1.774-2.06zm1.636 23.867c0 .786.029 3.384-1.182 3.384-1.959 0-2.337-1.87-2.6-3.413-.462-2.673-.488-6.028-.511-8.766-.757-.757-1.632-1.572-1.632-2.732 0-.434.132-.815.349-1.193.586-1.107.742-2.488 1.282-3.434.483-.894 1.771-1.243 2.739-1.243 2.017 0 3.756 1.324 3.756 3.46 0 2.871-2.444 5.084-2.444 8.39 0 1.837.243 3.706.243 5.547z" />
+                                </g>
+                            </svg>
+
+                        </div>
+                        <div class="col-4 col-2-m logo scale-up" style="transition-delay: 75ms;">
+                            <svg fill="none" viewBox="0 0 133 132">
+                                <g clip-path="url(#clip0_40_1360)">
+                                    <g clip-path="url(#clip1_40_1360)">
+                                        <path
+                                            d="M55.118 57.299c-4.01 0-7.277 3.295-7.277 7.34 0 4.018 3.242 7.313 7.252 7.338h.025c4.034 0 7.227-3.22 7.302-7.314 0-4.044-3.292-7.34-7.302-7.364zm.025 11.383c-2.203 0-3.911-1.772-3.936-4.019 0-2.222 1.733-4.02 3.886-4.044h.05c2.178 0 3.886 1.772 3.886 4.044 0 2.272-1.659 4.02-3.886 4.02zM42.371 71.727h3.44V57.572l-6.856 4.793-.074.05-.074-.05L32 57.572v14.155h3.44v-7.764l.199.15 3.242 2.396 3.267-2.396.198-.15v7.764h.025zM77.221 71.728v-14.13h-3.49v6.441l-9.257-6.49v14.13h3.49v-6.741l9.257 6.79zM79.003 74.997l2.5-1.847c.223-.175.396-.4.495-.624.1-.225.149-.5.149-.824V60.918H79.82v-3.32h5.619v14.08c0 .923-.149 1.697-.42 2.296-.273.599-.743 1.173-1.387 1.697l-2.648 1.972-1.98-2.646zM128.681 71.725l-.817-1.897h-6.435l-.768 1.897h-3.836l6.014-14.104h3.515l6.188 14.104h-3.861zm-6.064-4.817h4.009l-2.054-4.818-1.955 4.817zM99.3 71.725l-.816-1.897h-6.436l-.767 1.897h-3.837l6.015-14.104h3.54l6.188 14.104h-3.886zm-6.064-4.817h4.01l-2.054-4.818-1.956 4.817zM116.008 62.141c-.099-2.846-2.723-4.768-5.99-4.768-1.708.025-3.169.55-4.282 1.623-1.139 1.073-1.708 2.421-1.708 3.969l.049 1.148 8.465 2.896.099.025-.024.1c-.099.549-.421.998-.916 1.298-.495.3-1.065.45-1.758.45-.594 0-1.163-.175-1.708-.5-.519-.3-.891-.699-1.064-1.173h-3.168c.099 2.846 2.698 4.768 5.94 4.768 1.758 0 3.218-.525 4.357-1.548 1.138-1.023 1.708-2.322 1.708-3.87a10.838 10.838 0 00-.124-1.522l-8.391-2.896-.099-.025.025-.1c.074-.474.371-.873.891-1.198.52-.325 1.089-.474 1.732-.474.669 0 1.263.175 1.807.549.495.35.842.749.99 1.248h3.169zM20.515 61.02l.966-1.698-.966-1.723h-9.95c-1.485 0-2.277-.923-2.574-1.173l-1.114-1.173c-.396-.35-1.213-1.049-2.524-1.049H.293l.966 1.698-.966 1.697h5.792c1.337 0 2.277.774 2.574 1.074l1.139 1.173c.42.424 1.287 1.123 2.55 1.123h8.167v.05z" />
+                                        <path
+                                            d="M20.515 62.966H13.04c-1.41 0-2.227-.874-2.524-1.123l-1.164-1.224c-.272-.25-1.113-1.073-2.55-1.073H.294l.966 1.697-.966 1.723H8.56c1.337 0 2.253.774 2.525 1.048l1.188 1.224c.297.3 1.188 1.123 2.525 1.123h5.717l.966-1.698-.966-1.697z" />
+                                        <path
+                                            d="M20.515 68.334h-5.024c-1.46 0-2.253-.899-2.55-1.148l-1.138-1.199c-.273-.25-1.114-1.073-2.55-1.073H.293l.966 1.698-.966 1.697h10.718c1.361 0 2.277.799 2.55 1.073l1.138 1.174c.297.3 1.163 1.148 2.55 1.148h3.267l.965-1.697-.966-1.673z" />
+                                    </g>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_40_1360">
+                                        <path d="M0 0h132.001v132.001H0z" transform="translate(.8)" />
+                                    </clipPath>
+                                    <clipPath id="clip1_40_1360">
+                                        <path d="M0 0h131.846v35.373H0z" transform="translate(.495 48.238)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="col-4 col-2-m logo scale-up" style="transition-delay: 150ms;">
+                            <svg fill="none" viewBox="0 0 133 132">
+                                <path
+                                    d="M77.745 66.688c-.517 3.158-2.218 4.814-4.26 4.814-1.294 0-2.039-.87-1.819-2.22l.714-4.289c.278-1.589 1.266-2.831 3.037-2.831 1.96 0 2.853 1.277 2.328 4.526zm-6.995 6.298c.276 0 .939 1.115 3.089 1.115 4.581 0 7.2-3.18 7.919-7.28.907-5.057-1.657-7.357-4.887-7.357-1.52 0-2.653.131-3.481.551l1.246-6.955h-3.8l-3.78 20.79h2.864s.417-.858.857-.858h-.027v-.006zm40.486-8.867c.581-3.15-.635-4.685-4.193-4.685-2.649 0-3.695 1.122-4.685 2.073l.097-1.75-3.524.021-.272 2.595-2.038 11.478h3.859l1.243-7.452c.44-2.566 2.292-4.528 4.027-4.528 1.933 0 1.91 1.06 1.605 2.674l-1.681 9.306h3.827l1.735-9.732zm16.084-4.653h-4.498l-5.167 5.254-.074-.015 2.072-11.634H115.9l-3.784 20.778h3.806l.389-2.082.774-4.55c2.011 0 3.143.211 4.025 4.046l.608 2.586h3.888s-.968-3.932-1.601-5.467c-.666-1.615-1.387-2.683-2.936-2.973l6.251-5.943zM16.77 64.56c2.784-.583 4.232-2.743 4.62-4.147.992-3.862-.797-6.879-5.933-6.825l-5.883-.006L5.88 73.849h3.834l1.517-8.14c3.535-.094 3.968.731 4.63 4.684l.609 3.456h3.975c-.47-2.095-.77-4.067-1.156-5.652-.418-1.67-1.06-2.973-2.714-3.594l.196-.043zm.77-4.825c-.33 1.8-1.784 3.064-3.575 3.064h-2.26l1.167-6.401 2.056-.004c2.44 0 2.915 1.54 2.613 3.341zm17.335 3.828c.55-3.072-1.16-4.13-4.608-4.13-4.305 0-6.18 1.96-6.18 1.96l1.323 2.142s1.392-1.565 4.168-1.565c1.547 0 1.58.758 1.432 1.566l-.303 1.825c-5.546-.13-8.386 1.01-9.02 4.5-.52 2.86 1.716 4.24 4.223 4.24 1.296 0 2.344-.19 3.61-1.245.249.685.693 1.051 1.187 1.127.8.159 2.18-.022 2.593-.313-.032-.424 0-1.505.469-4.045l1.106-6.062zm-4.55 3.734c-.614 4.18-1.194 4.597-3.294 4.597-1.437 0-1.967-.943-1.724-2.179.334-1.686 1.66-2.418 5.019-2.418zm65.385-3.733c.552-3.073-1.16-4.13-4.61-4.13-4.303 0-6.18 1.96-6.18 1.96l1.327 2.142s1.39-1.566 4.161-1.566c1.551 0 1.583.758 1.437 1.566l-.303 1.825c-5.549-.13-8.386 1.01-9.023 4.5-.526 2.86 1.71 4.24 4.22 4.24 1.295 0 2.345-.19 3.615-1.245.243.685.687 1.051 1.183 1.127.8.159 2.18-.022 2.59-.313-.026-.424 0-1.505.47-4.045l1.113-6.062zm-4.552 3.733c-.61 4.18-1.192 4.597-3.295 4.597-1.434 0-1.966-.943-1.726-2.179.337-1.686 1.663-2.418 5.021-2.418zm-48.581 6.804c4.58 0 7.2-3.18 7.914-7.28.909-5.057-1.652-7.357-4.884-7.357-1.518 0-2.613.131-3.468.551l1.243-6.955h-3.816l-3.782 20.79h2.871s.413-.858.828-.858c.279-.006.94 1.109 3.094 1.109zm1.6-11.94c1.96 0 2.79 1.271 2.328 4.527-.472 3.326-2.218 4.818-4.288 4.818-1.295 0-2.04-.874-1.793-2.224l.716-4.284c.274-1.592 1.266-2.832 3.008-2.832h.029v-.004zm7.92 5.788c.591-5.292 3.078-8.567 8.993-8.567 4.388 0 5.842 3.215 5.252 6.67-.943 5.525-3.185 8.129-8.814 8.129-3.643 0-5.807-2.851-5.43-6.231zm10.239-1.64c.282-1.464.58-4.306-2.045-4.306-1.765 0-3.412 1.147-4.153 5.17-.451 2.46.043 4.433 2.088 4.433 1.495-.003 3.32-1.185 4.11-5.297z" />
+                            </svg>
+                        </div>
+                        <div class="col-4 col-2-m logo scale-up" style="transition-delay: 225ms;">
+                            <svg fill="none" viewBox="0 0 133 132">
+                                <g clip-path="url(#clip0_40_1375)">
+                                    <path
+                                        d="M24.69 71.826h-1.906L16.3 63.524v-1.386h.193c3.367 0 5.911-1.694 5.911-4.59v-.06c0-2.705-2.165-4.4-5.851-4.4h-6.92v13.458H8.106v-14.91h8.581c2.477 0 4.51.822 5.718 2.017.95 1.005 1.52 2.391 1.52 3.77v.066c0 3.33-2.536 5.28-5.97 5.72l6.735 8.617zM8.87 72.39a1.202 1.202 0 01-1.21-1.195c0-.66.542-1.195 1.21-1.195.667 0 1.209.535 1.209 1.195s-.542 1.196-1.21 1.196z" />
+                                    <path fill-rule="evenodd"
+                                        d="M59.51 76.415h1.529c.89 0 1.46.44 1.46 1.254 0 .822-.697 1.261-1.527 1.261h-.95v1.38h-.444l-.067-3.895zm1.462 2.075c.63 0 1.075-.307 1.075-.88 0-.564-.445-.814-1.075-.814h-1.016v1.694h1.016zm2.67-2.075h.437v1.767h2.292v-1.767h.378v3.901h-.445v-1.76H64.02v1.76h-.445l.067-3.9zm6.037-.066h.445l1.78 3.901h-.512l-.445-1.004h-2.099l-.437 1.005h-.445l1.713-3.902zm1.075 2.516l-.89-1.951-.89 2.016 1.78-.066zm3.939-2.457c.385 0 .83.124 1.15.381.185.183.318.499.318.755 0 .624-.445 1.064-1.083 1.13l1.21 1.57h-.638l-1.143-1.511h-1.142v1.51h-.445v-3.835h1.773zm-.067 1.95c.571 0 1.016-.315 1.016-.814 0-.505-.378-.755-1.016-.755h-1.209v1.57h1.209zm2.796-1.95h.445l1.402 2.141 1.46-2.141h.446v3.901h-.445v-3.146l-1.402 2.076-1.394-2.076v3.146h-.445l-.067-3.901zm6.608-.066h.379l1.78 3.901h-.379l-.445-1.004H83.2l-.445 1.004h-.445l1.72-3.901zm1.083 2.515l-.89-1.95-.89 2.009 1.78-.059zm1.847-.498c0-1.071.823-1.951 1.906-2.017h.06c.57 0 1.149.19 1.527.63l-.319.316a1.75 1.75 0 00-1.209-.506c-.823 0-1.52.697-1.52 1.577v.058c-.067.88.63 1.577 1.461 1.635h.06c.511 0 .956-.183 1.275-.564l.312.315c-.379.44-.95.69-1.588.69-1.075 0-1.965-.88-1.965-1.944v-.19zm4.702-1.951h2.856v.374h-2.41v1.327h2.157v.374h-2.158v1.386h2.41v.374h-2.855v-3.835zm3.998 2.266v-2.266h.445v2.2c0 .821.445 1.32 1.209 1.32s1.209-.44 1.209-1.254v-2.266h.445v2.2c0 .88-.698 1.635-1.654 1.635-.95 0-1.654-.69-1.654-1.57zm5.659-1.885h-1.335v-.381h3.115v.381h-1.335v3.454h-.445V76.79zm2.922-.374h.445v3.894h-.445v-3.894zm1.78 1.95c0-1.07.823-2.008 1.906-2.008h.067c.571 0 1.142.183 1.52.623l-.319.315c-.311-.315-.756-.564-1.268-.499-.823 0-1.528.69-1.528 1.57v.066c-.059.814.638 1.57 1.461 1.635h.067c.512 0 .957-.19 1.268-.572l.319.316c-.378.44-.949.696-1.587.696-1.083-.132-1.906-1.012-1.906-2.141zm6.163-2.008h.445l1.839 3.894h-.504l-.445-1.005h-2.158l-.445 1.005h-.445l1.713-3.895zm1.076 2.515l-.89-1.944-.89 2.01 1.78-.066zm2.225-2.457h.445v3.461h2.225v.44h-2.67v-3.9zm3.626 3.337l.253-.316c.38.377.825.565 1.335.565.504 0 .89-.315.89-.69 0-.38-.193-.571-1.017-.755-.83-.19-1.335-.505-1.335-1.136.06-.624.572-1.13 1.269-1.064.511 0 1.016.125 1.401.5l-.259.315c-.312-.25-.697-.44-1.142-.44-.505 0-.824.315-.824.63 0 .374.186.565 1.076.755.89.184 1.276.5 1.276 1.13 0 .69-.572 1.13-1.335 1.13-.638-.06-1.209-.25-1.588-.624zM29.963 50.822h1.402v9.057c1.016-1.95 3.115-3.146 5.332-3.08 3.753 0 5.911 2.515 5.911 6.035v8.991h-1.394v-8.741c0-3.022-1.72-5.031-4.702-5.031-2.796-.066-5.088 2.2-5.147 4.965v8.741h-1.402V50.822zm30.12 6.351h1.586l-6.415 15.15c-1.335 3.088-2.796 4.151-4.954 4.151-1.017 0-2.033-.183-2.923-.623l.505-1.261c.764.381 1.654.564 2.544.564 1.527 0 2.543-.88 3.686-3.454l-7.18-14.527h1.654l6.163 13.141 5.333-13.141zm7.43 10.875v-9.614h-2.158v-1.32h2.159v-4.656h1.394v4.656h5.214v1.32h-5.214v9.49c0 2.075 1.276 2.83 2.989 2.83.764 0 1.528-.19 2.158-.498v1.32c-.756.374-1.587.498-2.41.498-2.225 0-4.131-1.254-4.131-4.026zM80.16 50.822h1.394v9.057c1.017-1.95 3.115-3.146 5.34-3.08 3.753 0 5.912 2.515 5.912 6.035v8.991h-1.402v-8.741c0-3.014-1.713-5.031-4.702-5.031-2.796-.059-5.08 2.2-5.147 4.972v8.734h-1.395V50.822zm39.902 12.328c0-3.212-1.647-5.031-4.383-5.031-2.299 0-4.287 1.54-4.643 4.26.005.191.007.406.007.646v8.8h-.066v.066h-1.395v-8.807-.712c-.356-2.713-2.344-4.253-4.643-4.253-2.729 0-4.383 1.819-4.383 5.03v8.676h-1.394v-8.866c0-3.71 2.158-6.101 5.718-6.101 2.225-.059 4.316 1.195 5.333 3.146.044.095.081.176.118.242.045-.069.092-.15.141-.242 1.016-1.951 3.108-3.205 5.333-3.146 3.56 0 5.718 2.39 5.718 6.101v8.866h-1.394l-.067-8.675zm1.461-4.965c0-.257.067-.506.126-.697.064-.185.193-.374.386-.564.188-.127.378-.252.571-.374.185-.066.445-.132.697-.132.252 0 .445.066.697.132.193.058.383.183.571.374a.921.921 0 01.386.564c.059.191.126.44.126.697 0 .25-.067.499-.126.69-.064.185-.193.373-.386.564-.188.127-.378.252-.571.374a2.221 2.221 0 01-.697.132c-.252 0-.445-.066-.697-.132-.193-.059-.383-.183-.571-.374a.921.921 0 01-.386-.565c-.059-.249-.126-.44-.126-.689zm.319 0c0 .183.059.44.126.565.067.124.193.315.319.498.126.125.252.257.445.316.185.066.378.124.571.124.193 0 .378-.058.571-.124.193-.059.319-.191.445-.316a1.45 1.45 0 00.319-.498c.059-.191.126-.382.126-.565 0-.19-.067-.381-.126-.572-.067-.183-.193-.308-.319-.499-.126-.124-.252-.256-.445-.315-.193-.066-.378-.125-.571-.125-.193 0-.386.059-.571.125-.193.059-.319.19-.445.315a1.45 1.45 0 00-.319.499c-.067.19-.126.381-.126.572zm.823-1.012h.764c.512 0 .697.19.697.572 0 .183-.059.308-.126.374-.059.066-.252.125-.378.125l.571.88h-.319l-.571-.88h-.319v.88h-.319v-1.951zm.319.88h.512c.059 0 .126 0 .185-.059.067-.066.067-.066.126-.132.067-.058.067-.124.067-.183 0-.066 0-.125-.067-.19-.059-.067-.059-.067-.126-.125-.059 0-.059-.066-.126-.066h-.638l.067.755z"
+                                        clip-rule="evenodd" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_40_1375">
+                                        <path d="M0 0h117.481v29.7H0z" transform="translate(7.66 50.82)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="col-4 col-2-m logo scale-up" style="transition-delay: 300ms;">
+                            <svg fill="none" viewBox="0 0 133 132">
+                                <path
+                                    d="M63.2 72.6l-.5.1h-.4l-.3-.2-.3-.2c0-.2-.2-.3-.3-.5l-1.6-2.4h-.5V72l.7.2v.2a6.3 6.3 0 01-1.3.2h-1.2v-.3c.2 0 .4-.2.5-.3.2-.1.2-.3.2-.6v-6l-.7-.2V65l.5-.1h.6l.6-.1h.7c.9 0 1.5.2 2 .5.4.4.6.9.6 1.5v.8a2.2 2.2 0 01-1 1.2l-.7.3 1.7 2.3.5.5.6.3v.2l-.4.2zM61 66c-.3-.3-.7-.4-1.2-.4h-.5V69h.4a1.7 1.7 0 001.2-.5l.4-.6.2-.8c0-.5-.2-.9-.5-1.1zm5 6.5h-.2l-.4.1H65a4.2 4.2 0 01-1 0v-.3a1.1 1.1 0 00.5-.3l.2-.1v-4.3l-.8-.3V67l.8-.1.7-.1h.4l-.1.6V72l.7.2v.2l-.3.1zm-.1-7.3l-.2.3-.2.1H65l-.2-.1a.8.8 0 01-.2-.5v-.3l.2-.2.2-.1.3-.1h.2l.2.2.2.2v.5zm3 2.3v5.4l-.1 1.2-.3.8c-.1.2-.3.4-.5.4a1.1 1.1 0 01-.9.1.7.7 0 01-.3-.2V75l.4-.1.4-.4.2-.5v-6.4l-.7-.3V67l.8-.1H69l-.1.6zm.1-2.3a.6.6 0 01-.6.5h-.3l-.2-.2v-.2l-.1-.3v-.3l.2-.2.2-.1.3-.1h.2l.2.2.1.2v.5zm6.2 7.4a2 2 0 01-.5 0h-.5l-.4-.4-2-2.6V72l.7.2v.2l-.3.1h-.3l-.4.1h-.4a4.2 4.2 0 01-.9 0v-.3h.3l.2-.2.1-.2v-7.2l-.7-.3V64a4.9 4.9 0 011.4-.2h.4v5.5l.6-.6a5.7 5.7 0 00.9-1l.2-.5.2-.4h.3l.3-.1h.2l.3.1-.1.4-.3.6a4.9 4.9 0 01-1.3 1.1l-.4.3 1.9 2.3.5.4.4.1v.3a2 2 0 01-.4.2zm4.4-1c0 .2-.3.4-.4.6-.2.1-.5.3-.8.3l-.9.2c-.5 0-.9-.1-1.1-.3-.3-.1-.4-.4-.4-.7v-.3l.1-.2.8.6 1 .2.7-.2c.2-.2.2-.4.2-.6V71l-.2-.2-.3-.3a5 5 0 00-.5-.2l-.6-.3c-.3-.1-.6-.3-.8-.6-.2-.2-.3-.5-.3-.9 0-.2 0-.4.2-.6 0-.2.2-.4.4-.6l.7-.4.8-.1h.6l.5.2.2.2v.8l-.6-.3a2 2 0 00-1.3 0l-.3.1-.2.2a.9.9 0 000 .6l.1.3.3.2.4.2.7.2.5.3.4.3.2.5v1.1zm6.1-.8c-.1.4-.3.8-.6 1a2.8 2.8 0 01-2 1 2.7 2.7 0 01-1.8-.8l-.6-.9-.2-1.2c0-.5.1-.9.3-1.3.1-.4.3-.7.6-1 .2-.3.5-.5.9-.7l1-.2c.4 0 .8 0 1 .2.4.1.7.3 1 .6l.5.8.2 1.2c0 .5 0 1-.3 1.3zm-1-2.2l-.3-.6-.5-.5a1.3 1.3 0 00-1.2 0l-.6.5-.3.8-.2 1c0 .4 0 .7.2 1 0 .3.2.5.3.7l.5.4.6.1a1.4 1.4 0 001.2-.6l.3-.7a3.5 3.5 0 000-2zm6.7-1.2l-2 5.3h-.5l-2-5.3-.5-.3v-.3h2.3v.3l-.7.3 1.3 3.8 1.3-3.8-.7-.3v-.3h1.9v.3l-.4.3zm5.4 2.3h-3.6l.1 1 .4.6.6.4.7.2a2.6 2.6 0 00.9-.2l.4-.1.4-.3v.4l-.1.4-.4.3-.7.2-.8.1a2.3 2.3 0 01-1.8-.7 2.7 2.7 0 01-.7-2c0-.6 0-1 .2-1.4.1-.4.3-.8.6-1l.8-.7.9-.2c.3 0 .6 0 .9.2a1.8 1.8 0 011 1.1l.2 1v.7zm-1-1.4l-.3-.5a1 1 0 00-.4-.3l-.5-.1a1 1 0 00-.5.1l-.4.4c-.2.1-.3.3-.3.5l-.2.7h2.6v-.8zm5.5-.7l-.2.4-.3-.2h-.4c-.4 0-.7 0-1 .4V72l.8.2v.2a2.7 2.7 0 01-.7.2h-.8a4.6 4.6 0 01-1 0v-.3h.2l.2-.2.2-.2v-4.2l-.7-.4V67a4.8 4.8 0 011.4-.2h.3v.8l.3-.3.5-.4.6-.2c.4 0 .6.2.6.6v.3zm5.7 5a5.8 5.8 0 01-1 0 1 1 0 01-.4 0v-.3l.3-.3.1-.5v-3l-.3-.5a1 1 0 00-.4-.3l-.5-.1h-.3l-.4.1-.3.1-.2.2v4l.7.2v.2l-.3.1h-.3l-.4.1h-.4a4.2 4.2 0 01-1 0v-.3a1.1 1.1 0 00.5-.3l.2-.1v-7.2l-.8-.3V64a4.7 4.7 0 011.5-.2h.4l-.1.7v2.8l.8-.5 1-.1.7.1a1.5 1.5 0 01.8 1l.1.7V72l.7.2v.2l-.6.2zm6-2.9h-3.5l.1 1 .4.6.6.4.7.2a2.6 2.6 0 00.9-.2l.4-.1.4-.3v.4l-.1.4-.5.3-.6.2-.9.1c-.3 0-.6 0-1-.2l-.7-.5a2.7 2.7 0 01-.8-2c0-.6.1-1 .3-1.4l.5-1 .8-.7 1-.2c.3 0 .6 0 .8.2.3 0 .5.2.7.4l.4.7.1 1v.7zm-1-1.4c0-.2-.2-.4-.3-.5a1 1 0 00-.4-.3l-.4-.1a1 1 0 00-.5.1l-.5.4-.3.5v.7h2.5l-.1-.8zm4 4.2h-.3l-.4.1h-.4a4.2 4.2 0 01-1 0v-.3a1.1 1.1 0 00.5-.3l.2-.1v-4.3l-.8-.3V67l.8-.1.7-.1h.4V72l.6.2v.2l-.3.1zm-.2-7.3l-.2.3-.2.1h-.5a.7.7 0 01-.4-.3.8.8 0 01.2-.8l.2-.1.3-.1h.2l.2.2.2.2v.5zm6.1 7.2l-.5.3a2 2 0 01-.6-.7 2.2 2.2 0 01-.7.5 3 3 0 01-.4.1h-.4a2 2 0 01-1.6-.6 2.8 2.8 0 01-.6-2c0-.5 0-1 .2-1.4l.6-1 1-.7 1-.2a4 4 0 01.9.1v-2.1l-.8-.3V64a4.8 4.8 0 011.5-.2h.4l-.1.7v6.9s0 .2.2.3c0 .1.1.3.3.3l-.4.3zm-1.1-4.9h-1.6l-.6.5-.3.8a4 4 0 000 2l.3.6.4.4.6.1h.3l.4-.1a1.8 1.8 0 00.5-.3v-4zM20.1 69.8c-.3.3-.7.2-.8-.3.5 0 .8 0 .8.3zm19.3-.3c0 .5-.5.6-.8.3 0-.2.3-.3.8-.3zm-10 12.7h.6v-1.9h-.6v1.9zm3-8.2h.7v-1.8h-.7V74zm-6.7 2.8h.3v.4l.4-.2s-.3.2-.2.5l.3-.2v.5c.3.1.8-.2.8-.6l-.4-.1a3 3 0 011.7-.6c1 0 1.5 1 1.5 1.6l-.1.6c-.2.2-.3.2-.4.1 0 .3.5.3.6.2.1.3.4.3.7.3.3 0 .7 0 1 .6 0 0-.3.1-.4 0-.3-.1-.5 0-.5.2.3 0 .4.1.5.2-.3-.1-.6 0-.5.4.2-.3.4-.2.4-.2-.1 0-.3.3 0 .6 0-.2.1-.4.3-.4 0 0 .3 0 .4-.2 0 .2.4.1.5 0-.2 0-.4-.1-.2-.3 0 0 .4.2.5-.2 0 0-.4.2-.5-.2v-.1c0-.3-.1-.5-.3-.6.2 0 .3-.2.1-.5 0 .6-1.1.1-1.2-.6.8.2 1.6 0 1.6-.8 0-.4-.3-.7-.5-1l-.2-.5c0-.2.2-.3.3-.3.3 0 .6.4.7.7.1-.2.2-.4 0-.5h.1s.7 0 .7-.4v-.3h-.2c0 .1 0 .3-.3.3a3 3 0 01-.5 0l-.5-.1c-.6 0-.8.4-.8.7 0 .3.2.5.4.7.1.1.3.3.3.6 0 .5-.6.6-1 .2-.2-.5-.3-1-.6-1.4-.8.3-1.1 0-1.5-.1l-.6-.2c-.3 0-.6.2-1 .5-.2.3-.5.5-.8.6V76h.2v-.5l-.2.4-.3-.4v.4l-.3-.4a46.5 46.5 0 000 .5l-.3-.4a93.8 93.8 0 00.2.6l-.5-.3a24.4 24.4 0 00.3.4l-.4-.1.3.3h-.4l.4.2z" />
+                                <path
+                                    d="M27 80.4h.3c.1.2.4.2.5.2-.2-.1-.2-.2-.2-.3 0-.2.4-.4.5-.4l.3.1.3-.1c-.3 0-.4-.2-.4-.6 0-.8.4-1 1.3-1.3-.1 0-.4-.4-.1-.7a1 1 0 00-.5-.2c-.7 0-1.2.7-1.4.9-.1.2-.3.3-.4.2 0 .3.2.3.3.3l.2.9s-.3.3-.5.3l-.2-.1-.2-.2-.2.1.2.3c-.2-.1-.5-.1-.5.3.2-.2.4 0 .4 0-.1 0-.4.2-.2.5 0 0 0-.3.3-.3h.2zm2.2-7.2h-.4l-.6-.1c-.1.2.1.4.3.4h.3l.4-.2v-.1zm-2.8.7h.2l.2-.2.3.2.1-.2-.3-.1 1.4-1.9v-.4l-.4.2-1.4 1.8-.1-.3-.2.2.3.3-.2.2c-.2-.2-.5 0-.6.1l.4.1c-.3 0-.5.2-.5.2h.4l-.3.4.3.3.3-.5 1.5.8.2-.7-1-.3h-.3c-.2 0-.3-.1-.3-.2z" />
+                                <path fill-rule="evenodd"
+                                    d="M31.6 74c-.2 0-.3-.2-.3-.4v-.1l-.1-1 .6-.3h-.4l-.3-.1v-.6l-.6.3-.2-.2-.3-.3v.7c-.4 0-.6.1-.6.3l-.5.3v.1s0 .2.2.3c.3-.2.6-.1.6.3h-.5v.4l.6-.1c0 .2 0 .4-.5.5-.7.1-1 .3-1.1 1 .4 0 .7.1 1 .3l.2.1c.6.3 1.3 0 1.3 0-.2-.2-.2-.6 0-.8.1.3.4.3.6.2-.3-.2-.3-.5-.2-.8.2.2.5 0 .5-.1zm-1.7-1.5l-.5.1c.2.2.3.1.5-.1z"
+                                    clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                    d="M10.1 32.3h38.5v67.4H10.1V32.3zM20.3 71h1.3c.3 0 .6-.1.6-.3h.1c.2.5-.2.7-.5.7l-.5-.1-.6-.2h-.3l-.1-.1zm-3.6 3c1-.3.3-1.2.3-1.2-.5.2-.9-.1-.9-.4.5.2.7-.3.6-.7v-.1c0-.3-.2-1 .3-1.5.6.3 1-.2.9-.4 0-.1-.1-.1-.1 0l-.3.3c-.3 0-.7-.3-.7-.7.6-.3 1.6-.2 1.8.5 0 .1 0 .1 0 0 0 0 0-.5-.4-.7-.4-.2-.2-.5-.1-.6 0 0 .1 0 0 0 0 .3.2.4.7.4 1-.2 1.2.2 1.3.4.2 0 1 .5 1 .7l-.2.2s0 .3-.2.5c-1-.6-1.3 0-1.2.4l.9.1-.1.3s.1.2 0 .4c0 0-.3-.3-.9-.2 0 0-.4.5 1 .8 1.4.3 1.9 1.6 1.9 2.3-.6 0-1 .2-1.5.4-.4.3-1 .5-1.7.5V75c-.1.3-.4.5-.6.6-.5-.1-.8-.4-1-.5 0 0 .6-.5.3-1.3 0 0-.4.6-1.1.3V74zm19.8-3.3c0 .2.3.3.6.3h1.4-.4l-.6.3-.5.1c-.4 0-.7-.2-.6-.7 0-.1 0 0 0 0zm6 1.7h.1c0 .3-.4.6-.8.4-.1.1-.7.9.3 1.2-.8.4-1.1-.2-1.1-.2-.4.8.2 1.3.2 1.3-.1.1-.5.4-1 .5l-.6-.6v.7c-.7 0-1.2-.2-1.7-.5-.4-.2-.8-.4-1.4-.3 0-.8.4-2.1 1.8-2.4 1.4-.3 1-.8 1-.8-.5 0-.9.2-.9.2-.1-.2 0-.4 0-.4v-.3l.8-.1c0-.4-.2-1-1.2-.4-.2-.2-.2-.5-.2-.5l-.1-.2c0-.2.8-.6 1-.7 0-.2.3-.6 1.3-.4.4 0 .7-.1.6-.4.2.1.3.4 0 .6-.5.2-.5.7-.5.7 0 .1 0 .1 0 0 .3-.7 1.3-.8 1.8-.5 0 .4-.4.7-.6.7-.2 0-.3-.2-.3-.3 0-.1 0-.1-.1 0-.1.2.3.7.8.4.6.6.4 1.2.3 1.5 0 .5.1 1 .6.8zM29.3 61.6v-.3c0-.2 0-.3.2-.3.1 0 .2.1.2.3v.3c-.1.1-.1.2 0 .2h.4c.2 0 .3 0 .3.2 0 0 0 .2-.3.2h-.3c0-.2-.1-.2-.2-.1v.7c.4.1.6.4.6.6 0 .4-.5.7-.7.8-.3-.1-.7-.4-.7-.8 0-.2.1-.5.5-.5V62H29l-.3.1c-.2 0-.3-.1-.3-.2 0-.2.1-.3.3-.3l.3.1h.2s.1 0 0-.2zM29 65a.5.5 0 011 0 .5.5 0 01-1 0zm3.7 4.8s-1.2-.4-3.2-.4-3.1.3-3.2.4v-.1c0-1 0-1.6-.6-1.5.2-.4-.1-.7-.4-1-.3-.4-.7-.8-.7-1.3 0-.8.6-.8.7-.8l.4.1.4.2h.1c0 .1-.1.3-.3.3l-.2-.1-.2-.1s-.2 0-.2.3c0 .5.3 1 .7 1.4l.3-.2c.2 0 .4.3.4.6v.2l.3.1c.2 0 .4 0 .4-.4s-.2-.7-.5-1.1c-.3-.5-.6-1-.6-1.5s.3-1 1-1c.4 0 .6.2.7.4.2.1.3.3.6.3 0 0 0 .5-.4.5-.2 0-.3-.2-.4-.4-.1-.1-.2-.3-.4-.3 0 0-.3.1-.3.5l.4 1.4.3-.2c.3 0 .5.3.5.6 0 .2 0 .4-.2.5.2.3.3.4.6.4.4 0 .6-.2.6-.5l-.2-.3c-.2-.2-.3-.3-.3-.6s.2-.5.4-.5l.3.1h.3c.2 0 .4.1.4.4 0 .3-.1.4-.3.6l-.2.3c0 .3.2.5.6.5.3 0 .4-.1.6-.4a.7.7 0 01-.2-.5c0-.3.2-.6.4-.6s.3 0 .4.2c.2-.5.4-1 .4-1.4 0-.4-.2-.5-.3-.5-.2 0-.3.2-.4.3-.1.2-.2.4-.4.4-.3 0-.5-.4-.5-.5h.1c.3 0 .4-.2.6-.3.1-.2.3-.4.7-.4.6 0 1 .5 1 1 0 .6-.3 1-.6 1.5-.3.4-.5.7-.5 1.1 0 .4.2.4.4.4h.3v-.3c0-.3.1-.6.4-.6l.3.2c.4-.4.7-1 .7-1.4 0-.2-.1-.3-.2-.3l-.2.1-.2.1c-.2 0-.3-.2-.3-.3.3 0 .4-.1.4-.2l.5-.1c.1 0 .7 0 .7.8 0 .5-.4.9-.7 1.2-.3.4-.6.7-.4 1.1-.6 0-.6.5-.6 1.5zm-6.4 0zm-1.7 1.4l1.1-.3v1.5h.7v-1.6a17.4 17.4 0 018 .4c0-.2-.1-.5-.4-.5.5-.4.8.2.8.2.2 0 .4 0 .4.3 0 .7 1.7 1.1 2 1.2-.6.2-.9 1-.9 1-.5-.4-1-.8-1.2-.8l-.1.2h-.1c-.2-.3-.2-.4-.1-.5 0-.1 0-.4-.4-.4v4.7h.2s.3 0 .6-.3l1-.7c.7-.5 1.1-.3 1.9.1l.2.1c1.2.7 2.4 0 2.4 0 1 .8 1.4 3 1.4 3l.9.1c.7 0 .9-.5.9-.7 0-.6-.4-1-.8-1.5-.4-.4-.7-.9-.7-1.4 0-.3 0-1.5 1.5-1.5h1.4c.4 0 .6-.3.7-.5 0-.1 0 0 0 0v.2l.1.3c0 .5-.3.8-.8.8l-.5-.1s-.1 0 0 0c.2.3.2.8 0 1-.1-.6-.6-1-1.2-1-.8 0-.8.6-.8.7 0 .5.3.9.7 1.3.5.5 1 1 1 1.7 0 1.4-1.4 1.7-2.3 1.5 0 1.3 1.6 1.8 1.7.8.2.5.2 1-.4 1v.1c.5.3.3 1.4.3 2v.3c-.1.7.5.6.6.6-.5.6-1 0-1 0-.4.2-.2.6 0 .7.1 0 .1.1 0 .1 0 0-.6 0-.7-.5-.3.4-.7.3-.8.2-.2 0-.8-.3-.8.4-.5-.6 0-1 .2-1 0 0-.4-.3-.7.1 0-.7.5-.8.9-.5 0 0 .2-.5-.4-.5.4-.5.8 0 .9 0 .2.3.7.2.7.2 0-1.5-1-1.8-1.6-2-.5-.2-1-.4-1-.9H40c-.1.3-.9.4-1-.2 0 0 0-.1 0 0 .7.6 2.1-1.4.1-3a2.9 2.9 0 00-3.8-.2c0 .2.1.2.2.3H35c-.4.2 0 .5.1.6-.3 0-.6-.3-.6-.4v1.4c0 1.4-1.2 2-2.8 2.8-.7.3-1.4.7-2.2 1.3-.8-.6-1.6-1-2.3-1.3-1.6-.8-2.7-1.4-2.7-2.8V78c0 .1-.3.5-.7.4.2-.1.5-.4.1-.7-.1.2-.3.2-.5.1 0 0 .2-.1.2-.3-.6-.5-2.1-1.3-3.8.1-2 1.7-.5 3.7.1 3-.1.7-.9.6-1 .3-.1.5-.6.7-1 .8-.8.3-1.6.6-1.7 2 .2.1.6.2.8 0 0-.2.4-.6.9-.1-.6 0-.5.4-.5.5.4-.3 1-.2 1 .5a.5.5 0 00-.8 0c.3 0 .8.3.3.9-.1-.7-.7-.4-.8-.4-.1 0-.5.2-.8-.2-.1.5-.7.5-.8.5-.1 0-.1 0 0 0 .2-.2.5-.6 0-.7 0 0-.5.5-1 0v-.1c.1 0 .7 0 .7-.6v-.3c-.1-.6-.2-1.7.2-2 0 0 .1 0 0 0-.5-.2-.6-.6-.4-1.1 0 1 1.6.5 1.7-.8-.8.2-2.3-.1-2.3-1.5 0-.7.5-1.2 1-1.7.4-.4.7-.8.7-1.3 0-.1 0-.8-.8-.8-.6 0-1 .5-1.2 1-.2-.1-.1-.6 0-.9.1 0 0 0 0 0h-.5c-.5 0-.8-.2-.8-.7v-.7h.1c.1.2.3.6.8.6H15c1.4 0 1.6 1.1 1.6 1.4 0 .6-.4 1-.8 1.5-.4.4-.8.8-.8 1.4 0 .3.2.8 1 .8l.8-.2s.4-2.1 1.4-2.8c0 0 1.2.5 2.4-.1l.2-.1c.8-.4 1.2-.7 2-.2l1 .7.5.5h.2v-4.8c-.4 0-.4.3-.4.3v.6H24s0-.3-.2-.3l-1.2 1s-.3-.9-1-1.1c.5 0 2-.5 2-1.2 0-.2.4-.3.5-.3 0 0 .3-.6.8-.3-.2.1-.3.3-.3.6zM21 87.4c0 .2.1.3.3.4 0-.1.2-.7 2-.7v.9c0 1-1 .7-2.3.3l-2.4-.4c-1.9-.1-2.4.4-2.4.4l.3-2s.4-.4 1.8-.4c1.5 0 2.3.3 2.6.4v1zm14.6.6v-1c1.8 0 2 .6 2 .7.3 0 .4-.2.4-.4v-1c.3-.2 1.1-.5 2.7-.5 1.3 0 1.7.3 1.7.4l.4 2s-.6-.5-2.5-.4c-.8 0-1.6.3-2.3.4-1.4.4-2.4.6-2.4-.3zm2-1c-.6-.6-4.4-.8-8.1-.8-3.8 0-7.6.2-8 .8h-.1v-2c0-.6 3.9-1 8-1 4.2 0 8.2.4 8.2 1v2zm-14-3.8c-.1 0-.3.1-.5-.1-.1.5-.7.4-.8.4.2-.1.3-.3.3-.4 0-.3-.6-.8-.9-.8l-.2.1-.4.2-.5-.3c.2 0 .5 0 .7-.6.2-.7.2-1.2 0-1.4l-2-1H19c.2 0 .3-.1.4-.3 0-.2 0-.3-.2-.4a2 2 0 011.2-.6c.8 0 1.5.6 2 1.1.3.3.6.6.8.6 0 0 .2 0 .2-.2 0 .6-.2.6-.3.6h-.3c0 .7-.6 1.3-.6 1.3.3.3 1 .8 1.1.5.2-.2.5-.7 1-.2-.3 0-.5.2-.5.5.4-.3 1-.3 1 .5-.3-.4-.7-.1-.8 0 .3 0 .8.3.3.9 0-.4-.3-.5-.5-.5h-.3zm13 .3s-.6 0-.7-.4c-.2.2-.4.2-.6 0h-.4c-.2 0-.4 0-.4.4-.5-.5 0-.9.3-.9-.1 0-.5-.3-.8 0 0-.7.5-.7 1-.4 0-.3-.2-.5-.5-.5.4-.5.7 0 .9.2.2.3.9-.2 1.2-.5 0 0-.6-.7-.6-1.2V80h-.3c-.1 0-.4 0-.4-.4h.2l.9-.5c.5-.5 1.2-1.1 2-1.1.2 0 .8.2 1.2.6-.2 0-.2.2-.2.4s.2.3.4.3c-.7.3-1.8.7-2 1-.4.2-.3.7-.1 1.4.1.6.5.6.6.5-.1.3-.3.3-.5.3h-.4l-.2-.2c-.3 0-.8.4-.8.7 0 .2 0 .4.3.5z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="col-4 col-2-m logo scale-up" style="transition-delay: 375ms;">
+                            <svg fill="none" viewBox="0 0 132 132">
+                                <g clip-path="url(#clip0_42_217)">
+                                    <path
+                                        d="M58.452 89.5c-.475 0-.871.237-1.03.628l-1.98 5.1-.159.55-.158-.55-1.584-4.943v-.078a1.128 1.128 0 00-1.03-.706h-2.536c-.554.078-.95.47-.95 1.098 0 .157.079.314.079.47l.316 1.099-1.188 3.06-.238.55-.158-.55-1.506-4.944v-.078h-.079c-.079-.392-.475-.706-.95-.706h-2.535c-.555.078-1.03.47-1.03 1.098 0 .157.08.314.158.47l3.723 11.143c.159.47.555.784 1.03.784.476 0 .872-.314 1.03-.706l2.615-6.591.237-.628.159.628 2.218 6.513c.079.47.555.784 1.03.784s.871-.314 1.03-.706l4.437-11.299c.079-.156.079-.313.079-.47 0-.549-.476-1.02-1.03-1.02zm18.776 0c-.475 0-.872.237-1.03.628l-1.98 5.1-.158.55-.158-.55-1.585-4.943v-.078a1.127 1.127 0 00-1.03-.706h-2.535c-.555.078-.951.47-.951 1.098 0 .157 0 .314.079.47l.317 1.099-1.189 3.06-.238.55-.158-.55-1.505-4.944-.08-.078c-.079-.392-.475-.706-.95-.706h-2.535c-.555.078-1.03.47-1.03 1.098 0 .157.08.314.158.47l3.724 11.143c.158.47.555.784 1.03.784s.872-.314 1.03-.706l2.615-6.591.238-.628.158.628 2.219 6.513c.079.47.555.784 1.03.784s.871-.314 1.03-.706L78.18 90.99c.079-.156.079-.313.079-.47 0-.549-.476-1.02-1.03-1.02zm12.2 0h-8.794c-.554 0-.95.393-.95.942v11.535c.079.549.475.941 1.03.941h2.455c.555 0 .951-.392.951-.941v-5.414h3.645c.474 0 .95-.47.95-.942 0-.55-.475-1.02-.95-1.02H84.12v-3.06h5.308c.555 0 1.03-.47 1.03-1.02s-.474-1.02-1.03-1.02zM75.803 52.623c1.585 1.727 1.743 7.062 5.783 4.944 2.377-1.256 2.377-6.591-.871-8.553-2.615-1.491-4.041.55-4.992 3.06-.078.235-.078.392.08.55zm-6.259-.863c-1.742 1.334-2.852 5.179-5.941 3.845-2.535-1.255-2.773-6.12 1.584-8.396 3.01-1.412 4.516 1.334 4.516 4.237 0 .078-.08.236-.159.314zm4.12 9.651c1.664-.156 1.268-1.726 0-2.04-1.109-.392-2.773-.627-4.04-.55-2.14 0-2.06 1.648-.951 1.962.871.236 1.425.314 2.139 1.256.634 1.256.317-.392 2.852-.628zm7.844-27.305c2.06-3.453 5.703-2.825 7.526-1.099 1.981 1.883 2.377 4.08 1.585 5.571-1.03 2.04-3.723 4.473-5.466 2.119-.792-1.098-2.377-2.354-3.328-2.668-1.348-.628-1.585-1.805-.317-3.923z" />
+                                    <path
+                                        d="M89.825 49.248c-.158-.628-.475-.55-.475-.078.158 6.277-3.644 13.025-11.725 13.103-2.06 0-1.426 3.218-5.229 1.57-2.694-1.805-4.278 1.804-6.18-2.04-.475-1.1-1.11-1.57-1.901-1.805-8.002-1.962-10.537-12.868-3.486-21.656 1.347.863 1.901 1.02 3.407-.393.713-.706 2.06-1.49 2.772-1.726 1.664-.628 2.615-1.334 1.109-4.551-.693-1.516-1.638-2.323-2.644-2.668h-2.691c-.77.227-1.487.6-2.112 1.099-2.06 1.647-3.407 4.237-.872 7.297-7.13 4.786-8.397 10.67-8.239 15.85.159 5.413-1.188 4.943.555 10.435.158.471-.238.471-.475.315-7.447-4.708-11.488-19.146.158-27.071.238-.235.159-.55-.792 0-10.062 5.257-11.012 15.458-9.349 22.363.793 3.295-.396 3.923.872 8.317 3.01 9.102 5.546 9.886 9.19 10.122 6.576 0 2.06-3.61 2.377-8.082 0-.314.317-.392.475.156 3.644 8.003 6.18 15.301 15.686 14.595 5.466-.706 2.456-3.374 2.06-4.944-4.04-13.26 5.783-16.399 3.01-3.452-1.822 7.454 3.961 6.67 8.08 4.001 4.2-2.667 9.43-20.792 6.42-30.757zM73.821 65.019c-.95 2.355-5.624 1.57-5.783-.784 0-.078.159-.078.159 0 2.138.47 4.118.706 5.465.706.08 0 .16-.078.16.078z" />
+                                    <path
+                                        d="M53.302 81.81c0 .604-.242 1.183-.673 1.61a2.311 2.311 0 01-1.624.666c-1.347 0-2.377-1.02-2.377-2.275a2.371 2.371 0 012.377-2.354c1.267 0 2.297 1.098 2.297 2.354zm-2.297-2.746c-1.585 0-2.852 1.178-2.852 2.746 0 1.492 1.267 2.746 2.852 2.746 1.505 0 2.773-1.255 2.773-2.746 0-1.569-1.268-2.746-2.773-2.746z" />
+                                    <path
+                                        d="M51.797 82.204c-.08.392-.396.628-.713.628-.555 0-.95-.47-.95-1.02s.316-1.02.871-1.02c.396 0 .713.235.792.55h.397c-.08-.629-.555-.943-1.189-.943-.792 0-1.347.628-1.347 1.412 0 .785.555 1.413 1.426 1.413.555 0 .951-.392 1.11-1.02h-.397zm38.187 3.217c0 .603-.243 1.182-.674 1.608a2.31 2.31 0 01-1.624.667c-1.347 0-2.376-1.02-2.376-2.275a2.372 2.372 0 012.376-2.355c1.267 0 2.298 1.099 2.298 2.355zm-2.298-2.747c-1.585 0-2.852 1.178-2.852 2.747 0 1.49 1.267 2.746 2.852 2.746 1.505 0 2.772-1.256 2.772-2.746 0-1.57-1.267-2.747-2.772-2.747z" />
+                                    <path
+                                        d="M87.21 85.578h.396l.714 1.177h.474l-.792-1.177c.397-.08.713-.236.713-.707 0-.55-.317-.784-.95-.784h-.951v2.668h.396v-1.177zm0-.314v-.785h.476c.316 0 .634 0 .634.315 0 .47-.318.47-.634.47h-.476z" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_42_217">
+                                        <path d="M0 0h50v74H0z" transform="translate(41 29)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-l padding-bottom-5rem">
+            <div class="padding-top-3rem padding-bottom-5rem" id="el3">
+                <h2 class="padding-bottom-3rem">
+                    If you have an interesting project, collaboration idea or other proposition
+                    that might be of value to my work, I would love to hear from you.
+                </h2>
+                <div class="button-row">
+                    <a class="btn btn-white mail fade-Y-bottom-l" href="mailto:hoi@ruitenberg.nl?body=Hoi Thomas!" target="_blank"
+                        rel="noopener noreferrer">say hoi with an email</a>
+                    <a class="btn btn-white fade-Y-bottom-l" style="transition-delay: 50ms;"
+                        href="https://www.linkedin.com/in/thomasruitenberg/" target="_blank"
+                        rel="noopener noreferrer">or connect on LinkedIn</a>
+                    <a class="btn btn-white fade-Y-bottom-l" onclick="scrollFunction1()"
+                        style="transition-delay: 100ms;">check out my work
+                        <div class="icon">
+                            <svg fill="none" viewBox="0 0 32 32">
+                                <path fill-rule="evenodd"
+                                    d="M16 4l8 8.23-1.17 1.205-6.002-6.174V28h-1.656V7.26l-6.001 6.175L8 12.231 16 4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <a class="scrollToTopBtn btn btn-white">
+        <div class="icon up">
+            <svg fill="none" viewBox="0 0 32 32">
+                <path fill-rule="evenodd"
+                    d="M16 4l8 8.23-1.17 1.205-6.002-6.174V28h-1.656V7.26l-6.001 6.175L8 12.231 16 4z"
+                    clip-rule="evenodd" />
+            </svg>
+        </div>
+    </a>
+    <a class="scrollToHiBtn btn btn-white hand" onclick="scrollFunction3()">
+        say hoi
+    </a>
+    <footer>
+        <div class="container-l text-center padding-top-5rem padding-bottom-2rem">
+            <span>
+                website designed and developed by me <br>
+                <span style="font-size: 0.8rem; opacity: 60%;">©</span>
+                <span style="font-size: 0.8rem; opacity: 60%;" id="currentYear"></span>
+            </span>
+        </div>
+        
+    </footer>
+
+
+    <script type="text/JavaScript" src="date_script.js"></script>
+
 </body>
 
 </html>

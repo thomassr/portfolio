@@ -43,8 +43,23 @@
     box-shadow: var(--shadow-elevation-medium);
  }
 
+.video-embed { /* Makes responsive iframe 16:9  */
+    position: relative;
+    padding-top: 56.25%;
+}
 
-/* || Specific Styles for Juni project */
+/* || Specific Styles for EASY PAY KLEEDJE project */
+.orange {
+    background-color: #f9dfbd;
+    ;
+}
+
+
+
+
+
+
+/* || Specific Styles for JUNI project */
 .row-m p {
     margin-top: 4px;
     padding: 0;

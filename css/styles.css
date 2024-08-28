@@ -303,12 +303,6 @@ footer {
   }
 }
 
-/* @media (max-width: 992px) {
-  .scrollToTopBtn {
-    mix-blend-mode: normal !important;
-  }
-} */
-
 .scrollToTopBtn {
   right: 30px;
   padding: 18px;

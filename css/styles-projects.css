@@ -58,7 +58,11 @@
     background-color: #f9dfbd;
 }
 
-.orange img {
+.blue {
+    background-color: #dae0ef;
+}
+
+.blue img, .orange img {
     object-fit: cover;
     height: 100%;
 }
@@ -102,6 +106,12 @@
 .padding-box-l-t-r { /* left-top-right negative space */
     padding-left: 5.8%;
     padding-top: 5.8%;
+    padding-right: 5.8%;
+}
+
+.padding-box-l-b-r { /* left-bottom-right negative space */
+    padding-left: 5.8%;
+    padding-bottom: 5.8%;
     padding-right: 5.8%;
 }
 

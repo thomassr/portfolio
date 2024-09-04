@@ -130,7 +130,7 @@
 
     <div class="container-xxl padding-top-2rem padding-top-5rem-m">
         <div class="gridbox-single">
-            <div class="purple padding-box center margin-bottom">
+            <!-- <div class="blue padding-box center margin-bottom">
                     <div class="context-card-grid">
                         <div class="context-card">
                             <img src="./img/juni/contextcard1.svg" alt="...">
@@ -145,6 +145,9 @@
                             <img src="./img/juni/contextcard4.svg" alt="...">
                         </div>
                     </div>
+            </div> -->
+            <div class="orange">
+                <img src="./img/easypaykleedje/blanket-in-park.png" alt="screens made at Juni">
             </div>
             <div class="orange">
                 <img src="./img/easypaykleedje/blanket-in-park.png" alt="screens made at Juni">
@@ -155,10 +158,10 @@
     <div class="container-p padding-top-2rem padding-top-5rem-m">
         <p>
             Together with another designer I mapped out each step of the user journey. In Sketch, I translated parts of
-              the journey into wireframes above. This process was quite tricky and needed close cooperation with
-              development. Because of limited time and feasibility we had to use an external payment app Tikkie, so real
-              payments were possible. The technical integration with Tikkie highly influenced the user experience and needed
-              testing.
+            the journey into wireframes below. This process was quite tricky and needed close cooperation with
+            development. Because of limited time and to keep it feasible, we used an external payment app Tikkie, so real
+            payments were possible. This integration with Tikkie highly influenced the user experience and needed
+            testing.
         </p>
     </div>
 
@@ -166,126 +169,51 @@
     <div style="padding-left: 0px; padding-right: 0px;">
         <img src="./img/easypaykleedje/wireframes.png" alt="wireframe flowchart of app"></div>
     </div>
-    </div>
 
     <div class="container-p padding-top-2rem padding-top-5rem-m">
         <p>
-            Throughout the design process, I was mindful of customer behaviour and needs, incorporating their feedback into the
-            wireframe designs. With the support of an UX Researcher, I conducted moderated wireframe testing. Which allowed us
-            to validate our assumptions, like the order of the steps, and refine the design further. We used PingPong to find participants and
-            Dovetail to analyse the interviews.
-        </p>
-    </div>
-
-    <div class="container-xxl padding-top-2rem padding-top-5rem-m">
-        <div class="gridbox">
-            <div class="Right-Top purple padding-box-t-r margin-bottom"><img src="./img/juni/recipientlist.jpg"
-                    alt="screens made at Juni"></div>
-            <div class="Right-Bottom purple margin-bottom"><img src="./img/juni/failed-iphone.jpg" alt="screens made at Juni"></div>
-            <div class="Left-Bottom purple padding-box margin-bottom">
-                <video class="center shadow" loading="lazy" autoplay loop playsinline muted style="border-radius: 6px;">
-                    <source src="img/juni/initiate-payment.webm">
-                </video>
-            </div>
-            <div class="Left-Top yellow padding-box"><img src="./img/juni/recipient-filled.jpg"
-                    alt="screens made at Juni"></div>
-        </div>
-    </div>
-
-    <div class="container-p padding-top-2rem padding-top-5rem-m">
-        <p>
-            The learnings of previous testing, business needs and copy input of our UX copywriter led to new high-fidelity UI
-            designs. I created these with components from Juni's design system. I designed new patterns and components for
-            the recipient form, amount input and summary screen only when no existing component could be used. In collaboration
-            with another Product Designer from Onboarding, we decided to improve the navigation component. By displaying
-            the steps horizontally, it's more suitable for smaller screens and easier to develop. 
+            Once the whole flow was determined, taking technical limitations into account, it was time for the visual
+            style. To get started I asked the help of an UI and motion designer, which guided me along the way with
+            feedback and inspiration. After this I peer reviewed the designs with multiple colleagues for improvements.
+            Which left me with one last challenge: the Tikkie integration.
         </p>
     </div>
 
     <div class="container-xxl padding-top-2rem padding-top-5rem-m">
         <div class="gridbox-single">
-            <div class="yellow padding-box margin-bottom">
-                <img class="shadow" src="./img/juni/dovetail-safari.jpg" alt="interview results at Dovetail"
-                    style="border-radius: 0.3rem;">
+            <div class="orange padding-box-l-t-r overflow-hidden" style="max-height: 539px;">
+                <div class="center" style="height: 100%;">
+                    <img class="shadow" src="./img/easypaykleedje/temp/tikkie-mockup.png" alt="screens made at Juni">
+                </div>
             </div>
-            <div class="purple padding-box" style="position: relative;">
-                <div class="quote padding-bottom-2rem">
-                    <h2>When you make a payment to a new recipient for the first time, it can take up to a week. Usually it
-                        arrives the day after. That’s annoying.
-                    </h2>
-                    <p class="source" style="line-height: 0;">Accountant interviewed for discovery</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 109" preserveAspectRatio="xMinYMin meet"
-                        fill="none">
-                        <path fill="#7D76FF" fill-opacity=".1"
-                            d="M64.466 71.087c0 20.68-15.901 37.913-36.1 37.913C11.173 109 0 96.075 0 77.119 0 39.206 31.374 4.309 68.764 0l-3.438 20.249c-18.48 3.447-33.093 15.079-35.242 29.727 3.439-1.723 7.306-2.585 11.604-2.585 13.323 0 22.778 9.048 22.778 23.696Zm84.236 0c0 20.68-15.901 37.913-36.101 37.913-17.19 0-28.365-12.925-28.365-31.881C84.236 39.206 115.61 4.309 153 0l-3.438 20.249c-18.481 3.447-33.093 15.079-35.242 29.727 3.438-1.723 7.306-2.585 11.604-2.585 13.323 0 22.778 9.048 22.778 23.696Z" />
-                    </svg>
-                    <svg id="end" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 109" preserveAspectRatio="xMinYMin meet"
-                        fill="none">
-                        <path fill="#7D76FF" fill-opacity=".1"
-                            d="M64.466 71.087c0 20.68-15.901 37.913-36.1 37.913C11.173 109 0 96.075 0 77.119 0 39.206 31.374 4.309 68.764 0l-3.438 20.249c-18.48 3.447-33.093 15.079-35.242 29.727 3.439-1.723 7.306-2.585 11.604-2.585 13.323 0 22.778 9.048 22.778 23.696Zm84.236 0c0 20.68-15.901 37.913-36.101 37.913-17.19 0-28.365-12.925-28.365-31.881C84.236 39.206 115.61 4.309 153 0l-3.438 20.249c-18.481 3.447-33.093 15.079-35.242 29.727 3.438-1.723 7.306-2.585 11.604-2.585 13.323 0 22.778 9.048 22.778 23.696Z" />
-                    </svg>
+            <div class="orange padding-box-l-b-r overflow-hidden" style="max-height: 539px;">
+                <div class="center" style="height: 100%;">
+                    <img class="shadow" src="./img/easypaykleedje/temp/tikkie-mockup-bottom.png" alt="screens made at Juni">
                 </div>
             </div>
         </div>
     </div>
-    </div>
-
-    <div class="container-p padding-top-2rem padding-top-5rem-m">
-        <p>
-            PingPong was used again to gather representative participants for usability testing. By performing multiple
-            user tasks, I gathered valuable feedback and identified areas for improvement. This process led to updates in design,
-            notably the interactions when editing from the review page and addition of a scam warning.
-        </p>
-    </div>
-
-    <div class="container-xxl padding-top-2rem padding-top-5rem-m">
-        <div class="gridbox-single">
-            <div class="yellow padding-box margin-bottom">
-                <video class="center shadow" loading="lazy" autoplay loop playsinline muted style="border-radius: 6px;">
-                    <source src="img/juni/review-edit.webm">
-                </video>
-                <!-- <img src="./img/juni/sendmoneyreview.jpg" alt="screens made at Juni"> -->
-            </div>
-            <div class="yellow padding-box-r-b">
-                <img src="./img/juni/scamwarning.jpg" alt="screens made at Juni">
-            </div>
-        </div>
-    </div>
-
-    <div class="container-p padding-top-2rem padding-top-5rem-m">
-        <p>
-            Along the way, the engineers and founders were constantly kept in the loop. I was trusted to introduce a new design
-            methodology and, with the support of the PM, we were able to develop a design that was company-wide supported.
-            Which I find really important and keeps surprises to a minimum. </p>
-        <p>
-            What was left was delivering the designs to the engineers. I designed every edge-case, error state, new
-            inputfields, etc. This new Send Money feature had a wide-reaching impact on the product and KPI's. 
-            I was unfortunately let go by Juni before I could see it through to implementation. Despite this, 
-            I have confidence in my designs and believe that they will bring significant value to Juni's customers. 
-        </p>
-    </div>
     
     <div class="container-p padding-top-2rem padding-top-5rem-m">
-        <h3>2. Quick improvements to Instant Top-ups</h3>
+        <h3>2. Trying our app together with kids  </h3>
         <p>
-            Through data analysis and Hotjar recordings, we identified a problem where depositors were sent back money due to
-            incorrect currencies or unknown bank accounts, even though an information banner was present to alert them of
-            this limitation. But who reads banners anyway?
-        </p>
-        <p>
-            The PM suggested a quick fix, making the banner more standout. I decided to make a bigger effort and improve the UX instead of just changing the copy. I began redesigning the
-            top-up flow to incorporate Send Money's new UI elements while considering customer problems and technical third party requirements.
+            Together with the developers we created a simple demo which I could use for testing. Via our colleagues I
+            invited multiple kids towards our office. Interviewing kids is pretty hard, finding the right balance between
+            getting answers and by not asking leading questions. But at the end the results are really fascinating and it
+            was an awesome experience. Interesting results were found and were implemented in the new iteration, which
+            you’ll find below.
         </p>
     </div>
     
     <div class="container-xxl padding-top-2rem padding-top-5rem-m">
         <div class="gridbox-single">
-            <div class="purple padding-box-l-t-r margin-bottom">
-                <img src="./img/juni/choose-account.jpg" alt="screens made at Juni">
+            <div class="orange">
+                    <img class="shadow" src="./img/easypaykleedje/user-testing.png" alt="screens made at Juni">
             </div>
-            <div class="yellow padding-box">
-                <img class="shadow" src="./img/juni/topup-safari.jpg" alt="screens made at Juni"
-                    style="border-radius: 0.3rem;">
+            <div class="orange padding-box-l-b-r overflow-hidden" style="max-height: 539px;">
+                <div class="center" style="height: 100%;">
+                    <img class="shadow" src="./img/easypaykleedje/temp/tikkie-mockup-bottom.png" alt="screens made at Juni">
+                </div>
             </div>
         </div>
     </div>

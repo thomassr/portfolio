@@ -55,7 +55,12 @@
 
 /* || Specific Styles for EASY PAY KLEEDJE project */
 .orange {
-    background-color: #f9dfbd;
+    background-color: #ffedcf;
+}
+
+.orange-gradient {
+    background: rgb(249,129,42);
+    background: linear-gradient(0deg, rgba(249,129,42,1) 0%, rgba(249,166,2,1) 100%);
 }
 
 .blue {
@@ -309,7 +314,7 @@
 .card {
     height: fit-content;
     width: 88%;
-    background-color: #FFFAEB;
+    /* background-color: #FFFAEB; */
     border-radius: 16px;
     padding: 24px;
 }
@@ -321,9 +326,8 @@
     align-items: center;
     width: 40px;
     height: 40px;
-    background: #EBE4FF;
+    /* background: #EBE4FF; */
     border-radius: 50%;
-    color: #7D76FF;
 }
 
 @media (min-width: 768px){

@@ -67,11 +67,6 @@
     background-color: #dae0ef;
 }
 
-.blue img, .orange img {
-    object-fit: cover;
-    height: 100%;
-}
-
 .img-mobile img {
     max-height: 300px;
 }
@@ -82,6 +77,11 @@
     } 
 }
 
+@media (min-width: 768px) { /* sets the height of the gradient background for the logo */
+    .svg-logo-kingsday {
+        min-height: 500px;
+    } 
+}
 
 /* || Specific Styles for JUNI project */
 .row-m p {
@@ -103,7 +103,9 @@
 
 
 .yellow img, 
-.purple img { /* places the images in the yellow and purple boxes in the corner */
+.purple img,
+.orange img,
+.blue img { /* places the images in the yellow and purple boxes in the corner */
     display: block;
 }
 

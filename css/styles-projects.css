@@ -72,6 +72,17 @@
     height: 100%;
 }
 
+.img-mobile img {
+    max-height: 300px;
+}
+
+@media (min-width: 768px) {
+    .img-mobile img {
+        max-height: 600px;
+    } 
+}
+
+
 /* || Specific Styles for JUNI project */
 .row-m p {
     margin-top: 4px;

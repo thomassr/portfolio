@@ -116,7 +116,8 @@ function showLoginPasswordProtect($error_msg) {
         <link rel="stylesheet" href="/css/passprotection.css">
         <link rel="stylesheet" href="/css/fonts.css">
 
-        <script defer src="script1.js"></script>
+        <script defer src="/scripts/script.js"></script>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     
         

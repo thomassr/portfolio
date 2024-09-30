@@ -128,15 +128,25 @@ function hasClass(element, className) {
   }
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Try to select the .scrollToTopBtn element
+  const scrollToTopBtn = document.querySelector('.scrollToTopBtn');
+
+  // Check if the element exists before adding the event listener
+  if (scrollToTopBtn) {
+    scrollToTopBtn.addEventListener('click', scrollToTop);
+  } else {
+    console.warn('.scrollToTopBtn not found. Event listener not added.');
+  }
+});
+
+// Function to scroll to the top of the page
 function scrollToTop() {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth'
+    behavior: 'smooth' 
   });
 }
-
-
-document.querySelector('.scrollToTopBtn').addEventListener('click', scrollToTop);
 
 // Function to trigger animations when in view
 const observer1 = new IntersectionObserver((entries) => {
@@ -227,7 +237,7 @@ const backgroundTransition = document.querySelector('.background-wrapper');
 if (backgroundTransition) {
   observer.observe(backgroundTransition);
 } else {
-  console.warn('No .background-wrapper element found. Intersection Observer will not be set up.');
+  console.warn('.background-wrapper not found. Intersection Observer will not be set up.');
 }
 
 

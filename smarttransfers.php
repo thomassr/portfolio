@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="css/style.css?v=1.0">
   <script src="https://kit.fontawesome.com/60dc161d94.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>  
-  <script defer src="/scripts/script-deprecated.js"></script>
+  <script defer src="/scripts/script_deprecated.js"></script>
 
 
   <title>Thomas' Portfolio: Smart Transfers</title>

@@ -24,7 +24,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 
   
-  <script defer src="/scripts/script-deprecated.js"></script>
+  <script defer src="/scripts/script_deprecated.js"></script>
 
 
   <title>Thomas' Portfolio: Healthcare</title>

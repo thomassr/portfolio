@@ -24,7 +24,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 
   
-  <script defer src="/script.js"></script>
+  <script defer src="/scripts/script-deprecated.js"></script>
 
 
   <title>Thomas' Portfolio: Healthcare</title>
@@ -461,7 +461,7 @@
   <script>
     AOS.init();
   </script>
-  <script type="text/JavaScript" src="/date_script.js"></script>
+  <script type="text/JavaScript" src="/scripts/date_script.js"></script>
 </body>
 
 </html>

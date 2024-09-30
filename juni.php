@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="/css/styles-projects.css">
     
 
-    <script defer src="/script1.js"></script>
+    <script defer src="/scripts/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 
     <!-- Add Additional Modules -->
@@ -485,7 +485,7 @@
         </div>
     </footer>
 
-    <script type="text/JavaScript" src="/date_script.js"></script>
+    <script type="text/JavaScript" src="/scripts/date_script.js"></script>
 
 
 

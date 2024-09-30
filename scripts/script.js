@@ -1,4 +1,4 @@
-console.log("script1.js file linked");
+console.log("script.js file linked.");
 
 // Function for button scroll specific point 'check out my work'
 function scrollFunction1() {

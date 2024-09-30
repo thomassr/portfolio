@@ -15,11 +15,11 @@
     <meta name="theme-color" content="rgba(33, 33,33)">
     <meta name="robots" content="noindex,nofollow">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="img/favicons/site.webmanifest">
-    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#212121">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#212121">
     <meta name="msapplication-TileColor" content="#212121">
 
     <title>Thomas' Portfolio | Money Management at Juni</title>
@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="/css/fonts.css">
     <link rel="stylesheet" href="/css/anim.css">
     <link rel="stylesheet" href="/css/styles-projects.css">
-    <link rel="stylesheet" href="/css/styles-juni.css">
+    
 
     <script defer src="/script1.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
@@ -50,9 +50,9 @@
 
 </head>
 
-<body style="color: var(--black)">
+<body>
     
-    <div class="hero overflow-hidden">
+    <div class="hero purple overflow-hidden">
         <div class="container-xl text-center center padding-top-3rem padding-top-5rem-m">
             <h1 class="fade-Y-bottom-l" style="transition-delay: 100ms;">
                 Money Management at Juni
@@ -61,7 +61,7 @@
                 Juni is a B2B SaaS platform built for ecommerce businesses, to manage finances and maximise cash flow all
                 from a smart dashboard.
             </p>
-            <img class="hero-img scale-up" style="transition-delay: 75ms;" src="img/juni/Home.jpg" alt="...">
+            <img class="styling-juni-hero-img scale-up" style="transition-delay: 75ms;" src="/img/juni/Home.jpg" alt="...">
         </div>
         
     </div>
@@ -71,21 +71,21 @@
     <div class="container-p padding-top-2rem padding-top-5rem-m">
         <div class="row-m">
             <div class="col-6-m padding-top-1rem padding-top-2rem-m">
-                <p class="p-title">Role</p>
+                <h5>Role</h5>
                 <p>Product Designer</p>
             </div>
             <div class="col-6-m text-right-m padding-top-1rem padding-top-2rem-m">
-                <p class="p-title">Date</p>
+                <h5>Date</h5>
                 <p>April - December 2022</p>
             </div>
         </div>
         <div class="row-m">
             <div class="col-6-m padding-top-1rem padding-top-2rem-m">
-                <p class="p-title">Practices</p>
+                <h5>Practices</h5>
                 <p>User Research, Product Thinking, UX & UI Design, Design System</p>
             </div>
             <div class="col-6-m text-right-m padding-top-1rem padding-top-2rem-m">
-                <p class="p-title">Methods & Tools</p>
+                <h5>Methods & Tools</h5>
                 <p>Interviewing, Usability Testing, Competitor Analysis, Wireframing, Figma, Dovetail, Hotjar, PingPong, Amplitude</p>
             </div>
         </div>
@@ -98,7 +98,7 @@
     <div class="container-p padding-top-2rem padding-top-5rem-m">
         <h3>Project context</h3>
         <p>
-            My product area is called Money Management and I was leading the design process together with my Project
+            My product area was called Money Management and I was leading the design process together with my Project
             Manager and Lead Engineer. Our team was responsible for the backbone of the product; currency accounts,
             cards and transferring money.
         </p>
@@ -107,7 +107,7 @@
             efficiently and increasing transaction volume.
         </p>
         <p>
-            In these nine months, I’ve conducted interviews and usability tests, redesigned existing and created new
+            In these nine months, I’ve conducted multiple interviews and usability tests, redesigned existing and created new
             features, which has also been implemented. Together with front-end and data analytics, we defined and
             implemented analytic frameworks into our development process.
         </p>
@@ -116,8 +116,8 @@
     <div class="container-xxl padding-top-2rem padding-top-5rem-m">
         <div class="gridbox-1">
             <div class="Left purple padding-box center margin-bottom">
-                <div class="card">
-                    <div class="circle"><h5>1</h5></div>
+                <div class="card yellow">
+                    <div class="circle purple"><h5 style="color: #7D76FF;">1</h5></div>
                     <p style="font-weight: 500;" class="padding-bottom-0-5rem padding-top-1rem">
                         Payments are an essential part of any business, and this feature was lacking in its functionality, interaction, and user experience.
                     </p>
@@ -129,8 +129,8 @@
             <div class="Right-Top-3 yellow">
                 <div class="row" style="margin-left: 0px; margin-right: 0px;">
                     <div class="c-col-2 padding-left-0-5">
-                        <div class="circle">
-                            <h5>2</h5>
+                        <div class="circle purple">
+                            <h5 style="color: #7D76FF;">2</h5>
                         </div>
                     </div>
                     <div class="c-col-10">
@@ -145,8 +145,8 @@
             <div class="Right-Bottom-3 yellow">
                 <div class="row" style="margin-left: 0px; margin-right: 0px;">
                     <div class="c-col-2 padding-left-0-5">
-                        <div class="circle">
-                            <h5>3</h5>
+                        <div class="circle purple">
+                            <h5 style="color: #7D76FF;">3</h5>
                         </div>
                     </div>
                     <div class="c-col-10">
@@ -175,21 +175,21 @@
             <div class="purple padding-box center margin-bottom">
                     <div class="context-card-grid">
                         <div class="context-card">
-                            <img src="./img/juni/contextcard1.svg" alt="...">
+                            <img src="/img/juni/contextcard1.svg" alt="...">
                         </div>
                         <div class="context-card">
-                            <img src="./img/juni/contextcard2.svg" alt="...">
+                            <img src="/img/juni/contextcard2.svg" alt="...">
                         </div>
                         <div class="context-card">
-                            <img src="./img/juni/contextcard3.svg" alt="...">
+                            <img src="/img/juni/contextcard3.svg" alt="...">
                         </div>
                         <div class="context-card">
-                            <img src="./img/juni/contextcard4.svg" alt="...">
+                            <img src="/img/juni/contextcard4.svg" alt="...">
                         </div>
                     </div>
             </div>
             <div class="yellow">
-                <img src="./img/juni/flowchart.svg" alt="screens made at Juni">
+                <img src="/img/juni/flowchart.svg" alt="screens made at Juni">
             </div>
         </div>
     </div>
@@ -204,7 +204,7 @@
 
     <div class="container-xxl padding-top-2rem padding-top-5rem-m">
     <div class="purple" style="padding-left: 0px; padding-right: 0px;">
-        <img src="./img/juni/wireframes.png" alt="screens made at Juni"></div>
+        <img src="/img/juni/wireframes.png" alt="screens made at Juni"></div>
     </div>
     </div>
 
@@ -219,15 +219,15 @@
 
     <div class="container-xxl padding-top-2rem padding-top-5rem-m">
         <div class="gridbox">
-            <div class="Right-Top purple padding-box-t-r margin-bottom"><img src="./img/juni/recipientlist.jpg"
+            <div class="Right-Top purple padding-box-t-r margin-bottom"><img src="/img/juni/recipientlist.jpg"
                     alt="screens made at Juni"></div>
-            <div class="Right-Bottom purple margin-bottom"><img src="./img/juni/failed-iphone.jpg" alt="screens made at Juni"></div>
+            <div class="Right-Bottom purple margin-bottom"><img src="/img/juni/failed-iphone.jpg" alt="screens made at Juni"></div>
             <div class="Left-Bottom purple padding-box margin-bottom">
                 <video class="center shadow" loading="lazy" autoplay loop playsinline muted style="border-radius: 6px;">
-                    <source src="img/juni/initiate-payment.webm">
+                    <source src="/img/juni/initiate-payment.webm">
                 </video>
             </div>
-            <div class="Left-Top yellow padding-box"><img src="./img/juni/recipient-filled.jpg"
+            <div class="Left-Top yellow padding-box"><img src="/img/juni/recipient-filled.jpg"
                     alt="screens made at Juni"></div>
         </div>
     </div>
@@ -245,7 +245,7 @@
     <div class="container-xxl padding-top-2rem padding-top-5rem-m">
         <div class="gridbox-single">
             <div class="yellow padding-box margin-bottom">
-                <img class="shadow" src="./img/juni/dovetail-safari.jpg" alt="interview results at Dovetail"
+                <img class="shadow" src="/img/juni/dovetail-safari.jpg" alt="interview results at Dovetail"
                     style="border-radius: 0.3rem;">
             </div>
             <div class="purple padding-box" style="position: relative;">
@@ -282,12 +282,12 @@
         <div class="gridbox-single">
             <div class="yellow padding-box margin-bottom">
                 <video class="center shadow" loading="lazy" autoplay loop playsinline muted style="border-radius: 6px;">
-                    <source src="img/juni/review-edit.webm">
+                    <source src="/img/juni/review-edit.webm">
                 </video>
                 <!-- <img src="./img/juni/sendmoneyreview.jpg" alt="screens made at Juni"> -->
             </div>
             <div class="yellow padding-box-r-b">
-                <img src="./img/juni/scamwarning.jpg" alt="screens made at Juni">
+                <img src="/img/juni/scamwarning.jpg" alt="screens made at Juni">
             </div>
         </div>
     </div>
@@ -321,10 +321,10 @@
     <div class="container-xxl padding-top-2rem padding-top-5rem-m">
         <div class="gridbox-single">
             <div class="purple padding-box-l-t-r margin-bottom">
-                <img src="./img/juni/choose-account.jpg" alt="screens made at Juni">
+                <img src="/img/juni/choose-account.jpg" alt="screens made at Juni">
             </div>
             <div class="yellow padding-box">
-                <img class="shadow" src="./img/juni/topup-safari.jpg" alt="screens made at Juni"
+                <img class="shadow" src="/img/juni/topup-safari.jpg" alt="screens made at Juni"
                     style="border-radius: 0.3rem;">
             </div>
         </div>
@@ -344,10 +344,10 @@
     <div class="container-xxl padding-top-2rem padding-top-5rem-m">
         <div class="gridbox-single overflow-hidden">
             <div class="yellow padding-box-l-t-r margin-bottom">
-                <img src="./img/juni/topup-method.jpg" alt="screens made at Juni">
+                <img src="/img/juni/topup-method.jpg" alt="screens made at Juni">
             </div>
             <div class="yellow overflow-hidden">
-                <img style="object-fit: cover; width: 100%;height: 100%;" src="./img/juni/topup-success-macbook.jpg" alt="screens made at Juni">
+                <img style="object-fit: cover; width: 100%;height: 100%;" src="/img/juni/topup-success-macbook.jpg" alt="screens made at Juni">
 
             </div>
         </div>
@@ -371,12 +371,12 @@
                 <!-- <img src="./img/juni/cardsgrid.jpg" style="object-fit: cover;width: 100%;height: 100%;"
                     alt="screens made at Juni"> -->
                     <video style="object-fit: cover; width: 100%;height: 100%;" loading="lazy" autoplay loop playsinline muted>
-                        <source src="img/juni/cards-slide.webm">
+                        <source src="/img/juni/cards-slide.webm">
                     </video>
             </div>
             <div class="yellow padding-box-l-t-r overflow-hidden" style="max-height: 539px;">
                 <div class="center" style="height: 100%;">
-                    <img class="shadow" src="./img/juni/cardsidepanel.jpg"  alt="screens made at Juni">
+                    <img class="shadow" src="/img/juni/cardsidepanel.jpg"  alt="screens made at Juni">
                 </div>
             </div>
         </div>
@@ -394,12 +394,12 @@
         <div class="gridbox-single">
             <div class="purple padding-box-l-t-r overflow-hidden margin-bottom" style="max-height: 374px;">
                 <div class="center" style="height: 100%;">
-                    <img class="shadow" src="./img/juni/modal-monthlyspendlimit.png" alt="screens made at Juni">
+                    <img class="shadow" src="/img/juni/modal-monthlyspendlimit.png" alt="screens made at Juni">
                 </div>
             </div>
             <div class="purple padding-box overflow-hidden" style="max-height: 374px;">
                 <div class="center" style="height: 100%;">
-                    <img class="shadow" src="./img/juni/modal-deletecards.png" alt="screens made at Juni">
+                    <img class="shadow" src="/img/juni/modal-deletecards.png" alt="screens made at Juni">
                 </div>
             </div>
         </div>
@@ -426,20 +426,20 @@
 
     <div class="container-xxl padding-top-2rem padding-top-5rem-m padding-bottom-2rem padding-bottom-5rem-m">
         <div class="gridbox-2">
-            <div class="Right-Top-2 yellow padding-box center margin-bottom"><img class="center" src="./img/juni/filters.svg"
+            <div class="Right-Top-2 yellow padding-box center margin-bottom"><img class="center" src="/img/juni/filters.svg"
                     alt="screens made at Juni"></div>
-            <div class="Right-Bottom-2 purple margin-bottom"><img src="./img/juni/listview-ipad.jpg" alt="screens made at Juni"></div>
+            <div class="Right-Bottom-2 purple margin-bottom"><img src="/img/juni/listview-ipad.jpg" alt="screens made at Juni"></div>
             <div class="Left-Bottom-2 yellow padding-box center margin-bottom">
                 <video class="center shadow" loading="lazy" autoplay loop playsinline muted style="border-radius: 6px;">
-                    <source src="img/juni/safari-cards.webm">
+                    <source src="/img/juni/safari-cards.webm">
                 </video>
             </div>
-            <div class="Left-Top-2 purple padding-box-t-l"><img src="./img/juni/cards-apply-filters.jpg"
+            <div class="Left-Top-2 purple padding-box-t-l"><img src="/img/juni/cards-apply-filters.jpg"
                     alt="screens made at Juni"></div>
         </div>
     </div>
 
-    <a class="scrollToTopBtn btn btn-black">
+    <a class="scrollToTopBtn scrollToTopBtn-normal btn btn-black">
         <div class="icon baseline up">
             <svg fill="none" viewBox="0 0 32 32">
                 <path fill-rule="evenodd"
@@ -448,9 +448,7 @@
             </svg>
         </div>
     </a>
-    <a hidden class="scrollToHiBtn hand" onclick="scrollFunction3()">
-        say hoi
-    </a>
+  
 
         <div class="container-l padding-bottom-5rem">
             <div class="padding-top-3rem padding-bottom-1rem padding-bottom-5rem-m" id="el3">
@@ -459,10 +457,10 @@
                     
                 </h2>
                 <div class="button-row center">
-                    <a class="btn btn-black mail fade-Y-bottom-l" href="index.html#el1"
+                    <a class="btn btn-black mail fade-Y-bottom-l" href="/index.html#el1"
                         rel="noopener noreferrer">check out more work</a>
                     <a class="btn btn-black fade-Y-bottom-l" style="transition-delay: 50ms;"
-                        href="index.html#el3"
+                        href="/index.html#el3"
                         rel="noopener noreferrer">or say hoi</a>
                     <a class="btn btn-black fade-Y-bottom-l" href="#" style="transition-delay: 100ms;">back to top
                         <div class="icon baseline">
@@ -487,7 +485,9 @@
         </div>
     </footer>
 
-    <script type="text/JavaScript" src="date_script.js"></script>
+    <script type="text/JavaScript" src="/date_script.js"></script>
+
+
 
 </body>
 

@@ -34,39 +34,99 @@ function scrollFunction3() {
   });
 }
 
-
 // When pressed updates to right email
 $('a.mail').on('click', function () {
   var href = $(this).attr('href');
   $(this).attr('href', href.replace('ruitenberg', 'thomasruitenberg'));
 });
 
-window.addEventListener('scroll', function() {
-  var scrollToTopBtn = document.querySelector('.scrollToTopBtn');
-  var scrollToHiBtn = document.querySelector('.scrollToHiBtn');
-  var scrollHeight = window.pageYOffset;
-  var windowHeight = window.innerHeight;
-  var documentHeight = document.documentElement.scrollHeight;
+
+// Check if the browser supports addEventListener, otherwise, use attachEvent for older browsers (e.g., IE 8 and below)
+if (window.addEventListener) {
+  window.addEventListener('scroll', handleScroll);
+} else if (window.attachEvent) {
+  window.attachEvent('onscroll', handleScroll);
+}
+
+// Function that handles the scroll event logic
+function handleScroll() {
+  // Select the elements for the "scroll to top" and "scroll to hi" buttons
+  // Fallback to getElementById if querySelector is not supported in older browsers
+  var scrollToTopBtn = document.querySelector('.scrollToTopBtn') || document.getElementById('scrollToTopBtn');
+  var scrollToHiBtn = document.querySelector('.scrollToHiBtn') || document.getElementById('scrollToHiBtn');
+  
+  // Determine the current scroll position using scrollY or fall back to cross-browser alternatives
+  var scrollHeight = window.scrollY !== undefined 
+      ? window.scrollY 
+      : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+  
+  // Get the height of the visible window; fallback values ensure compatibility with older browsers
+  var windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+  
+  // Calculate the total document height; fallbacks handle older browsers
+  var documentHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+  
+  // Calculate the distance from the bottom of the page
   var distanceFromBottom = documentHeight - (scrollHeight + windowHeight);
 
-  if (scrollHeight > 400) {
-    scrollToTopBtn.classList.add('show');
-    scrollToHiBtn.classList.add('show');
+  // Show or hide the buttons based on the current scroll position
+  if (scrollHeight > 400) { 
+    // If scrolled more than 400 pixels, add the 'show' class to make buttons visible
+    addClass(scrollToTopBtn, 'show');
+    if (scrollToHiBtn) {
+      addClass(scrollToHiBtn, 'show'); // Only add if the element exists
+    }
   } else {
-    scrollToTopBtn.classList.remove('show');
-    scrollToHiBtn.classList.remove('show');
+    // If scrolled less than 400 pixels, remove the 'show' class to hide buttons
+    removeClass(scrollToTopBtn, 'show');
+    if (scrollToHiBtn) {
+      removeClass(scrollToHiBtn, 'show'); // Only remove if the element exists
+    }
   }
 
-
-
+  // Hide buttons when near the bottom of the page (distance ≤ 100 pixels)
   if (distanceFromBottom <= 100) {
-    scrollToTopBtn.classList.add('hide');
-    scrollToHiBtn.classList.add('hide');
+    addClass(scrollToTopBtn, 'hide');
+    if (scrollToHiBtn) {
+      addClass(scrollToHiBtn, 'hide'); // Only add if the element exists
+    }
   } else {
-    scrollToTopBtn.classList.remove('hide');
-    scrollToHiBtn.classList.remove('hide');
+    // Remove 'hide' class if not near the bottom
+    removeClass(scrollToTopBtn, 'hide');
+    if (scrollToHiBtn) {
+      removeClass(scrollToHiBtn, 'hide'); // Only remove if the element exists
+    }
   }
-});
+}
+
+// Utility function to add a class to an element with cross-browser compatibility
+function addClass(element, className) {
+  if (element.classList) {
+    element.classList.add(className); // Modern method for adding classes
+  } else if (!hasClass(element, className)) {
+    element.className += ' ' + className; // Fallback for older browsers that don't support classList
+  }
+}
+
+// Utility function to remove a class from an element with cross-browser compatibility
+function removeClass(element, className) {
+  if (element.classList) {
+    element.classList.remove(className); // Modern method for removing classes
+  } else {
+    // Regular expression replaces the className with an empty space in older browsers
+    element.className = element.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+  }
+}
+
+// Utility function to check if an element has a specific class, compatible with older browsers
+function hasClass(element, className) {
+  if (element.classList) {
+    return element.classList.contains(className); // Modern method to check for a class
+  } else {
+    // Regular expression tests whether the element's className contains the specified class
+    return new RegExp('(^| )' + className + '( |$)', 'gi').test(element.className);
+  }
+}
 
 function scrollToTop() {
   window.scrollTo({
@@ -162,7 +222,12 @@ const observer = new IntersectionObserver(function (entries) {
   });
 }, options);
 
-// Observe the background transition element
+// Observe the background transition element only if it exists
 const backgroundTransition = document.querySelector('.background-wrapper');
-observer.observe(backgroundTransition);
+if (backgroundTransition) {
+  observer.observe(backgroundTransition);
+} else {
+  console.warn('No .background-wrapper element found. Intersection Observer will not be set up.');
+}
+
 

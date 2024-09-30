@@ -138,7 +138,6 @@ section {
   border-radius: 60px;
   padding: 14px 32px 18px;
   background-color: transparent;
-  /* mix-blend-mode: normal;  */
 }
 
 
@@ -146,13 +145,12 @@ section {
   color: var(--white);
   border: 1px solid var(--white);
   mix-blend-mode: screen;
-  
 }
 
 .btn-black {
   color: var(--black);
   border: 1px solid var(--black);
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
 }
 
 .btn-white:hover {
@@ -296,10 +294,6 @@ footer {
   .scrollToTopBtn {
     bottom: 16px;
     right: 16px !important;
-    mix-blend-mode: exclusion;
-  }
-  .scrollToTopBtn-normal {
-    mix-blend-mode: normal !important;
   }
 }
 

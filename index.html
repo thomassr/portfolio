@@ -33,8 +33,9 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/anim.css">
 
-    <script defer src="/scripts/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="/scripts/script.js" defer></script>
+    <script src="/scripts/scrollBtn.js" defer></script>  
+ 
 
 
 
@@ -65,15 +66,17 @@
                 mobile.
             </h2>
             <div class="button-row padding-top-2rem padding-top-5rem-m">
-                <a class="btn btn-white fade-Y-bottom-l" style="transition-delay: 275ms;" onclick="scrollFunction1()">check
-                    out
-                    my work</a>
-                <a class="btn btn-white fade-Y-bottom-l" style="transition-delay: 350ms;" onclick="scrollFunction2()">learn
-                    more
-                    about me</a>
-                <a class="btn btn-white hand fade-Y-bottom-l" style="transition-delay: 425ms;"
-                    onclick="scrollFunction3()">or
-                    say hoi</a>
+                <div class="fade-Y-bottom-l" style="transition-delay: 275ms; mix-blend-mode: screen;">
+                    <button class="btn btn-white" id="navigate-work-hero">check out my work</button>
+                </div>
+            
+                <div class="fade-Y-bottom-l" style="transition-delay: 350ms; mix-blend-mode: screen;">
+                    <button class="btn btn-white" id="navigate-bio">learn more about me</button>
+                </div>
+            
+                <div class="fade-Y-bottom-l" style="transition-delay: 425ms; mix-blend-mode: screen;">
+                    <button class="btn btn-white hand" id="navigate-contact">or say hoi</button>
+                </div>
             </div>
         </div>
     </div>
@@ -195,7 +198,7 @@
                             <h3>UX Designer at
 
                                 <a class="link" href="https://www.nn.nl/" target="_blank"
-                                    rel="noopener noreferrer">Nationale Nederlanden
+                                    rel="noopener noreferrer">Nationale-Nederlanden
                                     <b style="vertical-align: super; font-size: 0.5em;">↗︎</b></a>
                             </h3>
                         </div>
@@ -464,7 +467,19 @@
                     <a class="btn btn-white fade-Y-bottom-l" style="transition-delay: 50ms;"
                         href="https://www.linkedin.com/in/thomasruitenberg/" target="_blank"
                         rel="noopener noreferrer">or connect on LinkedIn</a>
-                    <a class="btn btn-white fade-Y-bottom-l" onclick="scrollFunction1()"
+                    
+                    <div class="fade-Y-bottom-l" style="transition-delay: 100ms; mix-blend-mode: screen;">
+                        <button class="btn btn-white" id="navigate-work-footer">check out my work
+                            <div class="icon">
+                                <svg fill="none" viewBox="0 0 32 32">
+                                    <path fill-rule="evenodd"
+                                        d="M16 4l8 8.23-1.17 1.205-6.002-6.174V28h-1.656V7.26l-6.001 6.175L8 12.231 16 4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                    <!-- <a class="btn btn-white fade-Y-bottom-l" onclick="scrollFunction1()"
                         style="transition-delay: 100ms;">check out my work
                         <div class="icon">
                             <svg fill="none" viewBox="0 0 32 32">
@@ -473,13 +488,24 @@
                                     clip-rule="evenodd" />
                             </svg>
                         </div>
-                    </a>
+                    </a> -->
 
                 </div>
             </div>
         </div>
     </section>
-    <a class="scrollToTopBtn btn btn-white">
+    <button id="scrollToTopBtn" class="scrollToTopBtn btn btn-white hide">
+        <div class="icon up">
+        <svg fill="none" viewBox="0 0 32 32">
+            <path fill-rule="evenodd"
+                d="M16 4l8 8.23-1.17 1.205-6.002-6.174V28h-1.656V7.26l-6.001 6.175L8 12.231 16 4z"
+                clip-rule="evenodd" />
+        </svg>
+        </div>
+    </button>  
+    <button id="scrollToHiBtn" class="scrollToHiBtn btn btn-white hand hide">say hoi</button>  
+
+    <!-- <a class="scrollToTopBtn btn btn-white">
         <div class="icon up">
             <svg fill="none" viewBox="0 0 32 32">
                 <path fill-rule="evenodd"
@@ -490,7 +516,7 @@
     </a>
     <a class="scrollToHiBtn btn btn-white hand" onclick="scrollFunction3()">
         say hoi
-    </a>
+    </a> -->
     <footer>
         <div class="container-l text-center padding-top-5rem padding-bottom-2rem">
             <span>

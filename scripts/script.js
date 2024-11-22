@@ -1,5 +1,25 @@
 console.log("script.js file linked.");
 
+document.addEventListener('DOMContentLoaded', function () {  
+  // Check if the current page URL matches the expected page  
+  if (window.location.pathname === '/index.html') {  
+      document.getElementById('navigate-work-hero').addEventListener('click', () => scrollToSection('el1'));  
+      document.getElementById('navigate-work-footer').addEventListener('click', () => scrollToSection('el1'));  
+      document.getElementById('navigate-bio').addEventListener('click', () => scrollToSection('el2'));  
+      document.getElementById('navigate-contact').addEventListener('click', () => scrollToSection('el3'));  
+  }  
+});
+
+
+// // Event listeners for buttons  
+// document.getElementById('navigate-work-hero').addEventListener('click', () => scrollToSection('el1'));  
+// document.getElementById('navigate-work-footer').addEventListener('click', () => scrollToSection('el1'));  
+// document.getElementById('navigate-bio').addEventListener('click', () => scrollToSection('el2'));  
+// document.getElementById('navigate-contact').addEventListener('click', () => scrollToSection('el3'));  
+
+
+
+
 // Select all buttons with the class 'btn'  
 const buttons = document.querySelectorAll('.btn');  
   
@@ -28,13 +48,6 @@ function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId);  
   section.scrollIntoView({ behavior: 'smooth' });  
 }  
-
-// Event listeners for buttons  
-document.getElementById('navigate-work-hero').addEventListener('click', () => scrollToSection('el1'));  
-document.getElementById('navigate-work-footer').addEventListener('click', () => scrollToSection('el1'));  
-document.getElementById('navigate-bio').addEventListener('click', () => scrollToSection('el2'));  
-document.getElementById('navigate-contact').addEventListener('click', () => scrollToSection('el3'));  
-
 
 // Function to trigger animations when in view
 const observer1 = new IntersectionObserver((entries) => {

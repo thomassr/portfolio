@@ -112,10 +112,16 @@ function hasClass(element, className) {
 document.getElementById('scrollToTopBtn').addEventListener('click', function() {  
     window.scrollTo({ top: 0, behavior: 'smooth' });  
 });  
-  
-document.getElementById('scrollToHiBtn').addEventListener('click', function() {  
-    const hiSection = document.getElementById('el3');  
-    if (hiSection) {  
-        hiSection.scrollIntoView({ behavior: 'smooth' });  
-    }  
-});  
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Check if the current page URL matches the expected page  
+    if (window.location.pathname === '/index.html') {
+        document.getElementById('scrollToHiBtn').addEventListener('click', function () {
+            const hiSection = document.getElementById('el3');
+            if (hiSection) {
+                hiSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
+});

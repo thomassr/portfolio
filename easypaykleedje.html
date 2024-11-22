@@ -41,8 +41,8 @@
     <link rel="stylesheet" href="/css/anim.css">
     <link rel="stylesheet" href="/css/styles-projects.css">
 
-    <script defer src="/scripts/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="/scripts/script.js" defer></script>
+    <script src="/scripts/scrollBtn.js" defer></script>  
 
     <!-- Add Additional Modules -->
     <link rel="stylesheet" href="https://unpkg.com/@getbase/base/containers.css">
@@ -313,18 +313,15 @@
     </div>
 
     <!-- FLOATING BUTTON -->
-    <a class="scrollToTopBtn scrollToTopBtn-normal btn btn-black">
-        <div class="icon baseline up">
-            <svg fill="none" viewBox="0 0 32 32">
-                <path fill-rule="evenodd"
-                    d="M16 4l8 8.23-1.17 1.205-6.002-6.174V28h-1.656V7.26l-6.001 6.175L8 12.231 16 4z"
-                    clip-rule="evenodd" />
-            </svg>
+    <button id="scrollToTopBtn" class="scrollToTopBtn btn btn-black hide">
+        <div class="icon up">
+        <svg fill="none" viewBox="0 0 32 32">
+            <path fill-rule="evenodd"
+                d="M16 4l8 8.23-1.17 1.205-6.002-6.174V28h-1.656V7.26l-6.001 6.175L8 12.231 16 4z"
+                clip-rule="evenodd" />
+        </svg>
         </div>
-    </a>
-    <!-- <a class="scrollToHiBtn btn btn-black hand" onclick="scrollFunction3()">
-        say hoi
-    </a> -->
+    </button>  
 
 
 
@@ -334,22 +331,21 @@
         <div class="padding-top-3rem padding-bottom-1rem padding-bottom-5rem-m" id="el3">
             <h2 class="padding-bottom-3rem text-center">
                 I've got some more work to show you or I would love to hear from you when you have seen enough.
-
             </h2>
             <div class="button-row center">
-                <a class="btn btn-black mail fade-Y-bottom-l" href="/index.html#el1" rel="noopener noreferrer">check out
-                    more work</a>
-                <a class="btn btn-black fade-Y-bottom-l" style="transition-delay: 50ms;" href="/index.html#el3"
-                    rel="noopener noreferrer">or say hoi</a>
-                <a class="btn btn-black fade-Y-bottom-l" href="#" style="transition-delay: 100ms;">back to top
-                    <div class="icon baseline">
-                        <svg fill="none" viewBox="0 0 32 32">
-                            <path fill-rule="evenodd"
-                                d="M16 4l8 8.23-1.17 1.205-6.002-6.174V28h-1.656V7.26l-6.001 6.175L8 12.231 16 4z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </div>
-                </a>
+                
+                <div class="fade-Y-bottom-l">
+                <a class="btn btn-black mail" href="mailto:hoi@ruitenberg.nl?body=Hoi Thomas!" target="_blank"
+                    rel="noopener noreferrer">say hoi with an email</a>
+                </div>
+                <div class="fade-Y-bottom-l" style="transition-delay: 50ms;">
+                <a class="btn btn-black"
+                    href="https://www.linkedin.com/in/thomasruitenberg/" target="_blank"
+                    rel="noopener noreferrer">or connect on LinkedIn</a>
+                </div>
+                <a class="fade-Y-bottom-l btn btn-black" style="transition-delay: 100ms;"
+                href="/index.html#el1" rel="noopener noreferrer">check out more work</a>
+                </div>
 
             </div>
         </div>

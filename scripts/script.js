@@ -1,14 +1,28 @@
 console.log("script.js file linked.");
 
 document.addEventListener('DOMContentLoaded', function () {  
-  // Check if the current page URL matches the expected page  
-  if (window.location.pathname === '/index.html') {  
-      document.getElementById('navigate-work-hero').addEventListener('click', () => scrollToSection('el1'));  
-      document.getElementById('navigate-work-footer').addEventListener('click', () => scrollToSection('el1'));  
-      document.getElementById('navigate-bio').addEventListener('click', () => scrollToSection('el2'));  
-      document.getElementById('navigate-contact').addEventListener('click', () => scrollToSection('el3'));  
+  // Check if the current page is the root (index.html)  
+  if (window.location.pathname === '/' || window.location.pathname === '/index.html') {  
+      const workHeroButton = document.getElementById('navigate-work-hero');  
+      const workFooterButton = document.getElementById('navigate-work-footer');  
+      const bioButton = document.getElementById('navigate-bio');  
+      const contactButton = document.getElementById('navigate-contact');  
+
+      // Only add event listeners if the elements exist  
+      if (workHeroButton) {  
+          workHeroButton.addEventListener('click', () => scrollToSection('el1'));  
+      }  
+      if (workFooterButton) {  
+          workFooterButton.addEventListener('click', () => scrollToSection('el1'));  
+      }  
+      if (bioButton) {  
+          bioButton.addEventListener('click', () => scrollToSection('el2'));  
+      }  
+      if (contactButton) {  
+          contactButton.addEventListener('click', () => scrollToSection('el3'));  
+      }  
   }  
-});
+});  
 
 
 // // Event listeners for buttons  

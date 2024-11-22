@@ -126,7 +126,10 @@ section {
   }
 }
 
-.btn {  
+.btn { 
+  display: inline-flex; /* Use inline-flex for better alignment */  
+  align-items: center; /* Center the text vertically */  
+  justify-content: center; /* Center the text horizontally */   
   font-family: 'Satoshi', sans-serif;  
   font-size: 1.5em;  
   font-weight: 400;  
@@ -140,7 +143,14 @@ section {
   background-color: transparent;  
   border: 1px solid transparent; /* Use transparent border for layout consistency */  
   transition: background-color 300ms cubic-bezier(.17,.62,.57,.99);  
+  height: auto; /* Allow height to adjust based on padding */  
+  line-height: normal; /* Set line-height for better vertical alignment */ 
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }  
+
+
 
 .btn-white {  
   color: var(--white);  
@@ -234,7 +244,7 @@ video {
 
 @media (min-width: 576px) {
   .list-item {
-    padding-top: 10rem;
+    padding-top: 5rem;
     padding-bottom: 5rem;
   }
 }
@@ -310,6 +320,7 @@ transition-delay: .06s;
   .scrollToTopBtn {
     bottom: 16px;
     right: 16px !important;
+    mix-blend-mode: difference;
   }
 }
 
@@ -336,3 +347,6 @@ transition-delay: .06s;
   filter: invert(100%);
 }
 
+.padding-top-10rem {
+  padding-top: 10rem
+}

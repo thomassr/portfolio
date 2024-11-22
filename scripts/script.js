@@ -39,84 +39,113 @@ document.getElementById('navigate-contact').addEventListener('click', () => scro
 // Function to trigger animations when in view
 const observer1 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry)
+    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add('show-anim');
     } else {
       entry.target.classList.remove('show-anim');
-      {threshold: 1.0}
-    } 
-  }); 
-}, {rootMargin: "0px 0px -200px 0px"} // sets trigger point
-
-);
+    }
+  });
+}, {
+  rootMargin: "20px 0px -20% 0px"
+  
+});
 
 const hiddenElements = document.querySelectorAll('.fade-Y-bottom-l,.fade-Y-bottom-s,.scale-up');
 hiddenElements.forEach((el) => observer1.observe(el));
 
+document.addEventListener('DOMContentLoaded', function () {  
+
 const gradients = ['gradient-1', 'gradient-2', 'gradient-3', 'gradient-4', 'gradient-5'];  
+const backgroundLayers = document.querySelectorAll('.background-layer');  
   
+// Function to change background gradients  
 function changeBackground() {  
-    const backgroundLayers = document.querySelectorAll('.background-layer');  
     const randomIndex = Math.floor(Math.random() * gradients.length);  
   
-    // Verwijder 'active' class van alle lagen en voeg nieuwe gradient classes toe  
+    // Use a single pass to set classes  
     backgroundLayers.forEach((layer, index) => {  
-        layer.classList.remove('active'); // Verwijder de 'active' class van alle lagen  
-        const gradientClass = gradients[(randomIndex + index) % gradients.length]; // Bepaal de gradient class  
-        layer.classList.add(gradientClass); // Voeg de gradient class toe  
+        layer.classList.remove('active'); // Remove 'active' class  
+        const gradientClass = gradients[(randomIndex + index) % gradients.length];  
+        layer.classList.add(gradientClass); // Add new gradient class  
     });  
   
-    // Voeg 'active' class toe aan de eerste achtergrondlaag  
+    // Set 'active' class on the first layer  
     if (backgroundLayers.length > 0) {  
         backgroundLayers[0].classList.add('active');  
     }  
 }  
   
-// Initialiseer de achtergrond  
+// Initialize the background  
 changeBackground();  
   
-// Stel de Intersection Observer in  
+// Debounce function  
+function debounce(func, wait) {  
+    let timeout;  
+    return function executedFunction(...args) {  
+        const later = () => {  
+            timeout = null;  
+            func(...args);  
+        };  
+        clearTimeout(timeout);  
+        timeout = setTimeout(later, wait);  
+    };  
+}  
+  
+// Set up Intersection Observer  
 const options = {  
     root: null,  
     rootMargin: '0px',  
     threshold: 1  
 };  
   
-const observer = new IntersectionObserver((entries) => {  
+let hasLogged = false; // Flag to limit logging  
+  
+// Define the intersection observer callback  
+const intersectionCallback = (entries) => {  
     entries.forEach(entry => {  
         if (entry.isIntersecting) {  
+            // Log only once per element  
+            if (!hasLogged) {  
+                console.log(entry); // Log the entry  
+                hasLogged = true; // Prevent further logs  
+            }  
+  
             const activeLayer = document.querySelector('.background-layer.active');  
-            const backgroundLayers = document.querySelectorAll('.background-layer');  
+            if (!activeLayer) return; // Early exit if no active layer found  
   
-            // Bepaal de index van de huidige actieve laag  
-            const currentIndex = Array.from(backgroundLayers).indexOf(activeLayer);  
-            // Bepaal de index van de volgende laag (0 of 1)  
+            const currentIndex = [...backgroundLayers].indexOf(activeLayer);  
             const nextIndex = (currentIndex + 1) % backgroundLayers.length;  
-  
-            // Zorg ervoor dat we de gradient updaten voor de volgende laag  
             const nextLayer = backgroundLayers[nextIndex];  
+  
+            // Find current gradient class and determine next gradient  
             const currentGradient = [...nextLayer.classList].find(cls => gradients.includes(cls));  
             const currentGradientIndex = gradients.indexOf(currentGradient);  
-            const nextGradientIndex = (currentGradientIndex + 1) % gradients.length; // Volgende gradient  
+            const nextGradientIndex = (currentGradientIndex + 1) % gradients.length;  
             const nextGradient = gradients[nextGradientIndex];  
   
-            // Verander de gradient class  
+            // Update classes efficiently  
             nextLayer.classList.remove(currentGradient);  
             nextLayer.classList.add(nextGradient);  
-            activeLayer.classList.remove('active'); // Verwijder 'active' van de huidige laag  
-            nextLayer.classList.add('active'); // Maak de volgende laag actief  
+            activeLayer.classList.remove('active');  
+            nextLayer.classList.add('active');  
         }  
     });  
-}, options);  
+};  
   
-// Observeer de achtergrond overgangselement  
+// Create a debounced version of the intersection callback  
+const debouncedIntersectionCallback = debounce(intersectionCallback, 100); // Adjust wait time as needed  
+  
+const observer = new IntersectionObserver(debouncedIntersectionCallback, options);  
+  
+// Observe the background transition element  
 const backgroundTransition = document.querySelector('.background-wrapper');  
 if (backgroundTransition) {  
     observer.observe(backgroundTransition);  
 } else {  
     console.warn('.background-wrapper not found. Intersection Observer will not be set up.');  
 }  
+}); 
 
 
 // When pressed updates to right email

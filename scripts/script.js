@@ -24,16 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }  
 });  
 
-
-// // Event listeners for buttons  
-// document.getElementById('navigate-work-hero').addEventListener('click', () => scrollToSection('el1'));  
-// document.getElementById('navigate-work-footer').addEventListener('click', () => scrollToSection('el1'));  
-// document.getElementById('navigate-bio').addEventListener('click', () => scrollToSection('el2'));  
-// document.getElementById('navigate-contact').addEventListener('click', () => scrollToSection('el3'));  
-
-
-
-
 // Select all buttons with the class 'btn'  
 const buttons = document.querySelectorAll('.btn');  
   

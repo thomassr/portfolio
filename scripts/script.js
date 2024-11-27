@@ -1,28 +1,34 @@
 console.log("script.js file linked.");
 
 document.addEventListener('DOMContentLoaded', function () {  
-  // Check if the current page is the root (index.html)  
-  if (window.location.pathname === '/' || window.location.pathname === '/index.html') {  
-      const workHeroButton = document.getElementById('navigate-work-hero');  
-      const workFooterButton = document.getElementById('navigate-work-footer');  
-      const bioButton = document.getElementById('navigate-bio');  
-      const contactButton = document.getElementById('navigate-contact');  
-
-      // Only add event listeners if the elements exist  
-      if (workHeroButton) {  
-          workHeroButton.addEventListener('click', () => scrollToSection('el1'));  
-      }  
-      if (workFooterButton) {  
-          workFooterButton.addEventListener('click', () => scrollToSection('el1'));  
-      }  
-      if (bioButton) {  
-          bioButton.addEventListener('click', () => scrollToSection('el2'));  
-      }  
-      if (contactButton) {  
-          contactButton.addEventListener('click', () => scrollToSection('el3'));  
-      }  
-  }  
+    // Check if the current page is the root (index.html)  
+    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {  
+        // Define an array of button configurations  
+        const buttons = [  
+            { id: 'navigate-work-hero', sectionId: 'el1' },  
+            { id: 'navigate-work-footer', sectionId: 'el1' },  
+            { id: 'navigate-bio', sectionId: 'el2' },  
+            { id: 'navigate-contact', sectionId: 'el3' }  
+        ];  
+  
+        // Loop through the button configurations and add event listeners  
+        buttons.forEach(({ id, sectionId }) => {  
+            const button = document.getElementById(id);  
+            if (button) {  
+                button.addEventListener('click', () => scrollToSection(sectionId));  
+            }  
+        });  
+    }  
 });  
+  
+// Function to scroll to the selected section  
+function scrollToSection(sectionId) {  
+    const section = document.getElementById(sectionId);  
+    section.scrollIntoView({  
+      behavior: 'smooth',  
+      block: 'start'  
+  });  
+}  
 
 // Select all buttons with the class 'btn'  
 const buttons = document.querySelectorAll('.btn');  
@@ -37,21 +43,9 @@ buttons.forEach(button => {
         setTimeout(() => {  
             this.classList.remove('active');  
             this.blur(); // Remove focus from the button  
-        }, 200); // Adjust the duration as needed (200ms in this example)  
+        }, 200); // Duration in ms 
     });  
 });  
-
-// Function to scroll to the selected section  
-function scrollToSection(sectionId) {  
-  const section = document.getElementById(sectionId);  
-  section.scrollIntoView({ behavior: 'smooth' });  
-}  
-
-// Function to scroll to the selected section  
-function scrollToSection(sectionId) {  
-  const section = document.getElementById(sectionId);  
-  section.scrollIntoView({ behavior: 'smooth' });  
-}  
 
 // Function to trigger animations when in view
 const observer1 = new IntersectionObserver((entries) => {

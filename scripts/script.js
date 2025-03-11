@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
             { id: 'navigate-work-hero', sectionId: 'el1' },  
             { id: 'navigate-work-footer', sectionId: 'el1' },  
             { id: 'navigate-bio', sectionId: 'el2' },  
-            { id: 'navigate-contact', sectionId: 'el3' }  
+            { id: 'navigate-contact', sectionId: 'el3' },
+            { id: 'navigate-contact-sticky', sectionId: 'el3' }  
         ];  
   
         // Loop through the button configurations and add event listeners  

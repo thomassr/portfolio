@@ -133,7 +133,7 @@ section {
   font-family: 'Satoshi', sans-serif;  
   font-size: 1.5em;  
   font-weight: 400;  
-  letter-spacing: -0.03em;  
+  letter-spacing: -0.01em;  
   display: inline-flex;  
   gap: 8px;  
   text-decoration: none;  
@@ -144,7 +144,7 @@ section {
   border: 1px solid transparent; /* Use transparent border for layout consistency */  
   transition: background-color 300ms cubic-bezier(.17,.62,.57,.99);  
   height: auto; /* Allow height to adjust based on padding */  
-  line-height: normal; /* Set line-height for better vertical alignment */ 
+  line-height: 30px; /* Set line-height for better vertical alignment */ 
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -195,14 +195,14 @@ section {
   fill: var(--white) !important;  
 }  
 
-@media (max-width: 576px) {  
+/* @media (max-width: 576px) {  
   .btn,  
   .btn-white:hover,  
   .btn-black:hover {  
       font-size: 1.3em;  
       font-weight: 400;  
   }  
-}  
+}   */
 
 /* alignment of svg icon in button */
 .icon {
@@ -288,29 +288,30 @@ footer {
       width: 100%;
   }
 
-/* Sticky button Scroll to top */
-.scrollToTopBtn, .scrollToHiBtn {
-  position: fixed;  
-  bottom: -60px; /* Initially position the buttons out of view */  
-  right: 20px;  
-  cursor: pointer;  
-  opacity: 0; /* Initially hidden */  
-  pointer-events: none; /* Prevent interaction when hidden */  
-  transition: opacity 0.3s ease, bottom 0.3s ease; 
+  .sticky-btns {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    visibility: hidden; /* Initially hidden */
+    opacity: 0; /* Start with opacity 0 */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: row; /* Align items horizontally */
+    gap: 10px; /* Space between buttons */
+    transition: opacity .6s cubic-bezier(0.16, 1, 0.3, 1), transform .6s cubic-bezier(0.16, 1, 0.3, 1);    
+    transform: translateY(80px);
+}
+.show {
+    visibility: visible; /* Make visible */
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+}
+
+.btn.icon-only {
+  padding: 19px;
 }
 
 
-.hide { 
-  opacity: 0; 
-  pointer-events: none; /* Prevent clicks on the button */  
-  bottom: -60px;
-}  
 
-.show {  
-  opacity: 1; 
-  pointer-events: auto; /* Allow clicks on the button */  
-  bottom: 30px; /* Move the button into view */  
-}  
 
 .scrollToHiBtn.show {
 transition-delay: .06s;
@@ -324,17 +325,8 @@ transition-delay: .06s;
   }
 }
 
-.scrollToTopBtn {
-  right: 30px;
-  padding: 18px;
-}
-
-.scrollToHiBtn {
-  right: 108px;
-}
-
 @media (max-width: 1416px) {
-  .scrollToHiBtn {
+  #navigate-contact-sticky {
   visibility: hidden !important;
   }
 }

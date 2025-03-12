@@ -164,3 +164,30 @@ if (backgroundTransition) {
 document.querySelectorAll('a.mail').forEach(function(link) {  
   link.href = link.href.replace('ruitenberg', 'thomasruitenberg');  
 }); 
+  
+//   document.querySelectorAll('copy-mail').forEach(copyButton => {
+//       copyButton.addEventListener("click", () => {
+//         const email = "hoi@thomasruitenberg.nl"; // Your email address  
+//       });
+//   });
+
+
+document.querySelector('.copy-mail').addEventListener('click', function() {  
+    // Get the email from the data-copy attribute  
+    const email = this.getAttribute('data-copy');  
+
+    // Use the Clipboard API to copy the email  
+    navigator.clipboard.writeText(email)  
+        .then(() => {  
+            // Change the button text to indicate the email has been copied  
+            this.textContent = 'email copied';  
+
+            // Optionally, reset the button text after a short delay  
+            setTimeout(() => {  
+                this.textContent = 'say hoi with an email';  
+            }, 2000); // Reset after 2 seconds  
+        })  
+        .catch(err => {  
+            console.error('Failed to copy: ', err);  
+        });  
+});  

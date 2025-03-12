@@ -195,14 +195,25 @@ section {
   fill: var(--white) !important;  
 }  
 
-/* @media (max-width: 576px) {  
-  .btn,  
-  .btn-white:hover,  
-  .btn-black:hover {  
-      font-size: 1.3em;  
-      font-weight: 400;  
-  }  
-}   */
+.btn:disabled {
+  background: #f1f1f1;
+  color: #3f3f3f;
+  cursor: not-allowed;
+}
+
+.show-large {
+  display: none;
+}
+@media only screen and (min-width: 767px) {
+  .show-large {
+    display: block;
+  }
+  .show-mobile {
+    display: none;
+  }
+}
+
+
 
 /* alignment of svg icon in button */
 .icon {
@@ -288,7 +299,7 @@ footer {
       width: 100%;
   }
 
-  .sticky-btns {
+.sticky-btns {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -300,6 +311,7 @@ footer {
     transition: opacity .6s cubic-bezier(0.16, 1, 0.3, 1), transform .6s cubic-bezier(0.16, 1, 0.3, 1);    
     transform: translateY(80px);
 }
+
 .show {
     visibility: visible; /* Make visible */
     opacity: 1; /* Fade in */
@@ -311,16 +323,14 @@ footer {
 }
 
 
-
-
 .scrollToHiBtn.show {
 transition-delay: .06s;
 }
 
 @media (max-width: 992px) {
-  .scrollToTopBtn {
+  .sticky-btns {
     bottom: 16px;
-    right: 16px !important;
+    right: 16px;
     mix-blend-mode: difference;
   }
 }
@@ -332,8 +342,8 @@ transition-delay: .06s;
 }
 
 .hand {
-  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👋</text></svg>") 10 12,auto;  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-}
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👋</text></svg>") 10 12,auto;  animation-name: wave-animation;
+} 
   
 .invert {
   filter: invert(100%);
@@ -342,3 +352,5 @@ transition-delay: .06s;
 .padding-top-10rem {
   padding-top: 10rem
 }
+
+

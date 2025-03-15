@@ -34,7 +34,10 @@
 
 @media screen and (min-height: 1001px) {
     .hero {
-      height: auto; 
+      height: 80dvh; 
+    }
+    .title-hero {
+        margin: auto;
     }
   }
 

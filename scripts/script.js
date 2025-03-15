@@ -1,8 +1,9 @@
 console.log("script.js file linked.");
 
 document.addEventListener('DOMContentLoaded', function () {  
-    // Check if the current page is the root (index.html)  
-    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {  
+    // Check if the current page is one of the specified pages  
+    const validPaths = ['/', '/index.html', '/juni.php', '/easypaykleedje.html']; // Add more paths as needed
+    if (validPaths.includes(window.location.pathname)) {  
         // Define an array of button configurations  
         const buttons = [  
             { id: 'navigate-work-hero', sectionId: 'el1' },  
@@ -20,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }  
         });  
     }  
-});  
+});
   
 // Function to scroll to the selected section  
 function scrollToSection(sectionId) {  

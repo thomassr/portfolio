@@ -30,27 +30,16 @@
     <title>Thomas' Portfolio | Easy-pay Kleedje</title>
     <meta name="description" content="I craft mobile and web experiences - based in Utrecht.">
 
-    <!-- Base Core -->
-    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/core.css">
-    <!-- Base Common -->
-    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/code.css">
-
-    <!-- Add Your Website / App Stylesheet -->
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/fonts.css">
     <link rel="stylesheet" href="/css/anim.css">
     <link rel="stylesheet" href="/css/styles-projects.css">
+    
 
     <script src="/scripts/script.js" defer></script>
     <script src="/scripts/scrollBtn.js" defer></script>  
-
-    <!-- Add Additional Modules -->
-    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/containers.css">
-    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/grid.css">
-    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/horizontal-spacers.css">
-    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/vertical-spacers.css">
-    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/spacers.css">
-    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/typography-helpers.css">
 
 </head>
 
@@ -58,6 +47,7 @@
 
     <div class="hero orange overflow-hidden">
         <div class="container-xl text-center center padding-top-3rem padding-top-5rem-m">
+            <div class="title-hero">
             <h1 class="fade-Y-bottom-l" style="transition-delay: 100ms;">
                 Easy-pay Kleedje from Mobiquity
             </h1>
@@ -66,7 +56,7 @@
                 This 3-month company challenge made cashless payments possible through a
                 QR code blanket and app at Kingsday fleamarkets.
             </p>
-
+        </div>
             <img class="scale-up" style="transition-delay: 75ms;" src="/img/easypaykleedje/easypaykleedje-hero.png"
                 alt="shows three iphone mockups of app concept">
 
@@ -313,15 +303,18 @@
     </div>
 
     <!-- FLOATING BUTTON -->
-    <button id="scrollToTopBtn" class="scrollToTopBtn btn btn-black hide">
-        <div class="icon up">
-        <svg fill="none" viewBox="0 0 32 32">
-            <path fill-rule="evenodd"
-                d="M16 4l8 8.23-1.17 1.205-6.002-6.174V28h-1.656V7.26l-6.001 6.175L8 12.231 16 4z"
-                clip-rule="evenodd" />
-        </svg>
-        </div>
-    </button>  
+    <div class="sticky-btns" id="sticky-btns">
+        <a id="navigate-contact-sticky" class="btn btn-black hand">say hoi</a>
+        <a id="to-top-btn" class="btn btn-black icon-only">
+            <div class="icon">
+                <svg fill="none" viewBox="0 0 32 32">
+                    <path fill-rule="evenodd"
+                        d="M16 4l8 8.23-1.17 1.205-6.002-6.174V28h-1.656V7.26l-6.001 6.175L8 12.231 16 4z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+        </a>
+    </div>
 
 
 
@@ -335,9 +328,10 @@
             <div class="button-row center">
                 
                 <div class="fade-Y-bottom-l">
-                <a class="btn btn-black mail" href="mailto:hoi@ruitenberg.nl?body=Hoi Thomas!" target="_blank"
-                    rel="noopener noreferrer">say hoi with an email</a>
-                </div>
+                    <a class="btn btn-black show-mobile" href="mailto:hoi@ruitenberg.nl?body=Hoi Thomas!" id="copy-email" target="_blank"
+                        rel="noopener noreferrer">say hoi with an email</a>
+                    <button type="button" class="btn btn-black copy-mail show-large" data-copy="hoi@thomasruitenberg.nl" style="width: 280px;">say hoi with an email</button>                     
+                    </div>
                 <div class="fade-Y-bottom-l" style="transition-delay: 50ms;">
                 <a class="btn btn-black"
                     href="https://www.linkedin.com/in/thomasruitenberg/" target="_blank"

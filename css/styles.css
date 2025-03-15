@@ -296,7 +296,7 @@ footer {
       margin-left: auto;
       margin-right: auto;
       padding-bottom: 1rem;
-      width: 100%;
+      width: 60%;
   }
 
 .sticky-btns {
@@ -353,4 +353,6 @@ transition-delay: .06s;
   padding-top: 10rem
 }
 
-
+.list-item img{
+  border-radius: 12px;
+}
